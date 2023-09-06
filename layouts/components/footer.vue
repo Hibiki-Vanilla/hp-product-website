@@ -1,0 +1,276 @@
+<template>
+  <div class="footer">
+    <div class="footerTop">
+      <div class="footerTopLeft">
+        <img class="logo" src="@/static/footer/logo.png" alt="logo" />
+        <div class="footerTopLeftTitle">Empower The High</div>
+        <div class="footerTopLeftText">
+          Providing You With An Elevated Vaping Journey Like No Other.
+        </div>
+      </div>
+      <div class="footerTopRight">
+        <div
+          v-for="(item, index) in navList"
+          :key="index"
+          class="navItem"
+          @click="onNavClick(item)"
+        >
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <div class="footerBottomLeft">Copyright © 2023 POWEHI all rights reserved.</div>
+      <div class="footerBottomMid">
+        <div
+          v-for="(item, index) in midList"
+          :key="index"
+          class="textLink"
+          @click="onNavClick(item)"
+        >
+          {{ item.name }}
+        </div>
+      </div>
+      <div class="footerBottomRight">
+        <img
+          v-for="(item, index) in iconList"
+          :key="index"
+          :src="item.src"
+          class="icon"
+          @click="onIconJump(item)"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      navList: [
+        { name: "PRODUCT", jumpLink: "/product" },
+        { name: "SOLUTION", jumpLink: "/solution" },
+        { name: "ABOUT", jumpLink: "/about" },
+      ],
+      midList: [
+        { name: "Terms of Service", jumpLink: "" },
+        { name: "Privacy policy", jumpLink: "" },
+      ],
+      iconList: [
+        {
+          src: require("@/static/footer/ins.png"),
+          jumpLink: "https://www.instagram.com/powehiclub/",
+        },
+        {
+          src: require("@/static/footer/facebook.png"),
+          jumpLink: "https://www.facebook.com/profile.php?id=61550651796767",
+        },
+        { src: require("@/static/footer/x.png"), jumpLink: "#" },
+        {
+          src: require("@/static/footer/youtobe.png"),
+          jumpLink: "https://www.youtube.com/channel/UCQlAgqhx-wvqgqCxJP-VXNg",
+        },
+      ],
+    };
+  },
+  methods: {
+    onNavClick(item) {
+      this.$ctx.push(item.jumpLink);
+    },
+    onIconJump(item) {
+      window.open(item.jumpLink, "_blank");
+    },
+  },
+};
+</script>
+
+<style lang="less" scoped>
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 480px;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #eeeeee;
+
+  // top
+  .footerTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 24px;
+
+    .footerTopLeft {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        display: block;
+        height: 56px;
+        width: 161px;
+      }
+
+      .footerTopLeftTitle {
+        font-family: "Montserrat SemiBold";
+        line-height: 1;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        color: #434343;
+      }
+      .footerTopLeftText {
+        font-family: "Montserrat Regular";
+        line-height: 1;
+        font-size: 18px;
+        color: #898989;
+      }
+    }
+
+    .footerTopRight {
+      display: flex;
+
+      .navItem {
+        cursor: pointer;
+        font-family: "Montserrat SemiBold";
+        font-size: 20px;
+        color: #313131;
+      }
+      .navItem + .navItem {
+        margin-left: 65px;
+      }
+    }
+  }
+
+  // bottom
+  .footerBottom {
+    border-top: 2px solid #b5b5b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+
+    .footerBottomLeft {
+      font-family: "Montserrat Regular";
+      font-size: 14px;
+      color: #bfbfbf;
+    }
+
+    .footerBottomMid {
+      display: flex;
+      font-family: "Montserrat Regular";
+      font-size: 14px;
+      color: #bfbfbf;
+
+      .textLink {
+        cursor: pointer;
+      }
+      .textLink + .textLink {
+        margin-left: 30px;
+      }
+    }
+
+    .footerBottomRight {
+      display: flex;
+
+      .icon {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+      }
+      .icon + .icon {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    height: (650 / @morem);
+    padding: 0 (58 / @morem);
+
+    // top
+    .footerTop {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: baseline;
+      padding-bottom: (20 / @morem);
+
+      .footerTopLeft {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+          display: block;
+          height: (46 / @morem);
+          width: (132 / @morem);
+        }
+
+        .footerTopLeftTitle {
+          font-size: (16 / @morem);
+          padding-top: (10 / @morem);
+          padding-bottom: (30 / @morem);
+        }
+        .footerTopLeftText {
+          font-size: (16 / @morem);
+        }
+      }
+
+      .footerTopRight {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-top: (50 / @morem);
+        .navItem {
+          font-size: (16 / @morem);
+          color: #313131;
+          margin-bottom: (20 / @morem);
+        }
+        .navItem + .navItem {
+          margin-left: 0;
+        }
+      }
+    }
+
+    // bottom
+    .footerBottom {
+      height: (120 / @morem);
+      flex-wrap: wrap;
+
+      .footerBottomLeft {
+        width: 50%;
+        font-size: (12 / @morem);
+      }
+
+      .footerBottomMid {
+        justify-content: flex-end;
+        width: 50%;
+        font-size: (12 / @morem);
+        text-align: right;
+        .textLink + .textLink {
+          margin-left: (24 / @morem);
+        }
+      }
+
+      .footerBottomRight {
+        width: 100%;
+        .icon {
+          height: (20 / @morem);
+          width: (20 / @morem);
+        }
+        .icon + .icon {
+          margin-left: (20 / @morem);
+        }
+      }
+    }
+  }
+}
+</style>
