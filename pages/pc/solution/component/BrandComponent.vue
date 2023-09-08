@@ -253,7 +253,7 @@ Ensures that your product is manufacturable.`,
 
     .brandLightSpan {
       color: @mainColor;
-      border-bottom: 2px solid #fe8a12;
+      border-bottom: 2px solid @mainColor;
     }
   }
 

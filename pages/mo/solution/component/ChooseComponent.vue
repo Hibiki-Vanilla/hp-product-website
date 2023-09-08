@@ -96,8 +96,8 @@ export default {
     color: #1b1b1b;
   }
   .chooseTitleLine {
-    color: #fe8a12;
-    border-bottom: 1px solid #fe8a12;
+    color: @mainColor;
+    border-bottom: 1px solid @mainColor;
   }
 
   .chooseCon {
