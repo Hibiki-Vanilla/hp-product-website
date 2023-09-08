@@ -14,4 +14,12 @@ export const pcRouter = [
           name: '首页',
         },
       },
+      {
+        path: '/solution',
+        name: 'solution',
+        component: resolve('pages/pc/solution/index.vue'),
+        meta: {
+          name: '解决方案页',
+        },
+      },
 ]

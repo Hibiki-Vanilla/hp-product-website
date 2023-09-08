@@ -2,7 +2,7 @@
 module.exports = {
   apps: [
     {
-      name: 'gabriel',
+      name: 'hp',
       exec_mode: 'cluster',
       instances: '2', // max 0 或者指定数目 （表示启动的进程数，用于负载均衡）
       script: './node_modules/nuxt/bin/nuxt.js',

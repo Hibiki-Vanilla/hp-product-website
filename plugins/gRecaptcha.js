@@ -8,10 +8,10 @@ export default ({ req, app, store }) => {
     const body = document.body
     const htmlStyle = document.getElementsByTagName('html')[0].style
     if (!isMobile(userAgent)) {
-      htmlStyle.minWidth = '1280px'
-      htmlStyle.overflowX = 'auto'
-      body.style.minWidth = '1280px'
-      body.style.overflowX = 'visible'
+      // htmlStyle.minWidth = '1280px'
+      // htmlStyle.overflowX = 'auto'
+      // body.style.minWidth = '1280px'
+      // body.style.overflowX = 'visible'
     }
     // body下创建google校验挂在节点
     const googleRecpath = document.createElement('div')

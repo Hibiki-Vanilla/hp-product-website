@@ -14,4 +14,13 @@ export const moRouter = [
           name: '首页',
         },
       },
+
+      {
+        path: '/m/solution',
+        name: 'msolution',
+        component: resolve('pages/mo/solution/index.vue'),
+        meta: {
+          name: '解决方案页',
+        },
+      },
 ]

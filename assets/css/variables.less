@@ -1,10 +1,31 @@
 // less var or value
 
-@pcrem:19.2vw;
-@morem:7.5vw;
+@pcrem: 19.2vw;
+@morem: 7.5vw;
 
 
-@white:#ffffff;
-@mainColor:#fe8a12;
+@white: #ffffff;
+@mainColor: #fe8a12;
+
+.allShadow {
+    box-shadow: 8px 8px 20px hsla(0, 0%, 44%, .2), -8px -8px 20px #fff;
+    transition: box-shadow .8s cubic-bezier(.25, 1, .38, 1);
+}
+
+.allShadow:hover {
+    box-shadow: 8px 8px 20px hsla(0, 0%, 63%, .2), -8px -8px 20px #fff, inset 4px 4px 10px hsla(0, 0%, 63%, .2), inset -4px -4px 10px #fff;
+}
 
 
+@media (max-width:1000px) {
+    .allShadow {
+        box-shadow: 0.5vw 0.5vw 1vw hsla(0, 0%, 44%, .2), -0.5vw -0.5vw 1vw #fff;
+    }
+
+    .allShadow:hover {
+        box-shadow: 0.5vw 0.5vw 1vw hsla(0, 0%, 63%, .2),
+        -0.5vw -0.5vw -1vw #fff,
+          inset 0.25vw 0.25vw 0.5vw hsla(0, 0%, 63%, .2),
+           inset -0.25vw -0.25vw 0.5vw #fff;
+    }
+}

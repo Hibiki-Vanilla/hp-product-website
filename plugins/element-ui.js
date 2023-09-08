@@ -19,7 +19,8 @@ import {
   CollapseItem,
   Carousel,
   CarouselItem,
-  Message
+  Message,
+  Tooltip
 } from 'element-ui'
 
 const components = [
@@ -39,7 +40,8 @@ const components = [
   CollapseItem,
   Carousel,
   CarouselItem,
-  Message
+  Message,
+  Tooltip
 ]
 Vue.prototype.$message = Message;
 const Element = {

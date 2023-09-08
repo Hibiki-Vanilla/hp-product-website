@@ -215,12 +215,12 @@ export default {
         }
 
         .footerTopLeftTitle {
-          font-size: (16 / @morem);
+          font-size: (24 / @morem);
           padding-top: (10 / @morem);
           padding-bottom: (30 / @morem);
         }
         .footerTopLeftText {
-          font-size: (16 / @morem);
+          font-size: (18 / @morem);
         }
       }
 
@@ -230,7 +230,7 @@ export default {
         align-items: baseline;
         padding-top: (50 / @morem);
         .navItem {
-          font-size: (16 / @morem);
+          font-size: (18 / @morem);
           color: #313131;
           margin-bottom: (20 / @morem);
         }
@@ -246,15 +246,13 @@ export default {
       flex-wrap: wrap;
 
       .footerBottomLeft {
-        width: 50%;
-        font-size: (12 / @morem);
+        width: 100%;
+        font-size: (18 / @morem);
       }
 
       .footerBottomMid {
-        justify-content: flex-end;
-        width: 50%;
-        font-size: (12 / @morem);
-        text-align: right;
+        width: 100%;
+        font-size: (18 / @morem);
         .textLink + .textLink {
           margin-left: (24 / @morem);
         }
@@ -263,8 +261,8 @@ export default {
       .footerBottomRight {
         width: 100%;
         .icon {
-          height: (20 / @morem);
-          width: (20 / @morem);
+          height: (30 / @morem);
+          width: (30 / @morem);
         }
         .icon + .icon {
           margin-left: (20 / @morem);
