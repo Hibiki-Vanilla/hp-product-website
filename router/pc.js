@@ -30,4 +30,12 @@ export const pcRouter = [
           name: '解决方案页',
         },
       },
+      {
+        path: '/product/calio',
+        name: 'calio',
+        component: resolve('pages/pc/productList/calio/index.vue'),
+        meta: {
+          name: 'calio',
+        },
+      },
 ]

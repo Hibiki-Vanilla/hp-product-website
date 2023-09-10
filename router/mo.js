@@ -23,4 +23,12 @@ export const moRouter = [
           name: '解决方案页',
         },
       },
+      {
+        path: '/m/product/calio',
+        name: 'mcalio',
+        component: resolve('pages/mo/productList/calio/index.vue'),
+        meta: {
+          name: 'calio',
+        },
+      },
 ]
