@@ -9,7 +9,7 @@
     <IsoComponent />
     <QualityComponent />
     <TeamComponent />
-    <RequestForm :pageValue="'about'" />
+    <MoRequestForm :pageValue="'about'" />
   </div>
 </template>
 

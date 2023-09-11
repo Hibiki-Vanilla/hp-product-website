@@ -6,12 +6,11 @@
     <div class="labCon allShadow">
       <div class="labLeft textLight">
         <div class="labLeftTopText">
-          Our laboratory is a first-class R&D and quality control center for
-          vape. We have advanced equipment and technology, and have assembled an
-          experienced, efficient and professional team. We are committed to
-          providing comprehensive laboratory services to help our customers
-          guarantee the quality and performance of their products, to maintain a
-          competitive edge in a highly competitive market.
+          Our laboratory is a first-class R&D and quality control center for vape. We have
+          advanced equipment and technology, and have assembled an experienced, efficient
+          and professional team. We are committed to providing comprehensive laboratory
+          services to help our customers guarantee the quality and performance of their
+          products, to maintain a competitive edge in a highly competitive market.
         </div>
         <div class="labLeftBottom">
           <div class="labLeftBottomText">
@@ -45,7 +44,6 @@
     </div>
   </section>
 </template>
-
 
 <script>
 import "../index.less";
@@ -84,16 +82,10 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop ||
         0;
-      if (
-        stickyOffsetTop - scrollHeight < 400 &&
-        scrollHeight >= this.scrollHeight
-      ) {
+      if (stickyOffsetTop - scrollHeight < 400 && scrollHeight >= this.scrollHeight) {
         this.top = this.top <= -80 ? -80 : this.top - 0.5;
       }
-      if (
-        stickyOffsetTop - scrollHeight > -400 &&
-        scrollHeight < this.scrollHeight
-      ) {
+      if (stickyOffsetTop - scrollHeight > -400 && scrollHeight < this.scrollHeight) {
         this.top = this.top >= 0 ? 0 : this.top + 0.5;
       }
 
@@ -229,16 +221,20 @@ export default {
     }
 
     .labBottomRight {
+      @num: (18 / @pcrem);
+
       position: absolute;
-      top: calc(50% - (18 / @pcrem));
+      top: calc(50% - @num);
       right: -(50 / @pcrem);
       height: (18 / @pcrem);
       width: (20 / @pcrem);
     }
 
     .labBottomLeft {
+      @num: (18 / @pcrem);
+
       position: absolute;
-      top: calc(50% - (18 / @pcrem));
+      top: calc(50% - @num);
       transform: rotate(180deg);
       left: -(50 / @pcrem);
       height: (18 / @pcrem);

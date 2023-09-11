@@ -6,32 +6,20 @@
     </div>
 
     <div class="isoCon allShadow">
-      <div class="isoLeft textLight">
-        <div class="isoLeftTopText">
-          OUR REPUTATION
-          <br />
-          we are committed to providing our customers with the best possible service and
-          products. The sound management system supports the company’s development.
-          <br />
-          We are proud to become a trusted partner in the Cannabis community. Our
-          commitment to quality, innovation, and sustainability sets us apart from other
-          vape hardware solution providers.
-        </div>
-        <div class="isoLeftBottom">
-          <img class="logo" src="@/static/about/iso/logo.png" alt="logo" />
-        </div>
-      </div>
+      <img class="lineimg" src="@/static/about/iso/line.png" alt="reputation" />
 
-      <div class="isoRight">
-        <div class="isoRightLine" :style="srollTopStyle">
-          <img class="lineImg" src="@/static/about/iso/lineLeft.png" alt="" />
-        </div>
-
-        <div class="isoRightLine" :style="srollBottomStyle">
-          <img class="lineImg" src="@/static/about/iso/lineRight.png" alt="" />
-        </div>
+      <div class="isoTopText textLight">
+        OUR REPUTATION
+        <br />
+        we are committed to providing our customers with the best possible service and
+        products. The sound management system supports the company’s development. We are
+        proud to become a trusted partner in the Cannabis community. Our commitment to
+        quality, innovation, and sustainability sets us apart from other vape hardware
+        solution providers.
       </div>
     </div>
+
+    <img class="logo" src="@/static/about/iso/logo.png" alt="logo" />
   </section>
 </template>
 
@@ -55,7 +43,7 @@ export default {
 
   methods: {
     animationScroll() {
-      let stickyOffsetTop = document.querySelector(".iso").offsetTop;
+      const stickyOffsetTop = document.querySelector(".iso").offsetTop;
       const scrollHeight =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -90,75 +78,37 @@ export default {
 
   .isoTitle {
     color: #000;
-    padding-bottom: (50 / @pcrem);
+    padding-bottom: (40 / @morem);
   }
   .isoTip {
-    padding-bottom: (110 / @pcrem);
+    padding-bottom: (40 / @morem);
   }
 
   .isoCon {
-    height: (460 / @pcrem);
-    width: (1230 / @pcrem);
-    border-radius: (14 / @pcrem);
+    padding: (50 / @morem) (45 / @morem);
+    box-sizing: border-box;
+    width: (550 / @morem);
+    border-radius: (14 / @morem);
     background-color: #eeeeee;
     display: flex;
     align-items: center;
-    .isoLeft {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: (830 / @pcrem);
-      font-size: (18 / @pcrem);
-      padding-left: (60 / @pcrem);
-      padding-right: (120 / @pcrem);
+    flex-direction: column;
 
-      box-sizing: border-box;
-      .isoLeftTopText {
-        color: #707070;
-        padding-bottom: (80 / @pcrem);
-      }
-      .isoLeftBottom {
-        display: flex;
-        .logo {
-          height: (50 / @pcrem);
-          width: (395 / @pcrem);
-        }
-      }
+    .lineimg {
+      width: (463 / @morem);
+      height: (379 / @morem);
     }
-
-    .isoRight {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      height: 100%;
-      width: (400 / @pcrem);
-      overflow: hidden;
-
-      .isoRightLine {
-        position: absolute;
-        height: 100%;
-        width: (190 / @pcrem);
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        .lineImg {
-          width: 100%;
-          height: (870 / @pcrem);
-          will-change: top;
-        }
-
-        & + .isoRightLine {
-          left: unset;
-          right: 0;
-          .lineImg {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-          }
-        }
-      }
+    .isoTopText {
+      padding-top: (50 / @morem);
+      font-size: (16 / @morem);
+      color: #707070;
     }
+  }
+
+  .logo {
+    margin-top: (50 / @morem);
+    height: (59 / @morem);
+    width: (469 / @morem);
   }
 }
 </style>

@@ -3,9 +3,9 @@
     <div class="con">
       <div class="aboutLeftImage imageItem" v-if="pageValue === 'about'">
         <div class="aboutLeftText titleSize textBold">
-          Scale your business
+          Scale your business with us
           <br />
-          with us today!
+          today!
         </div>
         <img class="aboutLeftIconB" src="@/static/form/aboutIconB.png" alt="" />
 
@@ -240,30 +240,29 @@ export default {
 <style lang="less" scoped>
 .requesForm {
   position: relative;
-  height: (830 / @pcrem);
   width: 100%;
   background-color: @white;
+  padding-bottom: (60 / @morem);
 
   .con {
-    position: absolute;
-    top: (110 / @pcrem);
-    left: 50%;
-    transform: translate(-50%, 0);
+    padding-top: (100 / @morem);
+    margin: 0 auto;
     display: flex;
-    width: (1512 / @pcrem);
-    height: (834 / @pcrem);
-    border-radius: (16 / @pcrem);
+    flex-direction: column;
+    width: (650 / @morem);
+    // height: (1040 / @morem);
+    border-radius: (16 / @morem);
     overflow: hidden;
     .aboutLeftImage {
       position: relative;
-      height: 100%;
-      width: 50%;
+      height: (200 / @morem);
+      width: 100%;
       background-color: #f9cb22;
       overflow: hidden;
 
       .aboutLeftText {
         position: absolute;
-        top: (280 / @pcrem);
+        top: (60 / @morem);
         left: 0;
         z-index: 2;
         width: 100%;
@@ -272,18 +271,18 @@ export default {
       }
       .aboutLeftIcon {
         position: absolute;
-        height: (81 / @pcrem);
-        width: (72 / @pcrem);
-        left: (44 / @pcrem);
-        bottom: (56 / @pcrem);
+        height: (51 / @morem);
+        width: (46 / @morem);
+        left: (30 / @morem);
+        bottom: (20 / @morem);
       }
 
       .aboutLeftIconB {
         position: absolute;
-        height: (784 / @pcrem);
-        width: (688 / @pcrem);
-        left: (410 / @pcrem);
-        top: (210 / @pcrem);
+        height: (415 / @morem);
+        width: (279 / @morem);
+        left: (420 / @morem);
+        bottom: 0;
         animation: iconAnime 10s linear infinite;
       }
 
@@ -299,27 +298,26 @@ export default {
       // background-image: url("@/static/form/aboutLeft.png");
     }
     .homeLeftImage {
-      height: 100%;
-      width: 50%;
+      height: (200 / @morem);
+      width: 100%;
       // background-image: url("@/static/form/homeLeft.png");
     }
 
     // right
     .rightCon {
-      height: 100%;
-      width: 50%;
-      background-image: url("@/static/form/right.png");
-
+      width: 100%;
+      background-image: url("@/static/form/moRight.png");
+      padding-bottom: (50 / @morem);
       .rightFormCon {
         height: 100%;
         width: 100%;
         box-sizing: border-box;
-        padding: (60 / @pcrem) (80 / @pcrem) 0;
+        padding: (70 / @morem) (25 / @morem) 0;
 
         .formTitle {
           text-align: center;
           color: @white;
-          padding-bottom: (50 / @pcrem);
+          padding-bottom: (40 / @morem);
         }
 
         .eidtFormCon {
@@ -328,50 +326,52 @@ export default {
           justify-content: space-between;
 
           .el-form-item {
-            margin-bottom: (50 / @pcrem);
+            margin-bottom: (40 / @morem);
             :deep(.el-form-item__content) {
-              line-height: (40 / @pcrem);
+              line-height: (40 / @morem);
               position: relative;
-              font-size: (18 / @pcrem);
+              font-size: (24 / @morem);
             }
             :deep(.el-input__icon) {
-              width: (25 / @pcrem);
-              line-height: (40 / @pcrem);
+              width: (30 / @morem);
+              line-height: (40 / @morem);
             }
           }
 
           :deep(.el-form-item__error) {
-            padding-top: (8 / @pcrem);
-            font-size: (14 / @pcrem);
+            line-height: 1;
+            padding-top: (4 / @morem);
+            font-size: (24 / @morem);
             font-family: "Montserrat Light";
             color: #ff0000;
           }
           .el-input {
             :deep(.el-input__inner) {
-              font-size: (18 / @pcrem);
+              font-size: (24 / @morem);
               width: 100%;
-              height: (40 / @pcrem);
+              height: (60 / @morem);
+              line-height: (60 / @morem);
               background: #ffffff;
-              border-radius: (10 / @pcrem);
+              border-radius: (10 / @morem);
               font-family: "Montserrat Light";
               color: #898989;
-              padding: 0 (30 / @pcrem);
+              padding: 0 (40 / @morem);
             }
           }
 
           .el-textarea {
-            font-size: (18 / @pcrem);
+            font-size: (24 / @morem);
 
             :deep(.el-textarea__inner) {
-              max-height: (170 / @pcrem);
+              max-height: (200 / @morem);
               font-family: "Montserrat Light";
-              border-radius: (10 / @pcrem);
+              border-radius: (10 / @morem);
               color: #898989;
             }
           }
 
           .formItem {
-            width: (274 / @pcrem);
+            width: 100%;
           }
           .formItemRow {
             width: 100%;
@@ -380,11 +380,11 @@ export default {
           .formItemTitle {
             font-family: "Montserrat Regular";
             color: @white;
-            font-size: (18 / @pcrem);
-            padding-bottom: (10 / @pcrem);
+            font-size: (24 / @morem);
+            padding-bottom: (8 / @morem);
             span {
               color: @mainColor;
-              padding-right: (7 / @pcrem);
+              padding-right: (6 / @morem);
             }
           }
         }
@@ -396,10 +396,11 @@ export default {
 
           .formSubmit {
             cursor: pointer;
-            width: (170 / @pcrem);
-            height: (36 / @pcrem);
-            line-height: (36 / @pcrem);
-            border-radius: (18 / @pcrem);
+            width: (200 / @morem);
+            height: (50 / @morem);
+            line-height: (50 / @morem);
+            border-radius: (25 / @morem);
+            font-size: (24 / @morem);
             text-align: center;
             color: @white;
             background-color: #f9cb22;
@@ -411,7 +412,7 @@ export default {
         height: 100%;
         width: 100%;
         box-sizing: border-box;
-        padding: 0 (110 / @pcrem);
+        padding: 0 (110 / @morem);
         color: @white;
         text-align: center;
         display: flex;
@@ -420,15 +421,15 @@ export default {
         align-items: center;
 
         .rightFormOkImg {
-          width: (152 / @pcrem);
-          height: (158 / @pcrem);
+          width: (152 / @morem);
+          height: (158 / @morem);
         }
         .titleSize {
-          padding-top: (60 / @pcrem);
-          padding-bottom: (60 / @pcrem);
+          padding-top: (60 / @morem);
+          padding-bottom: (60 / @morem);
         }
         .textSize {
-          padding-bottom: (60 / @pcrem);
+          padding-bottom: (60 / @morem);
         }
       }
     }

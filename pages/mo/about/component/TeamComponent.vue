@@ -30,28 +30,27 @@ export default {};
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  height: (570 / @pcrem);
-  width: (1400 / @pcrem);
-  background-size: (1400 / @pcrem) (485 / @pcrem);
-  background-position: center (285 / @pcrem);
+  height: (500 / @morem);
+  width: 100%;
+  background-size: (663 / @morem) (231 / @morem);
+  background-position: center (370 / @morem);
   background-repeat: no-repeat;
   background-image: url("@/static/solution/quote/bg.png");
   color: #000;
 
   .teamTitle {
-    padding-top: (120 / @pcrem);
-    padding-bottom: (40 / @pcrem);
+    padding-top: (80 / @morem);
+    padding-bottom: (30 / @morem);
   }
   .teamTip {
-    padding-bottom: (70 / @pcrem);
+    padding-bottom: (40 / @morem);
   }
 
   .teamText {
     box-sizing: border-box;
-    width: 100%;
+    width: (550 / @morem);
     text-align: center;
-    padding: 0 (40 / @pcrem);
-    font-size: (18 / @pcrem);
+    font-size: (16 / @morem);
     color: #707070;
   }
 }
