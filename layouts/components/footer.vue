@@ -4,17 +4,10 @@
       <div class="footerTopLeft">
         <img class="logo" src="@/static/footer/logo.png" alt="logo" />
         <div class="footerTopLeftTitle">Empower The High</div>
-        <div class="footerTopLeftText">
-          Providing You With An Elevated Vaping Journey Like No Other.
-        </div>
+        <div class="footerTopLeftText">Providing You With An Elevated Vaping Journey Like No Other.</div>
       </div>
       <div class="footerTopRight">
-        <div
-          v-for="(item, index) in navList"
-          :key="index"
-          class="navItem"
-          @click="onNavClick(item)"
-        >
+        <div v-for="(item, index) in navList" :key="index" class="navItem" @click="onNavClick(item)">
           {{ item.name }}
         </div>
       </div>
@@ -23,23 +16,12 @@
     <div class="footerBottom">
       <div class="footerBottomLeft">Copyright © 2023 POWEHI all rights reserved.</div>
       <div class="footerBottomMid">
-        <div
-          v-for="(item, index) in midList"
-          :key="index"
-          class="textLink"
-          @click="onNavClick(item)"
-        >
+        <div v-for="(item, index) in midList" :key="index" class="textLink" @click="onNavClick(item)">
           {{ item.name }}
         </div>
       </div>
       <div class="footerBottomRight">
-        <img
-          v-for="(item, index) in iconList"
-          :key="index"
-          :src="item.src"
-          class="icon"
-          @click="onIconJump(item)"
-        />
+        <img v-for="(item, index) in iconList" :key="index" :src="item.src" class="icon" @click="onIconJump(item)" />
       </div>
     </div>
   </div>
@@ -50,40 +32,40 @@ export default {
   data() {
     return {
       navList: [
-        { name: "PRODUCT", jumpLink: "/product" },
-        { name: "SOLUTION", jumpLink: "/solution" },
-        { name: "ABOUT", jumpLink: "/about" },
+        { name: 'PRODUCT', jumpLink: '/product' },
+        { name: 'SOLUTION', jumpLink: '/solution' },
+        { name: 'ABOUT', jumpLink: '/about' },
       ],
       midList: [
-        { name: "Terms of Service", jumpLink: "" },
-        { name: "Privacy policy", jumpLink: "" },
+        { name: 'Terms of Service', jumpLink: '' },
+        { name: 'Privacy policy', jumpLink: '' },
       ],
       iconList: [
         {
-          src: require("@/static/footer/ins.png"),
-          jumpLink: "https://www.instagram.com/powehiclub/",
+          src: require('@/static/footer/ins.png'),
+          jumpLink: 'https://www.instagram.com/powehiclub/',
         },
         {
-          src: require("@/static/footer/facebook.png"),
-          jumpLink: "https://www.facebook.com/profile.php?id=61550651796767",
+          src: require('@/static/footer/facebook.png'),
+          jumpLink: 'https://www.facebook.com/profile.php?id=61550651796767',
         },
-        { src: require("@/static/footer/x.png"), jumpLink: "#" },
+        { src: require('@/static/footer/x.png'), jumpLink: '#' },
         {
-          src: require("@/static/footer/youtobe.png"),
-          jumpLink: "https://www.youtube.com/channel/UCQlAgqhx-wvqgqCxJP-VXNg",
+          src: require('@/static/footer/youtobe.png'),
+          jumpLink: 'https://www.youtube.com/channel/UCQlAgqhx-wvqgqCxJP-VXNg',
         },
       ],
-    };
+    }
   },
   methods: {
     onNavClick(item) {
-      this.$ctx.push(item.jumpLink);
+      this.$ctx.push(item.jumpLink)
     },
     onIconJump(item) {
-      window.open(item.jumpLink, "_blank");
+      window.open(item.jumpLink, '_blank')
     },
   },
-};
+}
 </script>
 
 <style lang="less" scoped>
@@ -102,7 +84,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 24px;
 
     .footerTopLeft {
@@ -116,7 +98,7 @@ export default {
       }
 
       .footerTopLeftTitle {
-        font-family: "Montserrat SemiBold";
+        font-family: 'Montserrat SemiBold';
         line-height: 1;
         font-size: 22px;
         padding-top: 10px;
@@ -124,7 +106,7 @@ export default {
         color: #434343;
       }
       .footerTopLeftText {
-        font-family: "Montserrat Regular";
+        font-family: 'Montserrat Regular';
         line-height: 1;
         font-size: 18px;
         color: #898989;
@@ -136,7 +118,7 @@ export default {
 
       .navItem {
         cursor: pointer;
-        font-family: "Montserrat SemiBold";
+        font-family: 'Montserrat SemiBold';
         font-size: 20px;
         color: #313131;
       }
@@ -156,14 +138,14 @@ export default {
     height: 100px;
 
     .footerBottomLeft {
-      font-family: "Montserrat Regular";
+      font-family: 'Montserrat Regular';
       font-size: 14px;
       color: #bfbfbf;
     }
 
     .footerBottomMid {
       display: flex;
-      font-family: "Montserrat Regular";
+      font-family: 'Montserrat Regular';
       font-size: 14px;
       color: #bfbfbf;
 
