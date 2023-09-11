@@ -17,16 +17,12 @@
           class="scrollItem"
           :class="[{ scrollItemTwo: index % 2 === 0 }]"
         >
-          <span class="scrollItemTitle textBold textSize">{{
-            item.title
-          }}</span>
+          <span class="scrollItemTitle textBold textSize">{{ item.title }}</span>
           <span class="scrollItemText textLight"> {{ item.text }}</span>
         </div>
 
         <div class="scrollRightBottom">
-          <div class="scrollButton textRegular" role="button">
-            Request Sample Now
-          </div>
+          <div class="scrollButton textRegular" role="button">Request Sample Now</div>
         </div>
       </div>
     </div>
@@ -114,13 +110,13 @@ export default {
         padding-top: (50 / @pcrem);
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         .scrollButton {
           cursor: pointer;
           color: @white;
           background-color: @mainColor;
           height: (68 / @pcrem);
-          line-height:(68 / @pcrem);
+          line-height: (68 / @pcrem);
           width: (260 / @pcrem);
           border-radius: (34 / @pcrem);
           text-align: center;

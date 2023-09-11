@@ -35,13 +35,6 @@ const mutations = {
 }
 
 const actions = {
-  async nuxtServerInit({commit}, { app }) {
-    const preview = app.context.route.query.p || 0;
-    const data = await app.$axios.get(`/u/gabriel/api/home/menu/list`,{
-      params:preview
-    })
-    commit('SET_NAV_LIST', data?.data || [])
-  },
   gooleCallBack({ state, commit }, uwell) {
     const { recaptData } = state
     const key = recaptData.isContact ? 'SET_CONTACT_FLAG' : 'SET_CALLBACK_FLAG'
@@ -49,9 +42,9 @@ const actions = {
       .post(recaptData.url, recaptData.params, { params: { gRecaptchaToken: uwell.token } })
       .then((res) => {
         if (res.code === 1) {
-          Message.success(window.$nuxt.$t(recaptData.messKey.success))
+          Message.success(recaptData.messKey.success)
         } else {
-          Message.error(window.$nuxt.$t(recaptData.messKey.error))
+          Message.error(recaptData.messKey.error)
         }
 
         commit(key, true)

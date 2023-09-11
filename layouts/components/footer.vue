@@ -55,8 +55,8 @@ export default {
         { name: "ABOUT", jumpLink: "/about" },
       ],
       midList: [
-        { name: "Terms of Service", jumpLink: "" },
-        { name: "Privacy policy", jumpLink: "" },
+        { name: "Terms of Service", jumpLink: "/terms" },
+        { name: "Privacy policy", jumpLink: "/privacy" },
       ],
       iconList: [
         {
@@ -102,7 +102,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 24px;
 
     .footerTopLeft {

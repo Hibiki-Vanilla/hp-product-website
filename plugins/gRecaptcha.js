@@ -15,7 +15,7 @@ export default ({ req, app, store }) => {
     }
     // body下创建google校验挂在节点
     const googleRecpath = document.createElement('div')
-    googleRecpath.id = 'u-gRecaptcha'
+    googleRecpath.id = 'hp-gRecaptcha'
     body.appendChild(googleRecpath)
     setTimeout(() => {
       const gooleGRecaptcha = window?.grecaptcha?.render('u-gRecaptcha', {

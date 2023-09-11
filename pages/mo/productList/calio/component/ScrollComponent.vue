@@ -1,8 +1,6 @@
 <template>
   <section class="scroll">
-
-
-        <div class="scrollTop">
+    <div class="scrollTop">
       <img
         v-for="(item, index) in list"
         :key="index"
@@ -20,20 +18,15 @@
           class="scrollItem"
           :class="[{ scrollItemTwo: index % 2 === 0 }]"
         >
-          <span class="scrollItemTitle textBold">{{
-            item.title
-          }}</span>
+          <span class="scrollItemTitle textBold">{{ item.title }}</span>
           <span class="scrollItemText textLight"> {{ item.text }}</span>
         </div>
 
         <div class="scrollBottomBottom">
-          <div class="scrollButton textRegular" role="button">
-            Request Sample Now
-          </div>
+          <div class="scrollButton textRegular" role="button">Request Sample Now</div>
         </div>
       </div>
     </div>
-
   </section>
 </template>
 
@@ -74,10 +67,10 @@ export default {
   // height: ( (540*7 + 794) /@morem);
   width: 100%;
   .scrollTop {
-      width: 100%;
-      height: (540/@morem);
+    width: 100%;
+    height: (540 / @morem);
     .calioImg {
-      height: (540/@morem);
+      height: (540 / @morem);
       width: 100%;
     }
   }
@@ -87,7 +80,7 @@ export default {
     // top: (540/@morem);
     // left: 0;
     // width: 100%;
-    height: (793/@morem);
+    height: (793 / @morem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,13 +114,13 @@ export default {
         padding-top: (30 / @morem);
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         .scrollButton {
           cursor: pointer;
           color: @white;
           background-color: @mainColor;
           height: (50 / @morem);
-          line-height:(50 / @morem);
+          line-height: (50 / @morem);
           width: (200 / @morem);
           border-radius: (25 / @morem);
           font-size: (16 / @morem);

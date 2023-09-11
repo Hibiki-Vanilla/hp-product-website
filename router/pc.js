@@ -38,4 +38,20 @@ export const pcRouter = [
           name: 'calio',
         },
       },
+      {
+        path: '/terms',
+        name: 'terms',
+        component: resolve('pages/pc/terms/index.vue'),
+        meta: {
+          name: '条款页',
+        },
+      },
+      {
+        path: '/privacy',
+        name: 'privacy',
+        component: resolve('pages/pc/privacy/index.vue'),
+        meta: {
+          name: '隐私页',
+        },
+      },
 ]

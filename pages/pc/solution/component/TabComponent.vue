@@ -256,7 +256,7 @@ export default {
       .tabRightItemCon {
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        align-items: flex-end;
 
         .tabRightItemLeft {
           width: (300 / @pcrem);

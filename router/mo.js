@@ -14,7 +14,14 @@ export const moRouter = [
           name: '首页',
         },
       },
-
+      {
+        path: '/m/about',
+        name: 'mabout',
+        component: resolve('pages/mo/about/index.vue'),
+        meta: {
+          name: '关于我们',
+        },
+      },
       {
         path: '/m/solution',
         name: 'msolution',
@@ -29,6 +36,22 @@ export const moRouter = [
         component: resolve('pages/mo/productList/calio/index.vue'),
         meta: {
           name: 'calio',
+        },
+      },
+      {
+        path: '/m/terms',
+        name: 'mterms',
+        component: resolve('pages/mo/terms/index.vue'),
+        meta: {
+          name: '条款页',
+        },
+      },
+      {
+        path: '/m/privacy',
+        name: 'mprivacy',
+        component: resolve('pages/mo/privacy/index.vue'),
+        meta: {
+          name: '隐私页',
         },
       },
 ]
