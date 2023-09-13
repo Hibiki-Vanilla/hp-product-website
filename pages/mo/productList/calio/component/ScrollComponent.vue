@@ -23,7 +23,9 @@
         </div>
 
         <div class="scrollBottomBottom">
-          <div class="scrollButton textRegular" role="button">Request Sample Now</div>
+          <div class="scrollButton textRegular" role="button" @click="onHomeForm">
+            Request Sample Now
+          </div>
         </div>
       </div>
     </div>
@@ -57,6 +59,16 @@ export default {
         { title: "Charging Current", text: "0.5 A" },
       ],
     };
+  },
+  methods: {
+    onHomeForm() {
+      this.$ctx.push("/");
+      setTimeout(() => {
+        document
+          .getElementById("moRequesForm")
+          .scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 200);
+    },
   },
 };
 </script>

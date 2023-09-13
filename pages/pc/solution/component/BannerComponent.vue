@@ -16,7 +16,6 @@ export default {};
   display: flex;
   width: 100%;
   justify-content: center;
-
   .bannerCon {
     height: (1080 / @pcrem);
     width: (1400 / @pcrem);

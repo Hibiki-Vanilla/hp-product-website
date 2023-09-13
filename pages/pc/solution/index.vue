@@ -22,7 +22,7 @@ import EngageComponent from "./component/EngageComponent.vue";
 import QuoteComponent from "./component/QuoteComponent.vue";
 
 export default {
-  name: "mSolution",
+  name: "MSolution",
   components: {
     BannerComponent,
     ChooseComponent,

@@ -1,7 +1,7 @@
 <template>
-  <section class="requesForm">
+  <section id="moRequesForm" class="requesForm">
     <div class="con">
-      <div class="aboutLeftImage imageItem" v-if="pageValue === 'about'">
+      <div v-if="pageValue === 'about'" class="aboutLeftImage imageItem">
         <div class="aboutLeftText titleSize textBold">
           Scale your business with us
           <br />
@@ -11,10 +11,51 @@
 
         <img class="aboutLeftIcon" src="@/static/form/aboutIcon.png" alt="" />
       </div>
-      <div class="homeLeftImage imageItem" v-if="pageValue === 'home'"></div>
+      <!-- home -->
+      <div v-if="pageValue === 'home'" class="homeLeftImage imageItem">
+        <img class="homeLeftIconB" src="@/static/form/homeIconB.png" alt="" />
+        <div class="homeCon">
+          <div class="homeTitle textBold titleSize">GET IN TOUCH</div>
+          <div class="homeText textRegular">
+            Need more information? Get in touch and
+            <br />
+            receive a complementary product consultation,
+            <br />
+
+            Scale your business with us today!
+            <br />
+
+            We’d love to connect with you!
+          </div>
+
+          <div class="homeLeftIconBox">
+            <img class="addressIcon" src="@/static/form/address.png" alt="" />
+            <div class="iconTextCon">
+              <div class="topTitle textBold textSize">Find us at the office</div>
+              <div class="topText textRegular">
+                12345 Clark St a, Los Angles,
+                <br />
+                CA 91006, USA
+              </div>
+            </div>
+          </div>
+
+          <div class="homeLeftIconBox">
+            <img class="emailIcon" src="@/static/form/email.png" alt="" />
+            <div class="iconTextCon">
+              <div class="topTitle textBold textSize">Send us an email</div>
+              <div class="topText textRegular">info@powehiusa.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right bottom -->
+
       <div class="rightCon imageItem">
         <!-- form -->
-        <div class="rightFormCon" v-if="formStatus">
+
+        <div v-if="formStatus" class="rightFormCon">
           <div class="formTitle textBold titleSize">CONTACT US</div>
           <el-form
             ref="editForm"
@@ -93,8 +134,8 @@
               <div class="formItemTitle"><span>*</span>Your message</div>
               <el-form-item prop="message">
                 <el-input
-                  type="textarea"
                   v-model="editForm.message"
+                  type="textarea"
                   placeholder="Your message"
                   show-word-limit
                   maxlength="500"
@@ -115,7 +156,7 @@
         </div>
 
         <!-- ok -->
-        <div class="rightFormOkCon" v-else>
+        <div v-else class="rightFormOkCon">
           <img class="rightFormOkImg" src="@/static/form/ok.png" />
           <div class="titleSize textBold">THANKS FOR YOUR REQUEST</div>
           <div class="textSize textBold">WE'LL BE IN TOUCH SOON!</div>
@@ -257,6 +298,7 @@ export default {
       position: relative;
       height: (200 / @morem);
       width: 100%;
+      border-radius: (14 / @morem) (14 / @morem) 0 0;
       background-color: #f9cb22;
       overflow: hidden;
 
@@ -298,9 +340,79 @@ export default {
       // background-image: url("@/static/form/aboutLeft.png");
     }
     .homeLeftImage {
-      height: (200 / @morem);
+      position: relative;
+      height: (450 / @morem);
       width: 100%;
-      // background-image: url("@/static/form/homeLeft.png");
+      border-radius: (14 / @morem) (14 / @morem) 0 0;
+      background-color: #fe8a12;
+      overflow: hidden;
+
+      .homeLeftIconB {
+        position: absolute;
+        height: (524 / @morem);
+        width: (459 / @morem);
+        left: (380 / @morem);
+        top: (100 / @morem);
+        animation: iconAnime 10s linear infinite;
+      }
+
+      .homeCon {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: (50 / @morem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .homeTitle {
+          color: @white;
+          padding-bottom: (40 / @morem);
+        }
+        .homeText {
+          font-size: (20 / @morem);
+          color: @white;
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: (100 / @morem);
+          padding-bottom: (30 / @morem);
+        }
+
+        .homeLeftIconBox {
+          display: flex;
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: (100 / @morem);
+          color: @white;
+          & + .homeLeftIconBox {
+            padding-top: (30 / @morem);
+          }
+          .addressIcon {
+            height: (37 / @morem);
+            width: (30 / @morem);
+          }
+          .emailIcon {
+            height: (24 / @morem);
+            width: (34 / @morem);
+          }
+          .iconTextCon {
+            padding-left: (12 / @morem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .topTitle {
+              margin-bottom: (10 / @morem);
+              border-bottom: 1px solid @white;
+            }
+            .topText {
+              font-size: (18 / @morem);
+            }
+          }
+        }
+      }
     }
 
     // right

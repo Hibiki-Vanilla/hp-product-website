@@ -1,16 +1,63 @@
 <template>
-  <div class="home">home</div>
+  <div class="home">
+    <BannerComponent />
+    <ChangeComponent />
+    <WhyComponent />
+    <ProductsComponent />
+    <CustomComponent />
+    <ValueComponent />
+    <SubscribeComponent />
+    <RequestForm :page-value="'home'" />
+  </div>
 </template>
 
 <script>
-export default {};
-</script>
+import BannerComponent from "./component/BannerComponent.vue";
+import ChangeComponent from "./component/ChangeComponent.vue";
+import WhyComponent from "./component/WhyComponent.vue";
+import ProductsComponent from "./component/ProductsComponent.vue";
+import CustomComponent from "./component/CustomComponent.vue";
+import ValueComponent from "./component/ValueComponent.vue";
+import SubscribeComponent from "./component/SubscribeComponent.vue";
 
-<style lang="less" scoped>
-.home {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-</style>
+export default {
+  name: "Home",
+  components: {
+    BannerComponent,
+    ChangeComponent,
+    WhyComponent,
+    ProductsComponent,
+    CustomComponent,
+    ValueComponent,
+    SubscribeComponent,
+  },
+  head() {
+    return {
+      title: "Home",
+      meta: [
+        {
+          name: "keywords",
+          content: "",
+        },
+        {
+          name: "description",
+          content: "",
+        },
+
+        {
+          property: "og:type",
+          content: "product",
+        },
+        {
+          property: "og:title",
+          content: "Home",
+        },
+        {
+          property: "og:description",
+          content: "",
+        },
+      ],
+    };
+  },
+};
+</script>

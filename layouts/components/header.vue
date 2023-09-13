@@ -4,7 +4,9 @@
       <div class="headerLeft" @click="handleHome"></div>
       <div class="headerRight">
         <!-- go inqury -->
-        <div class="headerRightInquryButton" role="button">Inqury Now</div>
+        <div class="headerRightInquryButton" role="button" @click="onHomeForm">
+          Inqury Now
+        </div>
         <!-- nav  -->
         <div class="navButton" :class="{ navButtonOn: onNav }" @click="onNavButton">
           <div class="navIconLine"></div>
@@ -40,7 +42,7 @@ export default {
       hanTopBtn: false,
       onNav: false,
       navList: [
-        { name: "PRODUCT", jumpLink: "/product" },
+        { name: "PRODUCT", jumpLink: "/product/calio" },
         { name: "SOLUTION", jumpLink: "/solution" },
         { name: "ABOUT", jumpLink: "/about" },
       ],
@@ -55,6 +57,14 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    onHomeForm() {
+      this.$ctx.push("/");
+      setTimeout(() => {
+        document
+          .getElementById(this.$store.state.isPc ? "requesForm" : "moRequesForm")
+          .scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 200);
+    },
     handleScroll() {
       const scroll =
         Window.pageYOffset ||

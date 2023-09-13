@@ -2,13 +2,24 @@
   <section class="quote">
     <div class="quoteTitle textBold">Scale your business with us today!</div>
 
-    <div class="quoteButton textLight" role="button">Get A Quote</div>
+    <div class="quoteButton textLight" role="button" @click="onHomeForm">Get A Quote</div>
   </section>
 </template>
 
 <script>
 import "../index.less";
-export default {};
+export default {
+  methods: {
+    onHomeForm() {
+      this.$ctx.push("/");
+      setTimeout(() => {
+        document
+          .getElementById("requesForm")
+          .scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 200);
+    },
+  },
+};
 </script>
 
 <style lang="less" scoped>

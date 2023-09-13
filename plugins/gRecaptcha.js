@@ -6,7 +6,7 @@ export default ({ req, app, store }) => {
     }
     const userAgent = req ? req.headers['user-agent'] : navigator.userAgent || ''
     const body = document.body
-    const htmlStyle = document.getElementsByTagName('html')[0].style
+    // const htmlStyle = document.getElementsByTagName('html')[0].style
     if (!isMobile(userAgent)) {
       // htmlStyle.minWidth = '1280px'
       // htmlStyle.overflowX = 'auto'
@@ -20,7 +20,7 @@ export default ({ req, app, store }) => {
     setTimeout(() => {
       const gooleGRecaptcha = window?.grecaptcha?.render('u-gRecaptcha', {
         // sitekey: '6LeteCYaAAAAAKli6Y6b-Fi2GGHQBHgzi-rOVItQ',
-        sitekey: '6LfWpvghAAAAAPYPuiAxsai2OieCy6BMlX1RXEp4',
+        sitekey: '6LcOHRgoAAAAABQwB0iIDvtlUa1e7QsayMwl9S6n',
         callback: (token) => {
           store.dispatch('gooleCallBack', { token, $axios })
         },
