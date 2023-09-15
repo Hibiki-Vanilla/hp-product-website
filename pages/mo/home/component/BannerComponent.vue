@@ -25,13 +25,9 @@
       </div>
     </div>
     <div class="bannerTip textLight textSize">
-      Leverage from our strong in-house team and partner supporting,
-      <br />
-      we're proud to offer a one-stop solution for all your cannabis vaping
-      <br />
-      needs, from product design and packaging to branding and
-      <br />
-      compliance.
+      Leverage from our strong in-house team and partner supporting, we're proud to offer
+      a one-stop solution for all your cannabis vaping needs, from product design and
+      packaging to branding and compliance.
     </div>
     <div class="bannerButtom textLight" role="button" @click="handleTo">
       FIND YOUR SOLUTION
@@ -67,7 +63,7 @@ export default {
 
   .bannerTitle {
     display: flex;
-    padding-top: (250 / @morem);
+    padding-top: (190 / @morem);
     padding-bottom: (100 / @morem);
     flex-direction: column;
     align-items: center;
@@ -85,9 +81,13 @@ export default {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        & + .bannerRow {
+          width: 56vw;
+          flex-wrap: wrap;
+        }
       }
       .bannerTitleSpan {
-        font-size: (42 / @morem);
+        font-size: (50 / @morem);
         animation: animate-mv-title-coloring 0.8s cubic-bezier(0.16, 0.5, 0.43, 1)
           forwards;
       }
@@ -123,13 +123,14 @@ export default {
   .bannerTip {
     text-align: center;
     color: #000000;
+    width: (650 / @morem);
     padding-bottom: (100 / @morem);
   }
 
   .bannerButtom {
     cursor: pointer;
     height: (60 / @morem);
-    width: (260 / @morem);
+    padding: 0 (18 / @morem);
     line-height: (60 / @morem);
     border-radius: (30 / @morem);
     font-size: (18 / @morem);

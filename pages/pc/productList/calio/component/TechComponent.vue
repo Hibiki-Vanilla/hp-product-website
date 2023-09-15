@@ -1,22 +1,21 @@
 <template>
   <section class="tech" data-aos="zoom">
     <div class="techCon imageItem">
-      <div class="techLeft" data-aos='fade-up'>
+      <div class="techLeft" data-aos="fade-up">
         <div class="techTitle textBlack titleSize">
-          VISCORE® Ceramic
+          VISCORE® CERAMIC
           <br />
-          Heating Technology
+          HEATING TECHNOLOGY
         </div>
 
         <div class="techText textSize textLight">
-          Our proprietary ceramic formula allows the product to be both sturdy
-          and sleek. Catering to the unique traits of various oils and
-          viscosities, all of our cartridges feature the renowned proprietary
-          ceramic heating element.
+          Our proprietary ceramic formula allows the product to be both sturdy and sleek.
+          Catering to the unique traits of various oils and viscosities, all of our
+          cartridges feature the renowned proprietary ceramic heating element.
           <br />
-          VISCORE patented ceramic heating core was precisely engineered with
-          the perfected porosity and structure that allows for purer flavors,
-          more powerful potency, and minimal possibility of burnt tastes.
+          VISCORE patented ceramic heating core is precisely engineered with the perfected
+          porosity and structure that allows for purer flavors, more powerful potency, and
+          minimal possibility of burnt tastes.
         </div>
       </div>
     </div>
@@ -50,10 +49,15 @@ export default {};
       height: 100%;
       box-sizing: border-box;
       padding-left: (110 / @pcrem);
-      padding-right: (80 / @pcrem);
     }
     .techTitle {
       padding-bottom: (60 / @pcrem);
+      letter-spacing: -0.1vw;
+    }
+    .techText {
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: (80 / @pcrem);
     }
   }
 }

@@ -5,10 +5,9 @@
     <UnleashComponent />
     <TechComponent />
     <FullyComponent />
-    <DualComponent/>
-    <ColorComponent/>
-    <ScrollComponent/>
-
+    <DualComponent />
+    <ColorComponent />
+    <ScrollComponent />
   </div>
 </template>
 
@@ -32,19 +31,21 @@ export default {
     FullyComponent,
     DualComponent,
     ColorComponent,
-    ScrollComponent
+    ScrollComponent,
   },
   head() {
     return {
-      title: "Calio",
+      title: "Calio - A Classical Design 1g/2g Disposable Cannabis Vape | POWEHI",
       meta: [
         {
           name: "keywords",
-          content: "",
+          content:
+            "CALIO,  POWEHI, Disposable Cannabis Vape, 1g CBD Vape, 2g D8 Vape, Delta-8 Vape device, 2mL HHC disposable, Hemp Vape pen.",
         },
         {
           name: "description",
-          content: "",
+          content:
+            "A Premium CBD 1mL/2mL vape pen with innovative technology, pre-heating and voltages adjustment, experience the perfect blend of style and functionality.",
         },
 
         {
@@ -53,11 +54,12 @@ export default {
         },
         {
           property: "og:title",
-          content: "Solution",
+          content: "Calio - A Classical Design 1g/2g Disposable Cannabis Vape | POWEHI",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "A Premium CBD 1mL/2mL vape pen with innovative technology, pre-heating and voltages adjustment, experience the perfect blend of style and functionality.",
         },
       ],
     };

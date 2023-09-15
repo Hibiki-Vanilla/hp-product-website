@@ -5,6 +5,8 @@
     </div>
     <div class="whyTop">
       <div class="whyTopLeft whyTopItem imageItem" data-aos="fade-up">
+        <div class="textBold">DIVERSE RANGE OF PRODUCTS</div>
+
         <div class="whyTopBoxCon" data-aos="fade-up">
           <div class="whyTopBoxTop">
             <div class="whyTopBoxTopCon">
@@ -20,6 +22,7 @@
         </div>
       </div>
       <div class="whyTopRight whyTopItem imageItem" data-aos="fade-up">
+        <div class="textBold">CUTTING-EDGE TECHNOLOGY</div>
         <div class="whyTopBoxCon" data-aos="fade-up">
           <div class="whyTopBoxTop">
             <div class="whyTopBoxTopCon">
@@ -37,6 +40,7 @@
     </div>
     <div class="whyBottom">
       <div class="whyBottomCon imageItem" data-aos="fade-up">
+        <div class="whyBottomTitle textBold">TURNKEY SOLUTION</div>
         <div class="whyBottomBox">
           <div class="whyBoxTop">
             <div class="whyBoxTopCon">
@@ -90,8 +94,13 @@ export default {};
 
     .whyTopItem {
       position: relative;
+      box-sizing: border-box;
+      padding-top: (40 / @pcrem);
+      padding-left: (40 / @pcrem);
       height: (355 / @pcrem);
       width: (680 / @pcrem);
+      font-size: (30 / @pcrem);
+      color: @white;
       .whyTopBoxCon {
         position: absolute;
         height: (312 / @pcrem);
@@ -177,6 +186,13 @@ export default {};
       height: (530 / @pcrem);
       width: 100%;
       background-image: url("@/static/home/why/bottomBg.png");
+      font-size: (38 / @pcrem);
+      color: @white;
+      .whyBottomTitle {
+        padding-top: (40 / @pcrem);
+        width: 100%;
+        text-align: center;
+      }
       .whyBottomBox {
         position: absolute;
         top: (446 / @pcrem);

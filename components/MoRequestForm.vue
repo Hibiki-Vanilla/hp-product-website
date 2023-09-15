@@ -341,7 +341,7 @@ export default {
     }
     .homeLeftImage {
       position: relative;
-      height: (450 / @morem);
+      height: (520 / @morem);
       width: 100%;
       border-radius: (14 / @morem) (14 / @morem) 0 0;
       background-color: #fe8a12;
@@ -512,10 +512,10 @@ export default {
             height: (50 / @morem);
             line-height: (50 / @morem);
             border-radius: (25 / @morem);
-            font-size: (24 / @morem);
+            font-size: (18 / @morem);
             text-align: center;
             color: @white;
-            background-color: #f9cb22;
+            background-color: @mainColor;
           }
         }
       }

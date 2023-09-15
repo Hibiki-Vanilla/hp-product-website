@@ -6,7 +6,7 @@
     <div class="productCon allShadow" @click="handleTo">
       <div class="productConTitle textBold">
         CALIO
-        <span class="textLight">HDN002</span>
+        <span class="textLight">HDN002/HDN002C</span>
       </div>
       <div class="productConTip textMedium">CLASSIC DESIGN 2G DISPOSABLE VAPE</div>
       <img class="productConIcon" src="@/static/home/products/icon.png" alt="" />

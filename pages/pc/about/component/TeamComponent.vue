@@ -12,8 +12,8 @@
       <br />
 
       We focuses on cultivating an emerging talents team with professional qualities,
-      strives to promote technological innovation, actively promotes the coordinated
-      development of the vape industry, and takes social responsibility as the principle
+      striving to promote technological innovation, actively promoting the coordinated
+      development of the vape industry, and taking social responsibility as the principle
       of a benchmark enterprise.
     </div>
   </div>

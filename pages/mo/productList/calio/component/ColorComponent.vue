@@ -2,12 +2,12 @@
   <section class="color imageItem" data-aos="zoom">
     <div class="colorCon" data-aos="fade-up">
       <div class="colorTitle textBlack titleSize">
-        White Label For OEM/ODM Customization
+        WHITE LABEL FOR OEM/ODM CUSTOMIZATION
       </div>
       <div class="colorText textSize textLight">
         Why not customize our CALIO for your brand?
         <br />
-        POWEHI provide various OEM and ODM solutions for your business.
+        POWEHI provides various OEM and ODM solutions for your business.
         <br />
         Want to try our products? Contact us today for a FREE sample.
       </div>

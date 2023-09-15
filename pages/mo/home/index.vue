@@ -33,15 +33,17 @@ export default {
   },
   head() {
     return {
-      title: "Home",
+      title: "POWEHI - Reliable Cannabis Vape Hardware OEM/ODM Solution Supplier",
       meta: [
         {
           name: "keywords",
-          content: "",
+          content:
+            "POWEHI, cannabis vape, THC/CBD vape, Delta 8 vaporizer, Vape hardware, Vape solution, Vape OEM ODM, Vape manufacturer, Disposable pen provider.",
         },
         {
           name: "description",
-          content: "",
+          content:
+            "POWEHI is a leading cannabis vaping device manufacturer that offers total solutions for CBD/THC vape products, customized designs, and end-to-end services.",
         },
 
         {
@@ -50,11 +52,12 @@ export default {
         },
         {
           property: "og:title",
-          content: "Home",
+          content: "POWEHI - Reliable Cannabis Vape Hardware OEM/ODM Solution Supplier",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "POWEHI is a leading cannabis vaping device manufacturer that offers total solutions for CBD/THC vape products, customized designs, and end-to-end services.",
         },
       ],
     };

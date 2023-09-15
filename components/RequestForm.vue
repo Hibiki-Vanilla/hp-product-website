@@ -38,7 +38,7 @@
             <img class="emailIcon" src="@/static/form/email.png" alt="" />
             <div class="iconTextCon">
               <div class="topTitle textBold textSize">Send us an email</div>
-              <div class="topText textRegular">info@powehiusa.com</div>
+              <div class="topText textRegular">info@powehiclub.com</div>
             </div>
           </div>
         </div>
@@ -56,33 +56,33 @@
             class="eidtFormCon"
           >
             <div class="formItem">
-              <div class="formItemTitle"><span>*</span>First name</div>
+              <div class="formItemTitle"><span>*</span>First Name</div>
               <el-form-item prop="firstName">
                 <el-input
                   v-model="editForm.firstName"
-                  placeholder="First name"
+                  placeholder="First Name"
                   prefix-icon="el-icon-s-custom"
                 />
               </el-form-item>
             </div>
 
             <div class="formItem">
-              <div class="formItemTitle"><span>*</span>Last name</div>
+              <div class="formItemTitle"><span>*</span>Last Name</div>
               <el-form-item prop="lastName">
                 <el-input
                   v-model="editForm.lastName"
-                  placeholder="Last name"
+                  placeholder="Last Name"
                   prefix-icon="el-icon-s-custom"
                 />
               </el-form-item>
             </div>
 
             <div class="formItem">
-              <div class="formItemTitle"><span>*</span>Email address</div>
+              <div class="formItemTitle"><span>*</span>Email Address</div>
               <el-form-item prop="email">
                 <el-input
                   v-model="editForm.email"
-                  placeholder="Email address"
+                  placeholder="Email Address"
                   prefix-icon="el-icon-message"
                 />
               </el-form-item>
@@ -100,11 +100,11 @@
             </div>
 
             <div class="formItem">
-              <div class="formItemTitle">Phone Numbe</div>
+              <div class="formItemTitle">Phone Number</div>
               <el-form-item prop="phone">
                 <el-input
                   v-model="editForm.phone"
-                  placeholder="Phone Numbe"
+                  placeholder="Phone Number"
                   prefix-icon="el-icon-phone"
                 />
               </el-form-item>
@@ -122,17 +122,16 @@
             </div>
 
             <div class="formItemRow">
-              <div class="formItemTitle"><span>*</span>Your message</div>
+              <div class="formItemTitle"><span>*</span>Your Message</div>
               <el-form-item prop="message">
                 <el-input
                   v-model="editForm.message"
                   type="textarea"
-                  placeholder="Your message"
+                  placeholder="Your Message"
                   show-word-limit
                   maxlength="500"
                   resize="none"
-                  rows="5"
-                  :autosize="{ minRows: 5, maxRows: 5 }"
+                  rows="4"
                 />
               </el-form-item>
             </div>
@@ -283,7 +282,7 @@ export default {
     transform: translate(-50%, 0);
     display: flex;
     width: (1512 / @pcrem);
-    height: (834 / @pcrem);
+    height: (850 / @pcrem);
     border-radius: (16 / @pcrem);
     overflow: hidden;
     .aboutLeftImage {
@@ -423,7 +422,7 @@ export default {
           justify-content: space-between;
 
           .el-form-item {
-            margin-bottom: (50 / @pcrem);
+            margin-bottom: (40 / @pcrem);
             :deep(.el-form-item__content) {
               line-height: (40 / @pcrem);
               position: relative;
@@ -458,7 +457,8 @@ export default {
             font-size: (18 / @pcrem);
 
             :deep(.el-textarea__inner) {
-              max-height: (170 / @pcrem);
+              // height: (170 / @pcrem);
+              // max-height: (170 / @pcrem);
               font-family: "Montserrat Light";
               border-radius: (10 / @pcrem);
               color: #898989;
@@ -491,10 +491,12 @@ export default {
 
           .formSubmit {
             cursor: pointer;
-            width: (170 / @pcrem);
-            height: (36 / @pcrem);
+            // width: (170 / @pcrem);
+            // height: (36 / @pcrem);
+            padding: (4 / @pcrem) (10 / @pcrem);
             line-height: (36 / @pcrem);
             border-radius: (18 / @pcrem);
+            font-size: (18 / @pcrem);
             text-align: center;
             color: @white;
             background-color: #f9cb22;

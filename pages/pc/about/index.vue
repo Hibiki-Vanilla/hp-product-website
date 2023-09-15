@@ -39,15 +39,17 @@ export default {
   },
   head() {
     return {
-      title: "About",
+      title: "About Us - A Turnkey Cannabis Vaping Manufacturer | POWEHI",
       meta: [
         {
           name: "keywords",
-          content: "",
+          content:
+            "About POWEHI, Turnkey CBD service, Cannabis Vape Pen supplier, one-stop solution, End-To-End service.",
         },
         {
           name: "description",
-          content: "",
+          content:
+            "POWEHI committed to providing one-stop solution for cannabis vape brands, from product design, development, testing, production, co-packaging, to delivery.",
         },
 
         {
@@ -56,11 +58,12 @@ export default {
         },
         {
           property: "og:title",
-          content: "Solution",
+          content: "About Us - A Turnkey Cannabis Vaping Manufacturer | POWEHI",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "POWEHI committed to providing one-stop solution for cannabis vape brands, from product design, development, testing, production, co-packaging, to delivery.",
         },
       ],
     };

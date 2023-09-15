@@ -1,12 +1,12 @@
 <template>
   <section class="product">
-    <div class="productTitle textBold titleSize">PRODUCTS</div>
+    <div class="productTitle textBold">PRODUCTS</div>
 
     <!-- con -->
     <div class="productCon allShadow" @click="handleTo">
       <div class="productConTitle textBold">
         CALIO
-        <span class="textLight">HDN002</span>
+        <span class="textLight">HDN002/HDN002C</span>
       </div>
       <div class="productConTip textMedium">CLASSIC DESIGN 2G DISPOSABLE VAPE</div>
       <img class="productConIcon" src="@/static/home/products/moIcon.png" alt="" />
@@ -57,7 +57,8 @@ export default {
   background-color: #ececec;
   .productTitle {
     color: #000;
-    padding-bottom: (110 / @morem);
+    font-size: (55 / @morem);
+    padding-bottom: (90 / @morem);
   }
 
   .productCon {
@@ -68,22 +69,22 @@ export default {
     justify-content: center;
     box-sizing: border-box;
     padding-left: (30 / @morem);
-    height: (230 / @morem);
+    height: (256 / @morem);
     width: (612 / @morem);
     border-radius: (12 / @morem);
 
     .productConTitle {
-      font-size: (24 / @morem);
+      font-size: (36 / @morem);
       color: #000;
       padding-bottom: (16 / @morem);
       .textLight {
-        font-size: (16 / @morem);
+        font-size: (24 / @morem);
       }
     }
     .productConTip {
       color: #000;
       padding-bottom: (30 / @morem);
-      font-size: (16 / @morem);
+      font-size: (18 / @morem);
     }
     .productConIcon {
       height: (65 / @morem);

@@ -5,10 +5,10 @@
 
       <div class="qualityRight imageItem">
         <div class="qualityRightTop textLight">
-          We take pride in our commitment to quality. Every PoweHi vaporizer undergoes
+          We take pride in our commitment to quality. Every POWEHI vaporizer undergoes
           rigorous testing and adheres to the highest manufacturing standards. From the
           selection of premium materials to the precision craftsmanship, we strive to
-          deliver a superior product that meets the demands of discerning cannabis
+          deliver a superior product that meets the demand of discerning cannabis
           enthusiasts. Our dedication to quality ensures that each inhale is a moment of
           pure satisfaction.
         </div>

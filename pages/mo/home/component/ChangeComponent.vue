@@ -52,7 +52,7 @@ export default {
 .change {
   position: relative;
   overflow: hidden;
-  height: (400 / @morem);
+  height: (724 / @morem);
   width: 100%;
 
   .changeBg {
@@ -79,19 +79,21 @@ export default {
     position: absolute;
     height: 100%;
     top: 0;
-    left: (50 / @morem);
+    left: 0;
     width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     color: @white;
     z-index: 2;
 
     .changeTitle {
-      padding-bottom: (40 / @morem);
+      padding-top: (30 / @morem);
+      padding-bottom: (20 / @morem);
     }
     .changeText {
-      width: (350 / @morem);
+      width: (580 / @morem);
     }
   }
 }

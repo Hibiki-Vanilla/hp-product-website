@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div :class="{ headerWrap: true, headerFixed: isFixed }">
-      <div class="headerLeft" @click="handleHome"></div>
+      <div class="headerLeft" role="button" @click="handleHome"></div>
       <div class="headerRight">
         <!-- go inqury -->
         <div class="headerRightInquryButton" role="button" @click="onHomeForm">
@@ -129,8 +129,8 @@ export default {
 
     .headerLeft {
       cursor: pointer;
-      width: 200px;
-      height: 69px;
+      width: 160px;
+      height: 55px;
       background-image: url("@/static/logo.png");
       background-size: 100% 100%;
       background-position: center center;

@@ -1,14 +1,21 @@
 <template>
   <section class="quality">
     <div class="qualityCon" data-aos="fade-up">
-      <div class="qualityLeft imageItem"></div>
+      <div class="qualityLeft imageItem">
+        <div class="qualityLeftTitle textBold titleSize">
+          UNCOMPROMISING
+          <br />
+          <span>QUALITY</span>
+        </div>
+        <div class="textLight textSize">MAINTAINING HIGH-QUALITY STANDARDS</div>
+      </div>
 
       <div class="qualityRight imageItem" data-aos="fade-right">
         <div class="qualityRightTop textLight">
-          We take pride in our commitment to quality. Every PoweHi vaporizer undergoes
+          We take pride in our commitment to quality. Every POWEHI vaporizer undergoes
           rigorous testing and adheres to the highest manufacturing standards. From the
           selection of premium materials to the precision craftsmanship, we strive to
-          deliver a superior product that meets the demands of discerning cannabis
+          deliver a superior product that meets the demand of discerning cannabis
           enthusiasts. Our dedication to quality ensures that each inhale is a moment of
           pure satisfaction.
         </div>
@@ -47,7 +54,18 @@ export default {};
     background-image: url("@/static/about/quality/left.png");
     height: (600 / @pcrem);
     width: (700 / @pcrem);
+    box-sizing: border-box;
+    padding-left: (40 / @pcrem);
+    padding-top: (70 / @pcrem);
     z-index: 2;
+    color: @white;
+
+    .qualityLeftTitle {
+      padding-bottom: (300 / @pcrem);
+      span {
+        border-bottom: 2px solid @white;
+      }
+    }
   }
   .qualityRight {
     display: flex;

@@ -6,9 +6,9 @@
     <div class="labCon allShadow">
       <div class="labLeft textLight">
         <div class="labLeftTopText">
-          Our laboratory is a first-class R&D and quality control center for vape. We have
-          advanced equipment and technology, and have assembled an experienced, efficient
-          and professional team. We are committed to providing comprehensive laboratory
+          Our laboratory is a first-class R&D and quality control center for vape. We
+          assemble equipment and technology, and have assembled an experienced, efficient
+          and professional team. We are committed to provide comprehensive laboratory
           services to help our customers guarantee the quality and performance of their
           products, to maintain a competitive edge in a highly competitive market.
         </div>

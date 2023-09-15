@@ -2,20 +2,19 @@
   <section class="tech" data-aos="zoom">
     <div class="techCon imageItem" data-aos="fade-up">
       <div class="techTitle textBlack titleSize">
-        VISCORE® Ceramic Heating
+        VISCORE® CERAMIC
         <br />
-        Technology
+        HEATING TECHNOLOGY
       </div>
 
       <div class="techText textSize textLight">
-        Our proprietary ceramic formula allows the product to be both sturdy and
-        sleek. Catering to the unique traits of various oils and viscosities,
-        all of our cartridges feature the renowned proprietary ceramic heating
-        element.
+        Our proprietary ceramic formula allows the product to be both sturdy and sleek.
+        Catering to the unique traits of various oils and viscosities, all of our
+        cartridges feature the renowned proprietary ceramic heating element.
         <br />
-        VISCORE patented ceramic heating core was precisely engineered with the
-        perfected porosity and structure that allows for purer flavors, more
-        powerful potency, and minimal possibility of burnt tastes.
+        VISCORE patented ceramic heating core is precisely engineered with the perfected
+        porosity and structure that allows for purer flavors, more powerful potency, and
+        minimal possibility of burnt tastes.
       </div>
     </div>
   </section>
@@ -43,9 +42,9 @@ export default {};
       padding-top: (100 / @morem);
       padding-bottom: (50 / @morem);
     }
-    .techText{
-      margin:  0 auto;
-          width: (550 / @morem);
+    .techText {
+      margin: 0 auto;
+      width: (550 / @morem);
     }
   }
 }

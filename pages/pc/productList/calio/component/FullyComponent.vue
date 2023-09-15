@@ -3,14 +3,13 @@
     <div class="fullyCon">
       <div class="fullyRight" data-aos="fade-up">
         <div class="fullyTitle textBlack titleSize">
-          Fully Visible And
+          FULLY VISIBLE AND
           <br />
-          Customizable Oil Window
+          CUSTOMIZABLE OIL WINDOW
         </div>
         <div class="fullyText textSize textLight">
-          A fully visible oil window that allows you to see how much oil is left
-          in the tank. You can also customize the oil window with your own logo
-          or design.
+          A fully visible oil window that allows you to see how much oil is left in the
+          tank. You can also customize the oil window with your own logo or design.
         </div>
       </div>
     </div>
@@ -42,7 +41,7 @@ export default {};
       .fullyTitle {
         padding-bottom: (50 / @pcrem);
       }
-      .fullyText{
+      .fullyText {
         line-height: 1.5;
       }
     }

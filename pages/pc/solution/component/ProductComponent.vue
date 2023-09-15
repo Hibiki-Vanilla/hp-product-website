@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     animationScroll() {
-      let stickyOffsetTop = document.querySelector(".product").offsetTop;
+      const stickyOffsetTop = document.querySelector(".product").offsetTop;
       const scrollHeight =
         window.pageYOffset ||
         document.documentElement.scrollTop ||

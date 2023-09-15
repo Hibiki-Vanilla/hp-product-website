@@ -3,7 +3,7 @@
     <div class="techCon" data-aos="fade-up">
       <div class="techTitle textBold titleSize">CUTTING-EDGE TECHNOLOGY</div>
       <div class="techTip textLight textSize">
-        Elevating Experience with Advanced Technology
+        ELEVATING EXPERIENCE WITH ADVANCED TECHNOLOGY
       </div>
       <div class="techText textLigth">
         In our turnkey solution for cannabis vaping, we prioritize research and

@@ -9,11 +9,11 @@
         <div class="whoRightTitle textBold titleSize">WHO <span>ARE WE</span></div>
         <div class="whoRightTip textLight">INNOVATION IS OUR MOTTO, NOT LIMITATION.</div>
         <div class="whoRightText textLight">
-          Powehi is a leading cannabis electronic vaporizer solution provider that is
+          POWEHI is a leading cannabis electronic vaporizer solution provider that is
           revolutionizing the vaping landscape. We offer a wide range of cutting-edge
           products that are designed to provide our customers with the best possible
-          experience. Our products are made with the highest quality materials and are
-          built to last.
+          experience. Our products are made with the highest quality materials and built
+          to last.
         </div>
       </div>
     </div>

@@ -12,7 +12,14 @@
         type="text"
         placeholder="Your Email Address"
       />
-      <div class="emailbutton" role="button" @click="onSubmit">Subscribe</div>
+      <div
+        class="emailbutton"
+        :class="[{ emailbuttonLock: !userOk }]"
+        role="button"
+        @click="onSubmit"
+      >
+        Subscribe
+      </div>
     </div>
     <div
       class="returnTextRow textRegular"
@@ -25,8 +32,11 @@
     </div>
     <div id="subscribeGooleGRecaptcha"></div>
     <div class="bottomRow">
-      <div class="bottomRowBlock textRegular"></div>
-      By Subscribing, You Are Agreeing To Our Privacy Policy.
+      <div class="bottomRowBlock textRegular allShadow" @click="userOk = !userOk">
+        <i v-show="userOk" class="el-icon-check yesIcon"></i>
+      </div>
+      By Subscribing, You Are Agreeing To Our &nbsp;
+      <span @click="goPrivacy"> Privacy Policy</span> .
     </div>
   </section>
 </template>
@@ -41,6 +51,7 @@ export default {
       textStatus: null,
       returnText: "",
       emailValue: "",
+      userOk: true,
     };
   },
   mounted() {
@@ -60,7 +71,7 @@ export default {
       }, 1000);
     },
     onSubmit() {
-      if (this.loading) {
+      if (this.loading || !this.userOk) {
         return false;
       }
       const emReg = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
@@ -96,6 +107,9 @@ export default {
           this.loading = false;
           window.grecaptcha.reset(this.subscribeGooleGRecaptcha);
         });
+    },
+    goPrivacy() {
+      this.$ctx.push("/m/privacy");
     },
   },
 };
@@ -161,6 +175,10 @@ export default {
       color: @white;
       background-color: #fe8a12;
     }
+    .emailbuttonLock {
+      cursor: no-drop;
+      background-color: rgba(160, 160, 160, 0.5);
+    }
   }
   .returnTextRow {
     width: (654 / @morem);
@@ -182,10 +200,21 @@ export default {
     color: #a0a0a0;
     font-size: (18 / @morem);
     .bottomRowBlock {
+      cursor: pointer;
       margin-right: (10 / @morem);
-      height: (15 / @morem);
-      width: (15 / @morem);
-      background-color: #a0a0a0;
+      height: (20 / @morem);
+      width: (20 / @morem);
+      border: 2px solid rgba(160, 160, 160, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .yesIcon {
+        color: @mainColor;
+      }
+    }
+    span {
+      cursor: pointer;
+      border-bottom: 1px solid #a0a0a0;
     }
   }
 }

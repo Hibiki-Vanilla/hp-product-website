@@ -65,7 +65,7 @@ export default {
     position: relative;
 
     padding: (30 / @morem) 0;
-    width: (550 / @morem);
+    width: (610 / @morem);
     border-radius: (20 / @morem);
     background-color: #eee;
     display: flex;
@@ -95,13 +95,13 @@ export default {
         align-items: flex-end;
         color: #fe8a12;
         padding-bottom: (10 / @morem);
-        font-size: (24 / @morem);
+        font-size: (36 / @morem);
         span {
           font-size: (18 / @morem);
         }
       }
       .rowItemText {
-        font-size: (16 / @morem);
+        font-size: (18 / @morem);
         color: #707070;
       }
     }

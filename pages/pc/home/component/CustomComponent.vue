@@ -156,7 +156,7 @@ export default {
 <style lang="less" scoped>
 .custom {
   display: flex;
-  //   overflow: hidden;
+  overflow: hidden;
   padding-top: (180 / @pcrem);
   width: 100%;
   flex-direction: column;

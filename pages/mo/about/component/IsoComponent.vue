@@ -9,9 +9,7 @@
       <img class="lineimg" src="@/static/about/iso/line.png" alt="reputation" />
 
       <div class="isoTopText textLight">
-        OUR REPUTATION
-        <br />
-        we are committed to providing our customers with the best possible service and
+        we are committed to provide our customers with the best possible service and
         products. The sound management system supports the company’s development. We are
         proud to become a trusted partner in the Cannabis community. Our commitment to
         quality, innovation, and sustainability sets us apart from other vape hardware
@@ -40,7 +38,12 @@ export default {
       return `bottom:${this.top}%`;
     },
   },
-
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
       const stickyOffsetTop = document.querySelector(".iso").offsetTop;
@@ -58,12 +61,6 @@ export default {
 
       this.scrollHeight = scrollHeight;
     },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
   },
 };
 </script>

@@ -108,7 +108,7 @@ export default {};
         padding-top: (30 / @pcrem);
         text-align: center;
         font-family: "Montserrat Light";
-        line-height: 2;
+        line-height: (34 / @pcrem);
         font-size: (14 / @pcrem);
         .offerRightTitle {
           font-size: (20 / @pcrem);
@@ -119,7 +119,7 @@ export default {};
       .offerRightTop {
         position: absolute;
         top: 0;
-        left: -(56 / @pcrem);
+        left: -(68 / @pcrem);
         height: (332 / @pcrem);
         width: (332 / @pcrem);
       }

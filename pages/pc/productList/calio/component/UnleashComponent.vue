@@ -3,9 +3,9 @@
     <div class="unleashCon">
       <div class="unleashRight" data-aos="fade-up">
         <div class="unleashTitle textBlack titleSize">
-          Unleash The Power
+          UNLEASH THE POWER
           <br />
-          Of Your Extracts
+          OF YOUR EXTRACTS
         </div>
 
         <div class="unleashText textLight textSize">

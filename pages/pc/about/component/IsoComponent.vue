@@ -8,9 +8,7 @@
     <div class="isoCon allShadow">
       <div class="isoLeft textLight">
         <div class="isoLeftTopText">
-          OUR REPUTATION
-          <br />
-          we are committed to providing our customers with the best possible service and
+          we are committed to provide our customers with the best possible service and
           products. The sound management system supports the company’s development.
           <br />
           We are proud to become a trusted partner in the Cannabis community. Our
@@ -52,10 +50,15 @@ export default {
       return `bottom:${this.top}%`;
     },
   },
-
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
-      let stickyOffsetTop = document.querySelector(".iso").offsetTop;
+      const stickyOffsetTop = document.querySelector(".iso").offsetTop;
       const scrollHeight =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -70,12 +73,6 @@ export default {
 
       this.scrollHeight = scrollHeight;
     },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
   },
 };
 </script>

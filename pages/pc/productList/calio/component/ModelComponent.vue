@@ -38,12 +38,13 @@
         </div>
       </div>
 
-      <div class="modelRight" data-aos='fade-up'>
+      <div class="modelRight" data-aos="fade-up">
         <div class="modelRightTitle">
           <span class="textBlack titleSize">CALIO</span>
-          <span class="textSemiBold">MODEL NUMBER 
-            <span class="blackBox">HDN003</span>
-            </span>
+          <span class="textSemiBold"
+            >MODEL NUMBER
+            <span class="blackBox">HDN002/HDN002C</span>
+          </span>
         </div>
 
         <div class="textLight modelRightText">
@@ -51,7 +52,7 @@
           <br />
           ● Fully Visible And Customizable Oil Window
           <br />
-          ● Dual Air-Flow & Pre-Heating For Anti-Clogging
+          ● Pre-Heating For Anti-Clogging
           <br />
           ● Button Activation & 3 Level Voltages Adjustment
           <br />
@@ -176,18 +177,18 @@ export default {
         .textSemiBold {
           padding-left: (15 / @pcrem);
           font-size: (18 / @pcrem);
-        
-        .blackBox{
-          background-color: #000;
-          color: @white;
-          padding: 2px;
-        }
+
+          .blackBox {
+            background-color: #000;
+            color: @white;
+            padding: 2px;
+          }
         }
       }
 
-      .modelRightText{
-        padding-top: (50/@pcrem);
-        font-size: (24/@pcrem);
+      .modelRightText {
+        padding-top: (50 / @pcrem);
+        font-size: (24 / @pcrem);
         line-height: 2;
       }
     }

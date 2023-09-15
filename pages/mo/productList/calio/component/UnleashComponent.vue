@@ -1,27 +1,23 @@
 <template>
   <section class="unleash imageItem" data-aos="zoom">
-    <div class="unleashCon" data-aos='fade-up'>
+    <div class="unleashCon" data-aos="fade-up">
+      <div class="unleashTitle textBlack titleSize">
+        UNLEASH THE POWER
+        <br />
+        OF YOUR EXTRACTS
+      </div>
 
-        <div class="unleashTitle textBlack titleSize">
-          Unleash The Power  Of Your 
-          <br />
-         Extracts
-        </div>
-
-        <div class="unleashText textLight textSize">
-          CALIO, the first product from POWEHI, is more than just a product.
-          <br />
-          It is a masterpiece of art and technology that embodies our values and
-          spirit.
-          <br />
-          With its cutting-edge performance and design, CALIO offers users an
-          unprecedentedly intelligent and convenient experience.
-          <br />
-           We believe that
-          CALIO will set a new benchmark for the industry and lead the way in
-          the development of new technologies.
-        </div>
-   
+      <div class="unleashText textLight textSize">
+        CALIO, the first product from POWEHI, is more than just a product.
+        <br />
+        It is a masterpiece of art and technology that embodies our values and spirit.
+        <br />
+        With its cutting-edge performance and design, CALIO offers users an
+        unprecedentedly intelligent and convenient experience.
+        <br />
+        We believe that CALIO will set a new benchmark for the industry and lead the way
+        in the development of new technologies.
+      </div>
     </div>
   </section>
 </template>
@@ -41,16 +37,15 @@ export default {};
     width: (550 / @morem);
     margin: 0 auto;
 
-text-align: center;
-      .unleashTitle {
-        padding-top: (90 / @morem);
-        padding-bottom: (40 / @morem);
-      }
+    text-align: center;
+    .unleashTitle {
+      padding-top: (90 / @morem);
+      padding-bottom: (40 / @morem);
+    }
 
-      .unleashText {
-        line-height: 1.2;
-      }
-    
+    .unleashText {
+      line-height: 1.2;
+    }
   }
 }
 </style>

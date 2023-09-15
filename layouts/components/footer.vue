@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="footerTop">
       <div class="footerTopLeft">
-        <img class="logo" src="@/static/footer/logo.png" alt="logo" />
+        <img class="logo" src="@/static/logo.svg" alt="logo" />
         <div class="footerTopLeftTitle">Empower The High</div>
         <div class="footerTopLeftText">
           Providing You With An Elevated Vaping Journey Like No Other.
@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       navList: [
-        { name: "PRODUCT", jumpLink: "/product" },
+        { name: "PRODUCT", jumpLink: "/product/calio" },
         { name: "SOLUTION", jumpLink: "/solution" },
         { name: "ABOUT", jumpLink: "/about" },
       ],
@@ -67,7 +67,10 @@ export default {
           src: require("@/static/footer/facebook.png"),
           jumpLink: "https://www.facebook.com/profile.php?id=61550651796767",
         },
-        { src: require("@/static/footer/x.png"), jumpLink: "#" },
+        {
+          src: require("@/static/footer/x.png"),
+          jumpLink: "https://twitter.com/POWEHICLUB",
+        },
         {
           src: require("@/static/footer/youtobe.png"),
           jumpLink: "https://www.youtube.com/channel/UCQlAgqhx-wvqgqCxJP-VXNg",
@@ -182,9 +185,14 @@ export default {
         cursor: pointer;
         height: 20px;
         width: 20px;
-      }
-      .icon + .icon {
-        margin-left: 20px;
+        transition: all 0.3s linear;
+        & + .icon {
+          margin-left: 20px;
+        }
+        &:hover {
+          box-shadow: 8px 8px 20px hsla(0, 0%, 63%, 0.2), -8px -8px 20px #fff,
+            inset 4px 4px 10px hsla(0, 0%, 63%, 0.2), inset -4px -4px 10px #fff;
+        }
       }
     }
   }

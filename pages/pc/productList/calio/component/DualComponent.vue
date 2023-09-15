@@ -3,15 +3,15 @@
     <div class="dualCon">
       <div class="dualLeft" data-aos="fade-up">
         <div class="dualTitle textBlack titleSize">
-          Dual Air-Flow & Pre-Heating
-          <br />
-          For Anti-Clogging
+          DUAL AIR-FLOW & PRE-HEATING FOR ANTI-CLOGGING
         </div>
         <div class="dualText textSize textLight">
-CALIO has dual air-flow that provides a smooth vaping experience. The pre-heating function helps prevent clogging.
-<br>
-<br>
-With button activation and 3 level voltages adjustment that allows you to customize your vaping experience.
+          CALIO has dual air-flow that provides a smooth vaping experience. The
+          pre-heating function helps prevent clogging.
+          <br />
+          <br />
+          With button activation and 3 level voltages adjustment that allows you to
+          customize your vaping experience.
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {};
       .dualTitle {
         padding-bottom: (50 / @pcrem);
       }
-      .dualText{
+      .dualText {
         height: 1.5;
       }
     }

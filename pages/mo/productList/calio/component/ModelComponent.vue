@@ -38,20 +38,21 @@
         </div>
       </div>
 
-      <div class="modelRight" data-aos='fade-up'>
+      <div class="modelRight" data-aos="fade-up">
         <div class="modelRightTitle">
           <span class="textBlack textSize">CALIO</span>
-          <span class="textSemiBold">MODEL NUMBER 
-            <span class="blackBox">HDN003</span>
-            </span>
+          <span class="textSemiBold"
+            >MODEL NUMBER
+            <span class="blackBox">HDN002/HDN002C</span>
+          </span>
         </div>
 
-        <div class=" textLight modelRightText">
+        <div class="textLight modelRightText">
           ● VISCORE® Ceramic Heating Technology
           <br />
           ● Fully Visible And Customizable Oil Window
           <br />
-          ● Dual Air-Flow & Pre-Heating For Anti-Clogging
+          ● Pre-Heating For Anti-Clogging
           <br />
           ● Button Activation & 3 Level Voltages Adjustment
           <br />
@@ -159,7 +160,7 @@ export default {
     }
 
     .modelRight {
-      padding-top: (60/@pcrem);
+      padding-top: (60 / @pcrem);
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -173,18 +174,18 @@ export default {
         .textSemiBold {
           padding-left: (15 / @morem);
           font-size: (18 / @morem);
-        
-        .blackBox{
-          background-color: #000;
-          color: @white;
-          padding: 2px;
-        }
+
+          .blackBox {
+            background-color: #000;
+            color: @white;
+            padding: 2px;
+          }
         }
       }
 
-      .modelRightText{
-        padding-top: (40/@morem);
-        font-size: (18/@morem);
+      .modelRightText {
+        padding-top: (40 / @morem);
+        font-size: (18 / @morem);
         line-height: 2;
       }
     }

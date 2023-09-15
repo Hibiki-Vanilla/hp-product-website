@@ -4,9 +4,8 @@
     <div class="customText textLight textSize" data-aos="fade-up">
       Our CMF design service helps you create a distinctive and appealing look and feel
       for your cannabis vaping products. We offer a range of options for color, material,
-      and finishing that suit different styles, preferences, and budgets.
-      <br />
-      All these customization solutions make your products stand out from the crowd!
+      and finishing that suit different styles, preferences, and budgets. All these
+      customization solutions make your products stand out from the crowd!
     </div>
     <div class="customTipRow" data-aos="fade-up">
       <img class="customTipIcon" src="@/static/home/custom/moTipIcon.png" alt="" />
@@ -170,7 +169,7 @@ export default {
   align-items: center;
 
   .customTitle {
-    padding-bottom: (50 / @morem);
+    padding-bottom: (30 / @morem);
     color: #000;
   }
   .customText {
@@ -201,7 +200,7 @@ export default {
       padding: (20 / @morem) (30 / @morem);
       border-radius: (8 / @morem);
       color: #707070;
-      font-size: (16 / @morem);
+      font-size: (18 / @morem);
     }
   }
 
@@ -256,7 +255,7 @@ export default {
 
   .customBottom {
     width: 100%;
-    padding: (150 / @morem) (100 / @morem);
+    padding: (150 / @morem) (80 / @morem);
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -267,8 +266,8 @@ export default {
     background-repeat: no-repeat;
 
     .customBottomItem {
-      height: (150 / @morem);
-      width: (150 / @morem);
+      height: (170 / @morem);
+      width: (170 / @morem);
       box-sizing: border-box;
       padding: 0 (10 / @morem);
       border-radius: (12 / @morem);
@@ -284,23 +283,23 @@ export default {
         justify-content: center;
       }
       .textRegular {
-        font-size: (14 / @morem);
+        font-size: (18 / @morem);
         color: #707070;
         text-align: center;
       }
       & + .customBottomItem {
-        margin-left: (50 / @morem);
+        margin-left: (40 / @morem);
       }
       &:nth-child(n + 3) {
-        margin-top: (70 / @pcrem);
+        margin-top: (50 / @pcrem);
       }
       &:nth-child(4) {
         margin-left: 0;
       }
     }
     .customBottomItemSpace {
-      height: (150 / @morem);
-      width: (150 / @morem);
+      height: (170 / @morem);
+      width: (170 / @morem);
     }
   }
 }

@@ -5,7 +5,7 @@ import env from "./env";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "hp-official-website-web",
+    title: "POWEHI",
     htmlAttrs: {
       lang: "en",
     },
@@ -23,14 +23,14 @@ export default {
       },
       {
         property: "og:image",
-        content: "https://www.myuwell.com/img/uwell-icon.png",
+        href: "https://files.myuwell.com/powehi/powehi-favicon.png",
       },
     ],
     link: [
       {
         rel: "icon",
         type: "image/x-icon",
-        href: "https://www.myuwell.com/img/uwell-icon.png",
+        href: "https://files.myuwell.com/powehi/powehi-favicon.png",
       },
     ],
     script: [

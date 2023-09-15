@@ -1,12 +1,12 @@
 <template>
   <section class="engage" data-aos="fade-up">
     <div class="engageTitle textBold">
-      Engage Customers
+      ENGAGE CUSTOMERS
       <br />
-      With Our Custom Packaging
+      WITH OUR CUSTOM PACKAGING
     </div>
     <div class="engageText textLight">
-      Our team has years of experience designing custom packaging and displays for
+      Our team has years of experience in designing custom packaging and displaying for
       cannabis companies. We create eye-catching packaging that is guaranteed to turn
       heads and heighten consumer engagement. We are always on the lookout for
       leading-edge innovations, and our work has been featured by top-tier cannabis and

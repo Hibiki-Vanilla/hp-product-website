@@ -35,28 +35,30 @@ export default {
   },
   head() {
     return {
-      title: "Solution",
+      title: "Solution - Customizable CBD/THC Vape Pen End-to-end Service | POWEHI",
       meta: [
         {
           name: "keywords",
-          content: "",
+          content:
+            "CBD Vape Pen, THC Vape Pen, Customizable Vape Pen, End-to-end Service, Customization Solution, White Label service.",
         },
         {
           name: "description",
-          content: "",
+          content:
+            "POWEHI offers a comprehensive end-to-end services for customizable CBD/THC disposable pens, rechargeable, 510 cartridges and batteries.",
         },
-
         {
           property: "og:type",
           content: "product",
         },
         {
           property: "og:title",
-          content: "Solution",
+          content: "Solution - Customizable CBD/THC Vape Pen End-to-end Service | POWEHI",
         },
         {
           property: "og:description",
-          content: "",
+          content:
+            "POWEHI offers a comprehensive end-to-end services for customizable CBD/THC disposable pens, rechargeable, 510 cartridges and batteries.",
         },
       ],
     };

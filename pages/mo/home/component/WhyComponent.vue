@@ -1,10 +1,10 @@
 <template>
   <section class="why">
-    <div class="whyTitle titleSize textBold" data-aos="fade-up">
-      WHY <span>POWEHI</span>
-    </div>
+    <div class="whyTitle textBold" data-aos="fade-up">WHY <span>POWEHI</span></div>
     <div class="whyTop">
-      <div class="whyTopLeft whyTopItem imageItem" data-aos="fade-up"></div>
+      <div class="whyTopLeft whyTopItem textBold imageItem" data-aos="fade-up">
+        DIVERSE RANGE OF PRODUCTS
+      </div>
       <div class="whyTopBoxCon" data-aos="fade-up">
         <div class="whyTopBoxTop">
           <div class="whyTopBoxTopCon">
@@ -12,14 +12,16 @@
             <div class="textBold">CHOOSE THE PERFECT VAPING HARDWARE</div>
           </div>
         </div>
-        <div class="whyTopBoxBottom textLight">
+        <div class="whyTopBoxBottom textLight textSize">
           We offer a wide range of cannabis vaping hardware for our customers to choose
           from, to meet customers' comprehensive vaping device needs in various types of
           market.
         </div>
       </div>
 
-      <div class="whyTopRight whyTopItem imageItem" data-aos="fade-up"></div>
+      <div class="whyTopRight whyTopItem textBold imageItem" data-aos="fade-up">
+        CUTTING-EDGE TECHNOLOGY
+      </div>
       <div class="whyTopBoxCon" data-aos="fade-up">
         <div class="whyTopBoxTop">
           <div class="whyTopBoxTopCon">
@@ -27,7 +29,7 @@
             <div class="textBold">ELEVATING EXPERIENCE WITH ADVANCED TECHNOLOGY</div>
           </div>
         </div>
-        <div class="whyTopBoxBottom textLight">
+        <div class="whyTopBoxBottom textLight textSize">
           Through Meticulous Attention To Detail And A Commitment To Innovation, We Focus
           On Enhancing The Heating Coil, Optimizing The Product Structure, Perfecting The
           Industrial Design, And Maximizing Electric Functions.
@@ -72,7 +74,8 @@ export default {};
 
   .whyTitle {
     color: #000;
-    padding-bottom: (70 / @morem);
+    padding-bottom: (55 / @morem);
+    font-size: (55 / @morem);
 
     span {
       color: @mainColor;
@@ -89,6 +92,11 @@ export default {};
       position: relative;
       height: (300 / @morem);
       width: (550 / @morem);
+      box-sizing: border-box;
+      padding-top: (30 / @morem);
+      padding-left: (20 / @morem);
+      font-size: (36 / @morem);
+      color: @white;
     }
 
     .whyTopLeft {
@@ -108,9 +116,12 @@ export default {};
     display: flex;
     flex-direction: column;
     .whyTopBoxTop {
+      display: flex;
+      align-items: center;
       height: (72 / @morem);
       width: 100%;
-      padding: (16 / @morem) 0 (16 / @morem) (20 / @morem);
+      // padding: (16 / @morem) 0 (16 / @morem) (20 / @morem);
+      padding-left: (20 / @morem);
       border-bottom: 1px solid #dcdcdc;
       box-sizing: border-box;
 
@@ -127,15 +138,14 @@ export default {};
         .textBold {
           padding-left: (10 / @morem);
           color: #fe6512;
-          font-size: (18 / @morem);
+          font-size: (24 / @morem);
         }
       }
     }
     .whyTopBoxBottom {
       width: 100%;
-      padding: (24 / @morem) (20 / @morem);
+      padding: (20 / @morem) (30 / @morem);
       box-sizing: border-box;
-      font-size: (14 / @morem);
       color: #707070;
       line-height: 1.4;
     }
