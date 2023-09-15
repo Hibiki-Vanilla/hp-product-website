@@ -42,6 +42,7 @@ export default {
       hanTopBtn: false,
       onNav: false,
       navList: [
+        { name: "HOME", jumpLink: "/" },
         { name: "PRODUCT", jumpLink: "/product/calio" },
         { name: "SOLUTION", jumpLink: "/solution" },
         { name: "ABOUT", jumpLink: "/about" },
@@ -76,6 +77,9 @@ export default {
     },
     handleHome() {
       this.$ctx.push("/");
+      if (this.onNav) {
+        this.onNavButton();
+      }
     },
     handleTo(nav) {
       if (nav.jumpLink) {

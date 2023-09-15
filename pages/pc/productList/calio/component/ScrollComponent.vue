@@ -11,20 +11,35 @@
     </div>
     <div class="scrollRight">
       <div class="scrollRightCon">
+        <div class="listRow listRowTop">
+          <div class="listItem textBold">Model Name</div>
+          <div class="listItem textLight">HDN002</div>
+          <div class="listItem textLight">HDN002C</div>
+        </div>
+        <!-- for -->
         <div
           v-for="(item, index) in textList"
           :key="index"
+          class="listRow"
+          :class="[{ scrollItemTwo: index % 2 === 1 }]"
+        >
+          <div class="listItem textBold">{{ item.title }}</div>
+          <div class="listItem textLight">{{ item.text }}</div>
+          <div class="listItem textLight">{{ item.twoText }}</div>
+        </div>
+
+        <!-- <div
+
           class="scrollItem"
-          :class="[{ scrollItemTwo: index % 2 === 0 }]"
+
         >
           <span class="scrollItemTitle textBold textSize">{{ item.title }}</span>
           <span class="scrollItemText textLight"> {{ item.text }}</span>
-        </div>
-
-        <div class="scrollRightBottom">
-          <div class="scrollButton textRegular" role="button" @click="onHomeForm">
-            Request Sample Now
-          </div>
+        </div> -->
+      </div>
+      <div class="scrollRightBottom">
+        <div class="scrollButton textRegular" role="button" @click="onHomeForm">
+          Request Sample Now
         </div>
       </div>
     </div>
@@ -46,16 +61,31 @@ export default {
         require("@/static/calio/s-7.png"),
       ],
       textList: [
-        { title: "Dimension", text: "62.1 mm x 30.1 mm x 16.3 mm" },
-        { title: "Activation Mode ", text: "Autodraw ( Voltage 3.7 V )" },
-        { title: "Coil Style", text: "Single Coil" },
-        { title: "Tank Capacity ", text: "0.3 ml and 0.5 ml" },
-        { title: "Resistance", text: "1.4 Ω" },
-        { title: "Coil Material", text: "Ceramic + FeCr" },
-        { title: "Body Material", text: "PVC" },
-        { title: "Micro USB Charging ", text: "5 V / 0.5 A" },
-        { title: "Battery Capacity", text: "400 mAh" },
-        { title: "Charging Current", text: "0.5 A" },
+        {
+          title: "Dimension",
+          text: "102.7*21*12mm(L*W*H)",
+          twoText: "102.7*21*12mm(L*W*H)",
+        },
+        { title: "Tank Capacity", text: "2.0mL", twoText: "1.0mL" },
+        { title: "Battery Capacity", text: "280mAh", twoText: "280mAh" },
+        { title: "Charging Port", text: "USB Type-C", twoText: "USB Type-C" },
+        {
+          title: "Voltage",
+          text: "2V(Pre-heat)/ 3.0/3.3/3.6V",
+          twoText: "2V(Pre-heat)/ 3.0/3.3/3.6V",
+        },
+        { title: "Activation", text: "Button Active", twoText: "Button Active" },
+        {
+          title: "Airway",
+          text: "Optional Dual airway",
+          twoText: "Optional Dual airway",
+        },
+        { title: "Filling Type", text: "Top Fill", twoText: "Top Fill" },
+        {
+          title: "Materials",
+          text: "Aluminum, PC, PCTG 316 Stainless Steel Center Post.",
+          twoText: "Aluminum, PC, PCTG 316 Stainless Steel Center Post.",
+        },
       ],
     };
   },
@@ -92,19 +122,51 @@ export default {
     flex: 1;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .scrollRightCon {
+      border: 2px solid #dcdcdc;
       display: flex;
       flex-direction: column;
+      margin-top: (50 / @pcrem);
+      width: (712 / @pcrem);
+      .listRow {
+        display: flex;
+        width: 100%;
+        background-color: @white;
+        .listItem {
+          height: 100%;
+          flex: 1;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          padding: (20 / @pcrem);
+          font-size: (18 / @pcrem);
+          &:first-child {
+            font-size: (20 / @pcrem);
+          }
+          & + .listItem {
+            border-left: 2px solid #dcdcdc;
+          }
+        }
+      }
+      .scrollItemTwo {
+        background-color: #eeeeee;
+      }
+
+      .listRowTop {
+        .listItem {
+          background-color: #707070;
+          color: @white;
+        }
+      }
 
       .scrollItem {
         width: (670 / @pcrem);
         height: (60 / @pcrem);
         line-height: (60 / @pcrem);
-        background-color: @white;
-        box-sizing: border-box;
-        padding-left: (48 / @pcrem);
+
         .scrollItemTitle {
           display: inline-block;
           width: (300 / @pcrem);
@@ -114,25 +176,20 @@ export default {
           font-size: (20 / @pcrem);
         }
       }
-      .scrollItemTwo {
-        background-color: #eeeeee;
-      }
+    }
 
-      .scrollRightBottom {
-        padding-top: (50 / @pcrem);
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        .scrollButton {
-          cursor: pointer;
-          color: @white;
-          background-color: @mainColor;
-          height: (68 / @pcrem);
-          line-height: (68 / @pcrem);
-          width: (260 / @pcrem);
-          border-radius: (34 / @pcrem);
-          text-align: center;
-        }
+    .scrollRightBottom {
+      padding-top: (30 / @pcrem);
+      .scrollButton {
+        cursor: pointer;
+        color: @white;
+        background-color: @mainColor;
+        height: (68 / @pcrem);
+        line-height: (68 / @pcrem);
+        width: (260 / @pcrem);
+        border-radius: (34 / @pcrem);
+        font-size: (18 / @pcrem);
+        text-align: center;
       }
     }
   }
