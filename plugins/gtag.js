@@ -3,7 +3,7 @@ import VueGtag from 'vue-gtag';
 
 export default ({ app }) => {
   Vue.use(VueGtag, {
-    config: { id: 'G-F0LCXV95KK' },
-    appName: 'gabriel',
+    config: { id: 'G-7H85CDY9Z4' },
+    appName: 'powehi',
   }, app.router);
 }

@@ -11,6 +11,6 @@ export default {};
 <style lang="less" scoped>
 .banner {
   height: (1334/@morem);
-  background-image: url('@/static/calio/mobanner.png');
+  background-image: url('https://files.myuwell.com/powehi/calio/mobanner.png');
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <section class="engage" data-aos="fade-up">
-    <div class="engageTitle textBold">
+    <h2 class="engageTitle textBold">
       ENGAGE CUSTOMERS
       <br />
       WITH OUR CUSTOM PACKAGING
-    </div>
+    </h2>
     <div class="engageText textLight">
       Our team has years of experience in designing custom packaging and displaying for
       cannabis companies. We create eye-catching packaging that is guaranteed to turn
@@ -15,7 +15,7 @@
 
     <img
       class="engageImg"
-      src="@/static/solution/engage/moBg.png"
+      src="https://files.myuwell.com/powehi/solution/engage/moBg.png"
       alt="Engage Customers With Our Custom Packaging"
     />
   </section>

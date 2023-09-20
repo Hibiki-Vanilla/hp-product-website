@@ -2,9 +2,9 @@
   <section class="dual imageItem" data-aos="zoom">
     <div class="dualCon">
       <div class="dualLeft" data-aos="fade-up">
-        <div class="dualTitle textBlack titleSize">
+        <h2 class="dualTitle textBlack titleSize">
           DUAL AIR-FLOW & PRE-HEATING FOR ANTI-CLOGGING
-        </div>
+        </h2>
         <div class="dualText textSize textLight">
           CALIO has dual air-flow that provides a smooth vaping experience. The
           pre-heating function helps prevent clogging.
@@ -26,7 +26,7 @@ export default {};
 <style lang="less" scoped>
 .dual {
   height: (1080 / @pcrem);
-  background-image: url("@/static/calio/dual.png");
+  background-image: url("https://files.myuwell.com/powehi/calio/dual.png");
   .dualCon {
     display: flex;
     width: (1400 / @pcrem);

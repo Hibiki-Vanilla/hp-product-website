@@ -1,6 +1,6 @@
 <template>
   <section class="package imageItem" data-aos="fade-up">
-    <div class="packageTitle titleSize textBold">PACKAGE CUSTOMIZATION</div>
+    <h2 class="packageTitle titleSize textBold">PACKAGE CUSTOMIZATION</h2>
     <div class="packageCon allShadow">
       <div class="packageLeft textLight">
         We offer a wide variety of packaging options for your cannabis vape products,
@@ -11,11 +11,11 @@
 
       <div class="packageRight">
         <div class="packageRightLine" :style="srollTopStyle">
-          <img class="packageRightLineImg" src="@/static/solution/package/1.png" alt="" />
+          <img class="packageRightLineImg" src="https://files.myuwell.com/powehi/solution/package/1.png" alt="" />
         </div>
 
         <div class="packageRightLine" :style="srollBottomStyle">
-          <img class="packageRightLineImg" src="@/static/solution/package/2.png" alt="" />
+          <img class="packageRightLineImg" src="https://files.myuwell.com/powehi/solution/package/2.png" alt="" />
         </div>
       </div>
     </div>
@@ -38,9 +38,15 @@ export default {
       return `bottom:${this.top}%`;
     },
   },
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
-      let stickyOffsetTop = document.querySelector(".package").offsetTop;
+      const stickyOffsetTop = document.querySelector(".package").offsetTop;
       const scrollHeight =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -56,12 +62,7 @@ export default {
       this.scrollHeight = scrollHeight;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
-  },
+
 };
 </script>
 
@@ -70,7 +71,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("@/static/solution/package/bg.png");
+  background-image: url("https://files.myuwell.com/powehi/solution/package/bg.png");
   height: (790 / @pcrem);
   .packageTitle {
     color: #000;

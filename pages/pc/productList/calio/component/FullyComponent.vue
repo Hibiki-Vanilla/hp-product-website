@@ -2,11 +2,11 @@
   <section class="fully imageItem" data-aos="zoom">
     <div class="fullyCon">
       <div class="fullyRight" data-aos="fade-up">
-        <div class="fullyTitle textBlack titleSize">
+        <h2 class="fullyTitle textBlack titleSize">
           FULLY VISIBLE AND
           <br />
           CUSTOMIZABLE OIL WINDOW
-        </div>
+        </h2>
         <div class="fullyText textSize textLight">
           A fully visible oil window that allows you to see how much oil is left in the
           tank. You can also customize the oil window with your own logo or design.
@@ -24,7 +24,7 @@ export default {};
 <style lang="less" scoped>
 .fully {
   height: (1080 / @pcrem);
-  background-image: url("@/static/calio/fully.png");
+  background-image: url("https://files.myuwell.com/powehi/calio/fully.png");
   .fullyCon {
     display: flex;
     justify-content: flex-end;

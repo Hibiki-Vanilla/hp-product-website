@@ -1,7 +1,7 @@
 <template>
   <div class="team" data-aos="fade-up">
-    <div class="teamTitle titleSize textBold">MEET OUR TEAM</div>
-    <div class="teamTip textSize textLight">THE TALENTS WITH CREATIVE</div>
+    <h2 class="teamTitle titleSize textBold">MEET OUR TEAM</h2>
+    <h3 class="teamTip textSize textLight">THE TALENTS WITH CREATIVE</h3>
 
     <div class="teamText textLight">
       POWEHI has an efficient operation management and production mechanism. It boasts a
@@ -35,7 +35,7 @@ export default {};
   background-size: (663 / @morem) (231 / @morem);
   background-position: center (370 / @morem);
   background-repeat: no-repeat;
-  background-image: url("@/static/solution/quote/bg.png");
+  background-image: url("https://files.myuwell.com/powehi/solution/quote/bg.png");
   color: #000;
 
   .teamTitle {

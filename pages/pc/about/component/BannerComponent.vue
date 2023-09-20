@@ -2,11 +2,11 @@
   <section>
     <div class="banner">
       <div class="bannerCon imageItem" data-aos="zoom">
-        <div class="bannerTitle textBold titleSize">
+        <h1 class="bannerTitle textBold titleSize">
           EXPERIENCE THE
           <br />
           POWEHI DIFFERENCE
-        </div>
+        </h1>
       </div>
     </div>
   </section>
@@ -24,7 +24,7 @@ export default {};
   justify-content: center;
 
   .bannerCon {
-    background-image: url("@/static/about/bg.png");
+    background-image: url("https://files.myuwell.com/powehi/about/bg.png");
     height: (946 / @pcrem);
     width: (1400 / @pcrem);
     display: flex;

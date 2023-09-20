@@ -1,9 +1,9 @@
 <template>
   <section class="banner imageItem" data-aos="zoom">
-    <div class="bannerCon">
-      <div class="bannerTitle textBlack">Classic Design</div>
+    <h1 class="bannerCon">
+      <strong class="bannerTitle textBlack">Classic Design</strong>
       <div class="textRegular titleSize">2G Disposable VAPE</div>
-    </div>
+    </h1>
   </section>
 </template>
 
@@ -15,7 +15,7 @@ export default {};
 <style lang="less" scoped>
 .banner {
   height: (1080 / @pcrem);
-  background-image: url("@/static/calio/banner.png");
+  background-image: url("https://files.myuwell.com/powehi/calio/banner.png");
 
   .bannerCon {
     display: flex;

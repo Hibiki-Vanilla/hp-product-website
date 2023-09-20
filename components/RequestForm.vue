@@ -7,9 +7,9 @@
           <br />
           with us today!
         </div>
-        <img class="aboutLeftIconB" src="@/static/form/aboutIconB.png" alt="" />
+        <img class="aboutLeftIconB" src="https://files.myuwell.com/powehi/form/aboutIconB.png" alt="" />
 
-        <img class="aboutLeftIcon" src="@/static/form/aboutIcon.png" alt="" />
+        <img class="aboutLeftIcon" src="https://files.myuwell.com/powehi/form/aboutIcon.png" alt="" />
       </div>
       <div v-if="pageValue === 'home'" class="homeLeftImage imageItem">
         <div class="homeLeftCon">
@@ -23,26 +23,26 @@
             We’d love to connect with you!
           </div>
           <div class="homeLeftIconBox">
-            <img class="addressIcon" src="@/static/form/address.png" alt="" />
+            <img class="addressIcon" src="https://files.myuwell.com/powehi/form/address.png" alt="" />
             <div class="iconTextCon">
               <div class="topTitle textBold textSize">Find us at the office</div>
               <div class="topText textRegular">
-                12345 Clark St a, Los Angles,
+                14816 Central Ave, Chino, 
                 <br />
-                CA 91006, USA
+                CA 91707, USA
               </div>
             </div>
           </div>
 
           <div class="homeLeftIconBox">
-            <img class="emailIcon" src="@/static/form/email.png" alt="" />
+            <img class="emailIcon" src="https://files.myuwell.com/powehi/form/email.png" alt="" />
             <div class="iconTextCon">
               <div class="topTitle textBold textSize">Send us an email</div>
               <div class="topText textRegular">info@powehiclub.com</div>
             </div>
           </div>
         </div>
-        <img class="homeLeftIconB" src="@/static/form/aboutIconB.png" alt="" />
+        <img class="homeLeftIconB" src="https://files.myuwell.com/powehi/form/aboutIconB.png" alt="" />
       </div>
       <div class="rightCon imageItem">
         <!-- form -->
@@ -147,7 +147,7 @@
 
         <!-- ok -->
         <div v-else class="rightFormOkCon">
-          <img class="rightFormOkImg" src="@/static/form/ok.png" />
+          <img class="rightFormOkImg" src="https://files.myuwell.com/powehi/form/ok.png" />
           <div class="titleSize textBold">THANKS FOR YOUR REQUEST</div>
           <div class="textSize textBold">WE'LL BE IN TOUCH SOON!</div>
         </div>
@@ -327,7 +327,7 @@ export default {
         }
       }
 
-      // background-image: url("@/static/form/aboutLeft.png");
+      // background-image: url("https://files.myuwell.com/powehi/form/aboutLeft.png");
     }
     .homeLeftImage {
       position: relative;
@@ -402,7 +402,7 @@ export default {
     .rightCon {
       height: 100%;
       width: 50%;
-      background-image: url("@/static/form/right.png");
+      background-image: url("https://files.myuwell.com/powehi/form/right.png");
 
       .rightFormCon {
         height: 100%;
@@ -499,7 +499,7 @@ export default {
             font-size: (18 / @pcrem);
             text-align: center;
             color: @white;
-            background-color: #f9cb22;
+            background-color: @mainColor;
           }
         }
       }

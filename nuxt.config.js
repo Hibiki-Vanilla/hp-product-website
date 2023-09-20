@@ -39,10 +39,10 @@ export default {
         async: true,
         defer: true,
       },
-      // {
-      //   src: "https://www.googletagmanager.com/gtag/js?id=G-F0LCXV95KK",
-      //   async: true,
-      // },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-7H85CDY9Z4",
+        async: true,
+      },
     ],
   },
 
@@ -60,10 +60,10 @@ export default {
   plugins: [
     "@/plugins/axios",
 
-    // {
-    //   src: "@/plugins/gtag.js",
-    //   mode: "client",
-    // },
+    {
+      src: "@/plugins/gtag.js",
+      mode: "client",
+    },
     {
       src: "@/plugins/aos.js",
       ssr: false,

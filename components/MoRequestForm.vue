@@ -7,13 +7,13 @@
           <br />
           today!
         </div>
-        <img class="aboutLeftIconB" src="@/static/form/aboutIconB.png" alt="" />
+        <img class="aboutLeftIconB" src="https://files.myuwell.com/powehi/form/aboutIconB.png" alt="" />
 
-        <img class="aboutLeftIcon" src="@/static/form/aboutIcon.png" alt="" />
+        <img class="aboutLeftIcon" src="https://files.myuwell.com/powehi/form/aboutIcon.png" alt="" />
       </div>
       <!-- home -->
       <div v-if="pageValue === 'home'" class="homeLeftImage imageItem">
-        <img class="homeLeftIconB" src="@/static/form/homeIconB.png" alt="" />
+        <img class="homeLeftIconB" src="https://files.myuwell.com/powehi/form/homeIconB.png" alt="" />
         <div class="homeCon">
           <div class="homeTitle textBold titleSize">GET IN TOUCH</div>
           <div class="homeText textRegular">
@@ -29,7 +29,7 @@
           </div>
 
           <div class="homeLeftIconBox">
-            <img class="addressIcon" src="@/static/form/address.png" alt="" />
+            <img class="addressIcon" src="https://files.myuwell.com/powehi/form/address.png" alt="" />
             <div class="iconTextCon">
               <div class="topTitle textBold textSize">Find us at the office</div>
               <div class="topText textRegular">
@@ -41,7 +41,7 @@
           </div>
 
           <div class="homeLeftIconBox">
-            <img class="emailIcon" src="@/static/form/email.png" alt="" />
+            <img class="emailIcon" src="https://files.myuwell.com/powehi/form/email.png" alt="" />
             <div class="iconTextCon">
               <div class="topTitle textBold textSize">Send us an email</div>
               <div class="topText textRegular">info@powehiusa.com</div>
@@ -157,7 +157,7 @@
 
         <!-- ok -->
         <div v-else class="rightFormOkCon">
-          <img class="rightFormOkImg" src="@/static/form/ok.png" />
+          <img class="rightFormOkImg" src="https://files.myuwell.com/powehi/form/ok.png" />
           <div class="titleSize textBold">THANKS FOR YOUR REQUEST</div>
           <div class="textSize textBold">WE'LL BE IN TOUCH SOON!</div>
         </div>
@@ -231,6 +231,9 @@ export default {
       },
     };
   },
+  mounted() {
+    this.initGrecaptcha();
+  },
   methods: {
     initGrecaptcha() {
       setTimeout(() => {
@@ -272,9 +275,7 @@ export default {
         });
     },
   },
-  mounted() {
-    this.initGrecaptcha();
-  },
+
 };
 </script>
 
@@ -337,7 +338,7 @@ export default {
         }
       }
 
-      // background-image: url("@/static/form/aboutLeft.png");
+      // background-image: url("https://files.myuwell.com/powehi/form/aboutLeft.png");
     }
     .homeLeftImage {
       position: relative;
@@ -418,7 +419,7 @@ export default {
     // right
     .rightCon {
       width: 100%;
-      background-image: url("@/static/form/moRight.png");
+      background-image: url("https://files.myuwell.com/powehi/form/moRight.png");
       padding-bottom: (50 / @morem);
       .rightFormCon {
         height: 100%;

@@ -56,7 +56,7 @@ export default {
 .banner {
   height: (836 / @morem);
   width: 100%;
-  background-image: url("@/static/home/moBanner.png");
+  background-image: url("https://files.myuwell.com/powehi/home/moBanner.png");
   display: flex;
   flex-direction: column;
   align-items: center;

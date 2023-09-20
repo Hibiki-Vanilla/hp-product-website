@@ -2,11 +2,11 @@
   <section class="who" data-aos="fade-up">
     <div class="whoCon">
       <div class="whoLeft imageItem">
-        <img class="whoLeftLogo" src="@/static/about/who/logo.png" alt="logo" />
+        <img class="whoLeftLogo" src="https://files.myuwell.com/powehi/about/who/logo.png" alt="logo" />
       </div>
 
       <div class="whoRight allShadow">
-        <div class="whoRightTitle textBold titleSize">WHO <span>ARE WE</span></div>
+        <h2 class="whoRightTitle textBold titleSize">WHO <span>ARE WE</span></h2>
         <div class="whoRightTip textLight">INNOVATION IS OUR MOTTO, NOT LIMITATION.</div>
         <div class="whoRightText textLight">
           POWEHI is a leading cannabis electronic vaporizer solution provider that is
@@ -41,7 +41,7 @@ export default {};
       height: (670 / @pcrem);
       width: (670 / @pcrem);
       border-radius: (14 / @pcrem);
-      background-image: url("@/static/about/who/bg.png");
+      background-image: url("https://files.myuwell.com/powehi/about/who/bg.png");
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -71,7 +71,7 @@ export default {};
       border-radius: (14 / @pcrem);
       background-color: #fff;
       box-sizing: border-box;
-      padding: 0 (120 / @pcrem);
+      padding: 0 (100 / @pcrem);
 
       .whoRightTitle {
         color: #000;
@@ -81,7 +81,7 @@ export default {};
         }
       }
       .whoRightTip {
-        padding: (30 / @pcrem) 0 (70 / @pcrem);
+        padding: (30 / @pcrem) 0 (50 / @pcrem);
         font-size: (24 / @pcrem);
         color: #000;
       }

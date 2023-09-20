@@ -35,7 +35,7 @@ export default {
   background-size: (1403 / @pcrem) (486 / @pcrem);
   background-position: center (210 / @pcrem);
   background-repeat: no-repeat;
-  background-image: url("@/static/solution/quote/bg.png");
+  background-image: url("https://files.myuwell.com/powehi/solution/quote/bg.png");
 
   .quoteTitle {
     font-size: (50 / @pcrem);

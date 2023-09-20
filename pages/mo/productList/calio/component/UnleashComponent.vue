@@ -1,11 +1,11 @@
 <template>
   <section class="unleash imageItem" data-aos="zoom">
     <div class="unleashCon" data-aos="fade-up">
-      <div class="unleashTitle textBlack titleSize">
+      <h2 class="unleashTitle textBlack titleSize">
         UNLEASH THE POWER
         <br />
         OF YOUR EXTRACTS
-      </div>
+      </h2>
 
       <div class="unleashText textLight textSize">
         CALIO, the first product from POWEHI, is more than just a product.
@@ -30,7 +30,7 @@ export default {};
 <style lang="less" scoped>
 .unleash {
   height: (1334 / @morem);
-  background-image: url("@/static/calio/moBannerThree.png");
+  background-image: url("https://files.myuwell.com/powehi/calio/moBannerThree.png");
 
   .unleashCon {
     height: 100%;

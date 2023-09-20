@@ -1,8 +1,8 @@
 <template>
   <section class="choose" data-aos="fade-up">
-    <div class="chooseTitle textBold titleSize">CHOOSE US FOR A</div>
-    <div class="chooseTitleLine textBold titleSize">COMPREHENSIVE AND</div>
-    <div class="chooseTitleLine textBold titleSize">SEAMLESS EXPERIENCE.</div>
+    <h2 class="chooseTitle textBold titleSize">CHOOSE US FOR A</h2>
+    <h2 class="chooseTitleLine textBold titleSize">COMPREHENSIVE AND</h2>
+    <h2 class="chooseTitleLine textBold titleSize">SEAMLESS EXPERIENCE.</h2>
     <!-- con -->
     <div class="chooseCon">
       <div class="hoverBox imageItem"></div>
@@ -38,43 +38,43 @@ export default {
     return {
       iconList: [
         {
-          src: require("@/static/solution/icon/1.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/1.png",
           height: 44 / 7.5,
           width: 44 / 7.5,
           text: "Customizable & Professional",
         },
         {
-          src: require("@/static/solution/icon/2.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/2.png",
           height: 38 / 7.5,
           width: 40 / 7.5,
           text: "Time-Saving & Cost-Effective",
         },
         {
-          src: require("@/static/solution/icon/3.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/3.png",
           height: 35 / 7.5,
           width: 35 / 7.5,
           text: "Comprehensive & Integrated",
         },
         {
-          src: require("@/static/solution/icon/4.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/4.png",
           height: 33 / 7.5,
           width: 27 / 7.5,
           text: "Reliable & Secure",
         },
         {
-          src: require("@/static/solution/icon/5.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/5.png",
           height: 37 / 7.5,
           width: 33 / 7.5,
           text: "Innovative & Flexible",
         },
         {
-          src: require("@/static/solution/icon/6.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/6.png",
           height: 32 / 7.5,
           width: 32 / 7.5,
           text: "Customer-Oriented & Responsive",
         },
         {
-          src: require("@/static/solution/icon/7.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/7.png",
           height: 33 / 7.5,
           width: 31 / 7.5,
           text: "Sustainable & Scalable",
@@ -110,7 +110,7 @@ export default {
     .hoverBox {
       height: (81 / @morem);
       width: (551 / @morem);
-      background-image: url("@/static/solution/abc.png");
+      background-image: url("https://files.myuwell.com/powehi/solution/abc.png");
     }
 
     .chooseRight {

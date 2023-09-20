@@ -1,7 +1,7 @@
 <template>
   <section class="lab" data-aos="fade-up">
-    <div class="labTitle textBold titleSize">STAT-OF-THE-ART LABORATORY</div>
-    <div class="labTip textLight textSize">TRUSTWORTHY AND TRANSPARENT</div>
+    <h2 class="labTitle textBold titleSize">STAT-OF-THE-ART LABORATORY</h2>
+    <h3 class="labTip textLight textSize">TRUSTWORTHY AND TRANSPARENT</h3>
 
     <div class="labCon allShadow">
       <div class="labLeft textLight">
@@ -21,26 +21,26 @@
 
             60+ tests on physical/electrical
           </div>
-          <img class="logo" src="@/static/about/lab/logo.png" alt="logo" />
+          <img class="logo" src="https://files.myuwell.com/powehi/about/lab/logo.png" alt="logo" />
         </div>
       </div>
       <div class="labRight">
         <div class="labRightLine" :style="srollTopStyle">
-          <img class="lineImg" src="@/static/about/lab/line.png" alt="" />
+          <img class="lineImg" src="https://files.myuwell.com/powehi/about/lab/line.png" alt="" />
         </div>
       </div>
     </div>
 
     <div class="labBottom">
       <div v-for="(item, index) in iconList" :key="index" class="iconItem">
-        <div class="iconText textBold">{{ item.text }}</div>
+        <strong class="iconText textBold">{{ item.text }}</strong>
       </div>
 
       <!-- left -->
-      <img class="labBottomLeft" src="@/static/about/lab/arr.png" alt="arr" />
+      <img class="labBottomLeft" src="https://files.myuwell.com/powehi/about/lab/arr.png" alt="arr" />
 
       <!-- right -->
-      <img class="labBottomRight" src="@/static/about/lab/arr.png" alt="arr" />
+      <img class="labBottomRight" src="https://files.myuwell.com/powehi/about/lab/arr.png" alt="arr" />
     </div>
   </section>
 </template>
@@ -73,7 +73,12 @@ export default {
       return `top:${this.top}%`;
     },
   },
-
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
       const stickyOffsetTop = document.querySelector(".lab").offsetTop;
@@ -92,12 +97,7 @@ export default {
       this.scrollHeight = scrollHeight;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
-  },
+
 };
 </script>
 

@@ -1,10 +1,10 @@
 <template>
   <section class="tech">
     <div class="techCon" data-aos="fade-up">
-      <div class="techTitle textBold titleSize">CUTTING-EDGE TECHNOLOGY</div>
-      <div class="techTip textLight textSize">
+      <h2 class="techTitle textBold titleSize">CUTTING-EDGE TECHNOLOGY</h2>
+      <h3 class="techTip textLight textSize">
         ELEVATING EXPERIENCE WITH ADVANCED TECHNOLOGY
-      </div>
+      </h3>
       <div class="techText textLigth">
         In our turnkey solution for cannabis vaping, we prioritize research and
         development to create cutting-edge products that surpass industry standards.
@@ -17,7 +17,7 @@
       <div class="techBottom">
         <img
           class="techBottomLeftImg"
-          src="@/static/about/tech/left.png"
+          src="https://files.myuwell.com/powehi/about/tech/left.png"
           alt="technology"
         />
 
@@ -31,9 +31,9 @@
                 :alt="item.text"
               />
             </div>
-            <div class="techItemText textLight">
+            <strong class="techItemText textLight">
               {{ item.text }}
-            </div>
+            </strong>
           </div>
         </div>
       </div>
@@ -49,19 +49,19 @@ export default {
       list: [
         {
           text: "HEATING COIL",
-          img: require("@/static/about/tech/1.png"),
+          img: "https://files.myuwell.com/powehi/about/tech/1.png",
           width: 35 / 7.5,
           height: 72 / 7.5,
         },
         {
           text: "AIRFLOW",
-          img: require("@/static/about/tech/2.png"),
+          img: "https://files.myuwell.com/powehi/about/tech/2.png",
           width: 31 / 7.5,
           height: 84 / 7.5,
         },
         {
           text: "STRUCTURE",
-          img: require("@/static/about/tech/3.png"),
+          img: "https://files.myuwell.com/powehi/about/tech/3.png",
           width: 53 / 7.5,
           height: 67 / 7.5,
         },
@@ -69,7 +69,7 @@ export default {
           text: "FUNCTIONS",
           width: 75 / 7.5,
           height: 51 / 7.5,
-          img: require("@/static/about/tech/4.png"),
+          img: "https://files.myuwell.com/powehi/about/tech/4.png",
         },
       ],
     };

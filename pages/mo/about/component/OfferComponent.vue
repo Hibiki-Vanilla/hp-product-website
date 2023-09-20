@@ -2,8 +2,8 @@
   <section class="offer">
     <div class="offerCon" data-aos="fade-up">
       <div class="offerLeft">
-        <div class="offerLeftTitle textBold titleSize">WHAT WE <span>OFFER</span></div>
-        <div class="offerLeftTip textLight textSize">WE HANDLE IT ALL</div>
+        <h2 class="offerLeftTitle textBold titleSize">WHAT WE <span>OFFER</span></h2>
+        <h3 class="offerLeftTip textLight textSize">WE HANDLE IT ALL</h3>
         <div class="offerLeftText textLight">
           Our robust internal teams serve as contacts for customer service. With POWEHI's
           high-standard supplier evaluation system and collaboration principle, we
@@ -14,7 +14,7 @@
 
       <div class="offerRight">
         <div class="offerRightTop allShadow offerRightBox">
-          <div class="offerRightTitle textBold">POWEHI IN-HOUSE TEAM</div>
+          <h3 class="offerRightTitle textBold">POWEHI IN-HOUSE TEAM</h3>
           Design
           <br />
           Marketing
@@ -31,7 +31,7 @@
         </div>
 
         <div class="offerRightBottom allShadow offerRightBox">
-          <div class="offerRightTitle textBold">3RD PARTY PARTNERS</div>
+          <h3 class="offerRightTitle textBold">3RD PARTY PARTNERS</h3>
           Design House
           <br />
           {{ "Media &KOLs" }}
@@ -104,7 +104,7 @@ export default {};
       background-repeat: no-repeat;
       background-position: (86 / @morem) (217 / @morem);
       background-size: (318 / @morem) (321 / @morem);
-      background-image: url("@/static/about/offer/moBg.png");
+      background-image: url("https://files.myuwell.com/powehi/about/offer/moBg.png");
 
       .offerRightBox {
         background-color: @white;

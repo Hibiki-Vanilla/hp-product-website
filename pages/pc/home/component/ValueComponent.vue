@@ -1,6 +1,6 @@
 <template>
   <section class="valueBox" data-aos="fade-up">
-    <div class="valueTitle textBold titleSize">MANUFACTURING</div>
+    <h2 class="valueTitle textBold titleSize">MANUFACTURING</h2>
     <div class="valueText textLight textSize">
       Efficient manufacturing and shipping are key to a successful cannabis business. We
       have established a robust network of manufacturing partners to produce your products
@@ -10,18 +10,18 @@
     <!-- bottom -->
     <div class="valueBottom">
       <div v-for="(item, index) in rowList" :key="index" class="rowItem">
-        <div class="textBold rowItemTitle">
+        <strong class="textBold rowItemTitle">
           {{ item.title }}
           <span v-if="index === 4">㎡</span>
-        </div>
+        </strong>
         <div class="rowItemText textRegular">{{ item.text }}</div>
       </div>
 
       <!-- left -->
-      <img class="valueBottomLeft" src="@/static/about/lab/arr.png" alt="arr" />
+      <img class="valueBottomLeft" src="https://files.myuwell.com/powehi/about/lab/arr.png" alt="arr" />
 
       <!-- right -->
-      <img class="valueBottomRight" src="@/static/about/lab/arr.png" alt="arr" />
+      <img class="valueBottomRight" src="https://files.myuwell.com/powehi/about/lab/arr.png" alt="arr" />
     </div>
   </section>
 </template>

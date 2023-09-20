@@ -1,11 +1,11 @@
 <template>
   <section class="tech" data-aos="zoom">
     <div class="techCon imageItem" data-aos="fade-up">
-      <div class="techTitle textBlack titleSize">
+      <h2 class="techTitle textBlack titleSize">
         VISCORE® CERAMIC
         <br />
         HEATING TECHNOLOGY
-      </div>
+      </h2>
 
       <div class="techText textSize textLight">
         Our proprietary ceramic formula allows the product to be both sturdy and sleek.
@@ -36,7 +36,7 @@ export default {};
   .techCon {
     height: (1234 / @morem);
     width: (650 / @morem);
-    background-image: url("@/static/calio/moTech.png");
+    background-image: url("https://files.myuwell.com/powehi/calio/moTech.png");
     text-align: center;
     .techTitle {
       padding-top: (100 / @morem);

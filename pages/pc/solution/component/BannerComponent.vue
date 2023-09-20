@@ -2,11 +2,11 @@
   <section>
     <div class="banner">
       <div class="bannerCon imageItem" data-aos="zoom">
-        <div class="bannerTitle textBold titleSize">
+        <h1 class="bannerTitle textBold titleSize">
           EXQUISITE TURNKEY SOLUTION
           <br />
           END-TO-END SERVICE
-        </div>
+        </h1>
       </div>
     </div>
   </section>
@@ -23,7 +23,7 @@ export default {};
   width: 100%;
   justify-content: center;
   .bannerCon {
-    background-image: url("@/static/solution/bg.png");
+    background-image: url("https://files.myuwell.com/powehi/solution/bg.png");
     height: (1080 / @pcrem);
     width: (1400 / @pcrem);
 

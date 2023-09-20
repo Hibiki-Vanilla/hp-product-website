@@ -1,12 +1,12 @@
 <template>
   <section class="package" data-aos="fade-up">
-    <div class="packageTitle titleSize textBold">PACKAGE CUSTOMIZATION</div>
+    <h2 class="packageTitle titleSize textBold">PACKAGE CUSTOMIZATION</h2>
     <div class="packageCon allShadow">
       <div class="packageRight">
         <div class="packageRightLine" :style="srollRightStyle">
           <img
             class="packageRightLineImg"
-            src="@/static/solution/package/mo1.png"
+            src="https://files.myuwell.com/powehi/solution/package/mo1.png"
             alt=""
           />
         </div>
@@ -14,7 +14,7 @@
         <div class="packageRightLine" :style="srollLeftStyle">
           <img
             class="packageRightLineImg"
-            src="@/static/solution/package/mo2.png"
+            src="https://files.myuwell.com/powehi/solution/package/mo2.png"
             alt=""
           />
         </div>
@@ -46,9 +46,15 @@ export default {
       return `right:${this.top}%`;
     },
   },
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
-      let stickyOffsetTop = document.querySelector(".package").offsetTop;
+      const stickyOffsetTop = document.querySelector(".package").offsetTop;
       const scrollHeight =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -64,12 +70,7 @@ export default {
       this.scrollHeight = scrollHeight;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
-  },
+
 };
 </script>
 

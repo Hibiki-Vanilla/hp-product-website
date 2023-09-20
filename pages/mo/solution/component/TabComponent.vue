@@ -16,7 +16,7 @@
           />
         </div>
 
-        <div class="tabItemText textBold">{{ item.text }}</div>
+        <strong class="tabItemText textBold">{{ item.text }}</strong>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
         class="tabRightOne tabRightItem"
         :class="[{ tabRightItemAct: nowIndex === 0 }]"
       >
-        <div class="tabRightItemTitle textBold">BRAND BUILDING SERVICE</div>
+        <h2 class="tabRightItemTitle textBold">BRAND BUILDING SERVICE</h2>
         <div class="tabRightItemCon">
           <div class="tabRightItemLeft textLight">
             Our brand strategy services will guide you through the process of developing a
@@ -92,7 +92,7 @@
           <div class="tabRightItemImgItem">
             <img
               class="tabRightItemImg"
-              src="@/static/solution/tab/10.png"
+              src="https://files.myuwell.com/powehi/solution/tab/10.png"
               alt="filling"
             />
             <div class="tabRightItemImgText textLight">FILLING</div>
@@ -100,7 +100,7 @@
           <div class="tabRightItemImgItem">
             <img
               class="tabRightItemImg"
-              src="@/static/solution/tab/11.png"
+              src="https://files.myuwell.com/powehi/solution/tab/11.png"
               alt="capping"
             />
             <div class="tabRightItemImgText textLight">CAPPING</div>
@@ -108,7 +108,7 @@
           <div class="tabRightItemImgItem">
             <img
               class="tabRightItemImg"
-              src="@/static/solution/tab/12.png"
+              src="https://files.myuwell.com/powehi/solution/tab/12.png"
               alt="packaging"
             />
             <div class="tabRightItemImgText textLight">PACKAGING</div>
@@ -126,28 +126,28 @@ export default {
     return {
       list: [
         {
-          src: require("@/static/solution/tab/1.png"),
+          src: "https://files.myuwell.com/powehi/solution/tab/1.png",
           width: 29 / 7.5,
           height: 32 / 7.5,
           text: "BRAND BUILDING SERVICE",
         },
         {
-          src: require("@/static/solution/tab/2.png"),
+          src: "https://files.myuwell.com/powehi/solution/tab/2.png",
           width: 26 / 7.5,
           height: 32 / 7.5,
           text: "TESTING & COMPLIANCE",
         },
         {
-          src: require("@/static/solution/tab/3.png"),
+          src: "https://files.myuwell.com/powehi/solution/tab/3.png",
           width: 32 / 7.5,
           height: 31 / 7.5,
           text: "PRODUCE & MANUFACTURING",
         },
         {
-          src: require("@/static/solution/tab/4.png"),
+          src: "https://files.myuwell.com/powehi/solution/tab/4.png",
           width: 31 / 7.5,
           height: 32 / 7.5,
-          text: "FILLING, ASSEMBLING & PACKAGI",
+          text: "FILLING, CAPPING & PACKAGING",
         },
       ],
       nowIndex: 0,
@@ -281,14 +281,14 @@ export default {
     }
 
     .tabRightOne .tabRightItemRight {
-      background-image: url("@/static/solution/tab/moOne.png");
+      background-image: url("https://files.myuwell.com/powehi/solution/tab/moOne.png");
     }
 
     .tabRightTwo .tabRightItemRight {
-      background-image: url("@/static/solution/tab/moTwo.png");
+      background-image: url("https://files.myuwell.com/powehi/solution/tab/moTwo.png");
     }
     .tabRightThree .tabRightItemRight {
-      background-image: url("@/static/solution/tab/moThree.png");
+      background-image: url("https://files.myuwell.com/powehi/solution/tab/moThree.png");
     }
   }
 }

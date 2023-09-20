@@ -1,6 +1,6 @@
 <template>
   <section class="engage" data-aos="fade-up">
-    <div class="engageTitle textBold">ENGAGE CUSTOMERS WITH OUR CUSTOM PACKAGING</div>
+    <h2 class="engageTitle textBold">ENGAGE CUSTOMERS WITH OUR CUSTOM PACKAGING</h2>
     <div class="engageText textLight">
       Our team has years of experience in designing custom packaging and displaying for
       cannabis companies. We create eye-catching packaging that is guaranteed to turn
@@ -13,36 +13,36 @@
       <!-- icon -->
       <div class="engageLeft">
         <div class="engageLeftIcon">
-          <div class="engageLeftIconTop textLight imageItem">
+          <strong class="engageLeftIconTop textLight imageItem">
             CUSTOM SIZE
             <br />
             STYLE
-          </div>
-          <div class="engageLeftIconBottom textLight imageItem">
+          </strong>
+          <strong class="engageLeftIconBottom textLight imageItem">
             FREE DESIGN
             <br />
             SUPPORT
-          </div>
+          </strong>
         </div>
 
         <div class="engageMidIcon">
-          <div class="engageMidIconTop imageItem">HIGH QUALITY PRINTING</div>
+          <strong class="engageMidIconTop imageItem">HIGH QUALITY PRINTING</strong>
 
           <div class="engageMidIconBottom">
-            <div class="engageMidIconBottomLeft imageItem">
+            <strong class="engageMidIconBottomLeft imageItem">
               RECYCLABLE
               <br />
               MATERIAL
-            </div>
-            <div class="engageMidIconBottomRight imageItem">
+            </strong>
+            <strong class="engageMidIconBottomRight imageItem">
               SPECIAL
               <br />
               FINISHES
-            </div>
+            </strong>
           </div>
         </div>
 
-        <div class="engageRightIcon imageItem">CO-PACKING SERVICE</div>
+        <strong class="engageRightIcon imageItem">CO-PACKING SERVICE</strong>
       </div>
 
       <!-- text -->
@@ -114,14 +114,14 @@ export default {};
           width: 100%;
           box-sizing: border-box;
           padding-top: (77 / @pcrem);
-          background-image: url("@/static/solution/engage/icon/1.png");
+          background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/1.png");
         }
         .engageLeftIconBottom {
           height: (120 / @pcrem);
           width: 100%;
           box-sizing: border-box;
           padding-top: (77 / @pcrem);
-          background-image: url("@/static/solution/engage/icon/2.png");
+          background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/2.png");
         }
       }
 
@@ -137,7 +137,7 @@ export default {};
           width: 100%;
           box-sizing: border-box;
           padding-top: (60 / @pcrem);
-          background-image: url("@/static/solution/engage/icon/3.png");
+          background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/3.png");
         }
 
         .engageMidIconBottom {
@@ -149,7 +149,7 @@ export default {};
             width: (150 / @pcrem);
             box-sizing: border-box;
             padding-top: (108 / @pcrem);
-            background-image: url("@/static/solution/engage/icon/4.png");
+            background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/4.png");
           }
           .engageMidIconBottomRight {
             margin-left: (20 / @pcrem);
@@ -158,7 +158,7 @@ export default {};
             width: (98 / @pcrem);
             box-sizing: border-box;
             padding-top: (108 / @pcrem);
-            background-image: url("@/static/solution/engage/icon/5.png");
+            background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/5.png");
           }
         }
       }
@@ -168,7 +168,7 @@ export default {};
         box-sizing: border-box;
         padding-top: (60 / @pcrem);
         margin-left: (20 / @pcrem);
-        background-image: url("@/static/solution/engage/icon/6.png");
+        background-image: url("https://files.myuwell.com/powehi/solution/engage/icon/6.png");
       }
     }
     .engageRight {

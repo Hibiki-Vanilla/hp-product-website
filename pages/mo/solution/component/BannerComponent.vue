@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="banner">
-      <img class="bannerCon" src="@/static/solution/moBg.png" data-aos="zoom" />
-    </div>
+    <h1 class="banner">
+      <img class="bannerCon" src="https://files.myuwell.com/powehi/solution/moBg.png" data-aos="zoom" />
+    </h1>
   </section>
 </template>
 

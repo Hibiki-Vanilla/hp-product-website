@@ -3,6 +3,8 @@
     <Header />
     <nuxt />
     <Footer />
+    <AgeWarning />
+    <CookiesTip />
   </div>
 </template>
 
@@ -14,7 +16,6 @@ export default {
   components: {
     Header,
     Footer,
-    //     AgeWarning,
   },
 };
 </script>

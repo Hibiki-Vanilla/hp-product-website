@@ -23,7 +23,7 @@
           class="listRow"
           :class="[{ scrollItemTwo: index % 2 === 1 }]"
         >
-          <div class="listItem textBold">{{ item.title }}</div>
+          <strong class="listItem textBold">{{ item.title }}</strong>
           <div class="listItem textLight">{{ item.text }}</div>
           <div class="listItem textLight">{{ item.twoText }}</div>
         </div>
@@ -52,19 +52,19 @@ export default {
   data() {
     return {
       list: [
-        require("@/static/calio/s-1.png"),
-        require("@/static/calio/s-2.png"),
-        require("@/static/calio/s-3.png"),
-        require("@/static/calio/s-4.png"),
-        require("@/static/calio/s-5.png"),
-        require("@/static/calio/s-6.png"),
-        require("@/static/calio/s-7.png"),
+        "https://files.myuwell.com/powehi/calio/s-1.png",
+        "https://files.myuwell.com/powehi/calio/s-2.png",
+        "https://files.myuwell.com/powehi/calio/s-3.png",
+        "https://files.myuwell.com/powehi/calio/s-4.png",
+        "https://files.myuwell.com/powehi/calio/s-5.png",
+        "https://files.myuwell.com/powehi/calio/s-6.png",
+        "https://files.myuwell.com/powehi/calio/s-7.png",
       ],
       textList: [
         {
           title: "Dimension",
-          text: "102.7*21*12mm(L*W*H)",
-          twoText: "102.7*21*12mm(L*W*H)",
+          text: "102.7*21*12mm (L*W*H)",
+          twoText: "102.7*21*12mm (L*W*H)",
         },
         { title: "Tank Capacity", text: "2.0mL", twoText: "1.0mL" },
         { title: "Battery Capacity", text: "280mAh", twoText: "280mAh" },
@@ -130,7 +130,7 @@ export default {
       display: flex;
       flex-direction: column;
       margin-top: (50 / @pcrem);
-      width: (712 / @pcrem);
+      width: (720 / @pcrem);
       .listRow {
         display: flex;
         width: 100%;

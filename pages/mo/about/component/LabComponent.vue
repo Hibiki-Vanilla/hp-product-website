@@ -1,12 +1,12 @@
 <template>
   <section class="lab" data-aos="fade-up">
-    <div class="labTitle textBold titleSize">STAT-OF-THE-ART LABORATORY</div>
-    <div class="labTip textLight textSize">TRUSTWORTHY AND TRANSPARENT</div>
+    <h2 class="labTitle textBold titleSize">STAT-OF-THE-ART LABORATORY</h2>
+    <h3 class="labTip textLight textSize">TRUSTWORTHY AND TRANSPARENT</h3>
 
     <div class="labCon allShadow">
       <div class="labRight">
         <div class="labRightLine" :style="srollLeftStyle">
-          <img class="lineImg" src="@/static/about/lab/moLine.png" alt="" />
+          <img class="lineImg" src="https://files.myuwell.com/powehi/about/lab/moLine.png" alt="" />
         </div>
       </div>
 
@@ -27,7 +27,7 @@
 
             60+ tests on physical/electrical
           </div>
-          <img class="logo" src="@/static/about/lab/logo.png" alt="logo" />
+          <img class="logo" src="https://files.myuwell.com/powehi/about/lab/logo.png" alt="logo" />
         </div>
       </div>
     </div>
@@ -64,7 +64,12 @@ export default {
       return `left:${this.top}%`;
     },
   },
-
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
       const stickyOffsetTop = document.querySelector(".lab").offsetTop;
@@ -83,12 +88,7 @@ export default {
       this.scrollHeight = scrollHeight;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
-  },
+
 };
 </script>
 
@@ -173,7 +173,7 @@ export default {
     height: (330 / @morem);
     width: (647 / @morem);
     margin: (90 / @morem) auto (120 / @morem);
-    background-image: url("@/static/about/lab/moBg.png");
+    background-image: url("https://files.myuwell.com/powehi/about/lab/moBg.png");
   }
 }
 </style>

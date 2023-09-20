@@ -1,6 +1,6 @@
 <template>
   <section class="product" data-aos="fade-up">
-    <div class="productTitle textBold">PRODUCT CUSTOMIZATION</div>
+    <h2 class="productTitle textBold">PRODUCT CUSTOMIZATION</h2>
     <div class="productText textLight">
       POWEHI offer a wide range of customization options for our cannabis vape hardware
       products. We believe that customization is the key to creating a vape pen that is
@@ -15,7 +15,7 @@
       </div>
       <img
         class="productLineImg"
-        src="@/static/solution/product/product.png"
+        src="https://files.myuwell.com/powehi/solution/product/product.png"
         alt="product"
       />
     </div>
@@ -39,6 +39,12 @@ export default {
           rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);`;
     },
   },
+  mounted() {
+    window.addEventListener("scroll", this.animationScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.animationScroll);
+  },
   methods: {
     animationScroll() {
       const stickyOffsetTop = document.querySelector(".product").offsetTop;
@@ -60,12 +66,7 @@ export default {
       this.scrollHeight = scrollHeight;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.animationScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.animationScroll);
-  },
+
 };
 </script>
 
@@ -107,7 +108,7 @@ export default {
         display: flex;
         height: (68 / @pcrem);
         width: (3805 / @pcrem);
-        background-image: url("@/static/solution/product/text.png");
+        background-image: url("https://files.myuwell.com/powehi/solution/product/text.png");
       }
     }
 

@@ -1,19 +1,19 @@
 <template>
   <section class="product">
-    <div class="productTitle textBold">PRODUCTS</div>
+    <h2 class="productTitle textBold">PRODUCTS</h2>
 
     <!-- con -->
     <div class="productCon allShadow" @click="handleTo">
-      <div class="productConTitle textBold">
+      <strong class="productConTitle textBold">
         CALIO
         <span class="textLight">HDN002/HDN002C</span>
-      </div>
-      <div class="productConTip textMedium">CLASSIC DESIGN 2G DISPOSABLE VAPE</div>
-      <img class="productConIcon" src="@/static/home/products/moIcon.png" alt="" />
+      </strong>
+      <div class="productConTip textMedium"><strong>CLASSIC DESIGN</strong> 2G DISPOSABLE VAPE</div>
+      <img class="productConIcon" src="https://files.myuwell.com/powehi/home/products/moIcon.png" alt="" />
 
-      <img class="productConImg" src="@/static/home/products/calio.png" alt="calio" />
+      <img class="productConImg" src="https://files.myuwell.com/powehi/home/products/calio.png" alt="calio" />
 
-      <img class="productArrIcon" src="@/static/home/products/arr.png" alt="calio" />
+      <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="calio" />
     </div>
 
     <!-- list -->
@@ -32,9 +32,9 @@ export default {
   data() {
     return {
       list: [
-        require("@/static/home/products/1.png"),
-        require("@/static/home/products/2.png"),
-        require("@/static/home/products/3.png"),
+        "https://files.myuwell.com/powehi/home/products/1.png",
+        "https://files.myuwell.com/powehi/home/products/2.png",
+        "https://files.myuwell.com/powehi/home/products/3.png",
       ],
     };
   },

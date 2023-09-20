@@ -1,17 +1,17 @@
 <template>
   <section class="why">
-    <div class="whyTitle titleSize textBold" data-aos="fade-up">
+    <h2 class="whyTitle titleSize textBold" data-aos="fade-up">
       WHY <span>POWEHI</span>
-    </div>
+    </h2>
     <div class="whyTop">
       <div class="whyTopLeft whyTopItem imageItem" data-aos="fade-up">
-        <div class="textBold">DIVERSE RANGE OF PRODUCTS</div>
+        <h3 class="textBold">DIVERSE RANGE OF PRODUCTS</h3>
 
         <div class="whyTopBoxCon" data-aos="fade-up">
           <div class="whyTopBoxTop">
             <div class="whyTopBoxTopCon">
-              <img src="@/static/home/why/yes.png" alt="icon" />
-              <div class="textBold">CHOOSE THE PERFECT VAPING HARDWARE</div>
+              <img src="https://files.myuwell.com/powehi/home/why/yes.png" alt="icon" />
+              <h3 class="textBold">CHOOSE THE PERFECT VAPING HARDWARE</h3>
             </div>
           </div>
           <div class="whyTopBoxBottom textLight">
@@ -22,12 +22,12 @@
         </div>
       </div>
       <div class="whyTopRight whyTopItem imageItem" data-aos="fade-up">
-        <div class="textBold">CUTTING-EDGE TECHNOLOGY</div>
+        <h3 class="textBold">CUTTING-EDGE TECHNOLOGY</h3>
         <div class="whyTopBoxCon" data-aos="fade-up">
           <div class="whyTopBoxTop">
             <div class="whyTopBoxTopCon">
-              <div class="textBold">ELEVATING EXPERIENCE WITH ADVANCED TECHNOLOGY</div>
-              <img src="@/static/home/why/yes.png" alt="icon" />
+              <h3 class="textBold">ELEVATING EXPERIENCE WITH ADVANCED TECHNOLOGY</h3>
+              <img src="https://files.myuwell.com/powehi/home/why/yes.png" alt="icon" />
             </div>
           </div>
           <div class="whyTopBoxBottom textLight">
@@ -40,12 +40,12 @@
     </div>
     <div class="whyBottom">
       <div class="whyBottomCon imageItem" data-aos="fade-up">
-        <div class="whyBottomTitle textBold">TURNKEY SOLUTION</div>
+        <h2 class="whyBottomTitle textBold titleSize">TURNKEY SOLUTION</h2>
         <div class="whyBottomBox">
           <div class="whyBoxTop">
             <div class="whyBoxTopCon">
-              <img src="@/static/home/why/yes.png" alt="icon" />
-              <div class="textBold">WE HANDLE IT ALL</div>
+              <img src="https://files.myuwell.com/powehi/home/why/yes.png" alt="icon" />
+              <h3 class="textBold">WE HANDLE IT ALL</h3>
             </div>
           </div>
           <div class="whyBoxBottom textLight">
@@ -68,7 +68,7 @@ export default {};
   padding-top: (150 / @pcrem);
   width: 100%;
   background-color: #ececec;
-  background-image: url("@/static/home/why/bg.png");
+  background-image: url("https://files.myuwell.com/powehi/home/why/bg.png");
   background-size: (1920 / @pcrem) (553 / @pcrem);
   background-position: center (570 / @pcrem);
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ export default {};
       }
     }
     .whyTopLeft {
-      background-image: url("@/static/home/why/topLeft.png");
+      background-image: url("https://files.myuwell.com/powehi/home/why/topLeft.png");
       .whyTopBoxCon {
         top: (307 / @pcrem);
         right: 0;
@@ -154,7 +154,7 @@ export default {};
       }
     }
     .whyTopRight {
-      background-image: url("@/static/home/why/topRight.png");
+      background-image: url("https://files.myuwell.com/powehi/home/why/topRight.png");
 
       .whyTopBoxCon {
         top: (307 / @pcrem);
@@ -185,7 +185,7 @@ export default {};
       position: relative;
       height: (530 / @pcrem);
       width: 100%;
-      background-image: url("@/static/home/why/bottomBg.png");
+      background-image: url("https://files.myuwell.com/powehi/home/why/bottomBg.png");
       font-size: (38 / @pcrem);
       color: @white;
       .whyBottomTitle {

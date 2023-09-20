@@ -60,19 +60,19 @@ export default {
       ],
       iconList: [
         {
-          src: require("@/static/footer/ins.png"),
+          src: "https://files.myuwell.com/powehi/footer/ins.png",
           jumpLink: "https://www.instagram.com/powehiclub/",
         },
         {
-          src: require("@/static/footer/facebook.png"),
+          src: "https://files.myuwell.com/powehi/footer/facebook.png",
           jumpLink: "https://www.facebook.com/profile.php?id=61550651796767",
         },
         {
-          src: require("@/static/footer/x.png"),
+          src: "https://files.myuwell.com/powehi/footer/x.png",
           jumpLink: "https://twitter.com/POWEHICLUB",
         },
         {
-          src: require("@/static/footer/youtobe.png"),
+          src: "https://files.myuwell.com/powehi/footer/youtobe.png",
           jumpLink: "https://www.youtube.com/channel/UCQlAgqhx-wvqgqCxJP-VXNg",
         },
       ],

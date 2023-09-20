@@ -4,7 +4,7 @@
     <div class="tip textSize textRegular">Stay updated, sign up for our newsletter.</div>
     <div class="buttonRow">
       <div class="iconBox">
-        <img src="@/static/home/subscribe/m.png" alt="" />
+        <img src="https://files.myuwell.com/powehi/home/subscribe/m.png" alt="" />
       </div>
       <input
         v-model="emailValue"
@@ -123,7 +123,7 @@ export default {
   justify-content: center;
   background-color: #eeeeee;
   background-size: (663 / @morem) / (230 / @morem);
-  background-image: url("@/static/home/subscribe/moBg.png");
+  background-image: url("https://files.myuwell.com/powehi/home/subscribe/moBg.png");
   background-repeat: no-repeat;
   background-position: center (284 / @morem);
   height: (410 / @morem);

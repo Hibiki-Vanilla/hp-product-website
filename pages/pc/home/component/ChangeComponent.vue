@@ -10,7 +10,7 @@
       />
     </div>
     <div class="changeCon">
-      <div class="changeTitle textBold titleSize">EMPOWER THE HIGH.</div>
+      <h2 class="changeTitle textBold titleSize">EMPOWER THE HIGH.</h2>
       <div class="changeText textRegular textSize">
         Step into the extraordinary world of POWEHI, where cutting-edge technology,
         exceptional quality, and unparalleled cannabis experiences converge. We aim to be
@@ -31,9 +31,9 @@ export default {
       nowIndex: 0,
       timer: null,
       list: [
-        require("@/static/home/change/1.png"),
-        require("@/static/home/change/2.png"),
-        require("@/static/home/change/3.png"),
+        "https://files.myuwell.com/powehi/home/change/1.png",
+        "https://files.myuwell.com/powehi/home/change/2.png",
+        "https://files.myuwell.com/powehi/home/change/3.png",
       ],
     };
   },

@@ -13,14 +13,14 @@
           />
           <img
             class="modelMainLeft"
-            src="@/static/calio/arr.png"
+            src="https://files.myuwell.com/powehi/calio/arr.png"
             alt="left"
             @click="nowIndex = nowIndex === 0 ? 3 : nowIndex - 1"
           />
 
           <img
             class="modelMainRight"
-            src="@/static/calio/arr.png"
+            src="https://files.myuwell.com/powehi/calio/arr.png"
             alt="right"
             @click="nowIndex = nowIndex === 3 ? 0 : nowIndex + 1"
           />
@@ -40,10 +40,10 @@
 
       <div class="modelRight" data-aos="fade-up">
         <div class="modelRightTitle">
-          <span class="textBlack textSize">CALIO</span>
+          <strong class="textBlack textSize">CALIO</strong>
           <span class="textSemiBold"
             >MODEL NUMBER
-            <span class="blackBox">HDN002/HDN002C</span>
+            <strong class="blackBox">HDN002/HDN002C</strong>
           </span>
         </div>
 
@@ -86,10 +86,10 @@ export default {
     return {
       nowIndex: 0,
       list: [
-        require("@/static/calio/01.png"),
-        require("@/static/calio/02.png"),
-        require("@/static/calio/03.png"),
-        require("@/static/calio/04.png"),
+        "https://files.myuwell.com/powehi/calio/01.png",
+        "https://files.myuwell.com/powehi/calio/02.png",
+        "https://files.myuwell.com/powehi/calio/03.png",
+        "https://files.myuwell.com/powehi/calio/04.png",
       ],
     };
   },

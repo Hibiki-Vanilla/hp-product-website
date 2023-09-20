@@ -1,8 +1,8 @@
 <template>
   <section class="our">
     <div class="ourCon imageItem" data-aos="fade-up">
-      <div class="ourTitle textBold titleSize">OUR MISSION</div>
-      <div class="ourTip textLight">EMPOWER THE HIGH</div>
+      <h2 class="ourTitle textBold titleSize">OUR MISSION</h2>
+      <h3 class="ourTip textLight">EMPOWER THE HIGH</h3>
       <div class="ourText textLight">
         POWEHI empowers you to embrace your true potential through our exceptional vaping
         devices. We believe that every individual has the power to shape their experiences
@@ -37,7 +37,7 @@ export default {};
     justify-content: center;
     height: (400 / @morem);
     width: (550 / @morem);
-    background-image: url("@/static/about/moOur.png");
+    background-image: url("https://files.myuwell.com/powehi/about/moOur.png");
 
     .ourTitle {
       color: @white;

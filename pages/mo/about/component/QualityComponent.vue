@@ -45,7 +45,7 @@ export default {};
     align-items: center;
   }
   .qualityLeft {
-    background-image: url("@/static/about/quality/moLeft.png");
+    background-image: url("https://files.myuwell.com/powehi/about/quality/moLeft.png");
     height: (281 / @morem);
     width: (520 / @morem);
   }
@@ -71,7 +71,7 @@ export default {};
     .qualityRightBottom {
       width: (160 / @morem);
       height: (330 / @morem);
-      background-image: url("@/static/about/quality/moBg.png");
+      background-image: url("https://files.myuwell.com/powehi/about/quality/moBg.png");
     }
   }
 }

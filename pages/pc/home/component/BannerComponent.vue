@@ -1,5 +1,8 @@
 <template>
   <section class="banner imageItem">
+  <h1>
+    POWEHI cannabis vape. Atrusted partner in the cannabis community
+  </h1>
     <div class="bannerTitle">
       <div class="bannerTitleBox titleSize textBold">
         <div class="bannerRow" data-aos="fade-up">
@@ -57,10 +60,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
+h1{
+  height: 0;
+  overflow: hidden;
+}
 .banner {
   height: (940 / @pcrem);
   width: 100%;
-  background-image: url("@/static/home/banner.png");
+  background-image: url("https://files.myuwell.com/powehi/home/banner.png");
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,9 +1,9 @@
 <template>
   <section class="color imageItem" data-aos="zoom">
     <div class="colorCon" data-aos="fade-up">
-      <div class="colorTitle textBlack titleSize">
+      <h2 class="colorTitle textBlack titleSize">
         WHITE LABEL FOR OEM/ODM CUSTOMIZATION
-      </div>
+      </h2>
       <div class="colorText textSize textLight">
         Why not customize our CALIO for your brand?
         <br />
@@ -23,7 +23,7 @@ export default {};
 <style lang="less" scoped>
 .color {
   height: (1334 / @morem);
-  background-image: url("@/static/calio/moColor.png");
+  background-image: url("https://files.myuwell.com/powehi/calio/moColor.png");
   .colorCon {
     display: flex;
     flex-direction: column;

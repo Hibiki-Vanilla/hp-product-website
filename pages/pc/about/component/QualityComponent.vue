@@ -2,12 +2,12 @@
   <section class="quality">
     <div class="qualityCon" data-aos="fade-up">
       <div class="qualityLeft imageItem">
-        <div class="qualityLeftTitle textBold titleSize">
+        <h2 class="qualityLeftTitle textBold titleSize">
           UNCOMPROMISING
           <br />
           <span>QUALITY</span>
-        </div>
-        <div class="textLight textSize">MAINTAINING HIGH-QUALITY STANDARDS</div>
+        </h2>
+        <h3 class="textLight textSize">MAINTAINING HIGH-QUALITY STANDARDS</h3>
       </div>
 
       <div class="qualityRight imageItem" data-aos="fade-right">
@@ -51,7 +51,7 @@ export default {};
     align-items: center;
   }
   .qualityLeft {
-    background-image: url("@/static/about/quality/left.png");
+    background-image: url("https://files.myuwell.com/powehi/about/quality/left.png");
     height: (600 / @pcrem);
     width: (700 / @pcrem);
     box-sizing: border-box;
@@ -90,7 +90,7 @@ export default {};
     .qualityRightBottom {
       width: 100%;
       height: (285 / @pcrem);
-      background-image: url("@/static/about/quality/bg.png");
+      background-image: url("https://files.myuwell.com/powehi/about/quality/bg.png");
     }
   }
 

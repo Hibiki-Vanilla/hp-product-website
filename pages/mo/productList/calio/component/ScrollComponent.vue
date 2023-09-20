@@ -25,7 +25,7 @@
           class="listRow"
           :class="[{ scrollItemTwo: index % 2 === 1 }]"
         >
-          <div class="listItem textBold">{{ item.title }}</div>
+          <strong class="listItem textBold">{{ item.title }}</strong>
           <div class="listItem textLight">{{ item.text }}</div>
           <div class="listItem textLight">{{ item.twoText }}</div>
         </div>
@@ -56,13 +56,13 @@ export default {
   data() {
     return {
       list: [
-        require("@/static/calio/mos-1.png"),
-        // require("@/static/calio/mos-2.png"),
-        // require("@/static/calio/mos-3.png"),
-        // require("@/static/calio/mos-4.png"),
-        // require("@/static/calio/mos-5.png"),
-        // require("@/static/calio/mos-6.png"),
-        // require("@/static/calio/mos-7.png"),
+        "https://files.myuwell.com/powehi/calio/mos-1.png",
+        // "https://files.myuwell.com/powehi/calio/mos-2.png",
+        // "https://files.myuwell.com/powehi/calio/mos-3.png",
+        // "https://files.myuwell.com/powehi/calio/mos-4.png",
+        // "https://files.myuwell.com/powehi/calio/mos-5.png",
+        // "https://files.myuwell.com/powehi/calio/mos-6.png",
+        // "https://files.myuwell.com/powehi/calio/mos-7.png",
       ],
       textList: [
         {

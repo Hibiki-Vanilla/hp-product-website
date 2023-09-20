@@ -1,9 +1,9 @@
 <template>
   <section class="iso" data-aos="fade-up">
-    <div class="isoTitle textBold titleSize">OUR REPUTATION</div>
-    <div class="isoTip textLight textSize">
+    <h2 class="isoTitle textBold titleSize">OUR REPUTATION</h2>
+    <h3 class="isoTip textLight textSize">
       TRUST US FOR ALL YOUR CANNABIS VAPING NEEDS
-    </div>
+    </h3>
 
     <div class="isoCon allShadow">
       <div class="isoLeft textLight">
@@ -16,17 +16,17 @@
           vape hardware solution providers.
         </div>
         <div class="isoLeftBottom">
-          <img class="logo" src="@/static/about/iso/logo.png" alt="logo" />
+          <img class="logo" src="https://files.myuwell.com/powehi/about/iso/logo.png" alt="logo" />
         </div>
       </div>
 
       <div class="isoRight">
         <div class="isoRightLine" :style="srollTopStyle">
-          <img class="lineImg" src="@/static/about/iso/lineLeft.png" alt="" />
+          <img class="lineImg" src="https://files.myuwell.com/powehi/about/iso/lineLeft.png" alt="" />
         </div>
 
         <div class="isoRightLine" :style="srollBottomStyle">
-          <img class="lineImg" src="@/static/about/iso/lineRight.png" alt="" />
+          <img class="lineImg" src="https://files.myuwell.com/powehi/about/iso/lineRight.png" alt="" />
         </div>
       </div>
     </div>

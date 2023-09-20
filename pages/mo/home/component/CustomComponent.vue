@@ -1,6 +1,6 @@
 <template>
   <section class="custom">
-    <div class="customTitle textBold titleSize" data-aos="fade-up">CUSTOMIZATION</div>
+    <h2 class="customTitle textBold titleSize" data-aos="fade-up">CUSTOMIZATION</h2>
     <div class="customText textLight textSize" data-aos="fade-up">
       Our CMF design service helps you create a distinctive and appealing look and feel
       for your cannabis vaping products. We offer a range of options for color, material,
@@ -8,16 +8,16 @@
       customization solutions make your products stand out from the crowd!
     </div>
     <div class="customTipRow" data-aos="fade-up">
-      <img class="customTipIcon" src="@/static/home/custom/moTipIcon.png" alt="" />
+      <img class="customTipIcon" src="https://files.myuwell.com/powehi/home/custom/moTipIcon.png" alt="" />
       <div class="customTipCon allShadow textLight">
         <div>
-          <span class="textBold">Materials:</span> Aluminium Alloy, PCTG, ABS+PC, PP, PC,
+          <strong class="textBold">Materials:</strong> Aluminium Alloy, PCTG, ABS+PC, PP, PC,
           ABS, Stainless Steel, Leather, PLA, Silicone, Glass, Ceramic…
         </div>
 
         <br />
         <div>
-          <span class="textBold">Finishing:</span> Polishing, Sandblasting, Wire Drawing,
+          <strong class="textBold">Finishing:</strong> Polishing, Sandblasting, Wire Drawing,
           Anodizing, Blast Light Development, Radium Carving, Etching, Painting, Spraying,
           Water Plating, Vacuum Plating, Water Sticker, Composite Plate Coating, Glass
           Coating…
@@ -97,58 +97,58 @@ export default {
   data() {
     return {
       topSiderList: [
-        require("@/static/home/custom/line/1.png"),
-        require("@/static/home/custom/line/2.png"),
-        require("@/static/home/custom/line/3.png"),
-        require("@/static/home/custom/line/4.png"),
-        require("@/static/home/custom/line/5.png"),
-        require("@/static/home/custom/line/1.png"),
-        require("@/static/home/custom/line/2.png"),
-        require("@/static/home/custom/line/3.png"),
-        require("@/static/home/custom/line/4.png"),
-        require("@/static/home/custom/line/5.png"),
+        "https://files.myuwell.com/powehi/home/custom/line/1.png",
+        "https://files.myuwell.com/powehi/home/custom/line/2.png",
+        "https://files.myuwell.com/powehi/home/custom/line/3.png",
+        "https://files.myuwell.com/powehi/home/custom/line/4.png",
+        "https://files.myuwell.com/powehi/home/custom/line/5.png",
+        "https://files.myuwell.com/powehi/home/custom/line/1.png",
+        "https://files.myuwell.com/powehi/home/custom/line/2.png",
+        "https://files.myuwell.com/powehi/home/custom/line/3.png",
+        "https://files.myuwell.com/powehi/home/custom/line/4.png",
+        "https://files.myuwell.com/powehi/home/custom/line/5.png",
       ],
       bottomSiderList: [
-        require("@/static/home/custom/twoLine/1.png"),
-        require("@/static/home/custom/twoLine/2.png"),
-        require("@/static/home/custom/twoLine/3.png"),
-        require("@/static/home/custom/twoLine/4.png"),
-        require("@/static/home/custom/twoLine/5.png"),
-        require("@/static/home/custom/twoLine/1.png"),
-        require("@/static/home/custom/twoLine/2.png"),
-        require("@/static/home/custom/twoLine/3.png"),
-        require("@/static/home/custom/twoLine/4.png"),
-        require("@/static/home/custom/twoLine/5.png"),
+        "https://files.myuwell.com/powehi/home/custom/twoLine/1.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/2.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/3.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/4.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/5.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/1.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/2.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/3.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/4.png",
+        "https://files.myuwell.com/powehi/home/custom/twoLine/5.png",
       ],
 
       iconList: [
         {
-          icon: require("@/static/home/custom/icon/1.png"),
+          icon: "https://files.myuwell.com/powehi/home/custom/icon/1.png",
           text: "High-Quality & Durable Materials",
           width: 56 / 7.5,
           height: 52 / 7.5,
         },
         {
-          icon: require("@/static/home/custom/icon/2.png"),
+          icon: "https://files.myuwell.com/powehi/home/custom/icon/2.png",
           text: "Custom Colors & Patterns",
           width: 55 / 7.5,
           height: 55 / 7.5,
         },
         {},
         {
-          icon: require("@/static/home/custom/icon/3.png"),
+          icon: "https://files.myuwell.com/powehi/home/custom/icon/3.png",
           text: "Special Finishing Options",
           width: 45 / 7.5,
           height: 45 / 7.5,
         },
         {
-          icon: require("@/static/home/custom/icon/4.png"),
+          icon: "https://files.myuwell.com/powehi/home/custom/icon/4.png",
           text: "Meet Diverse Budgets",
           width: 45 / 7.5,
           height: 51 / 7.5,
         },
         {
-          icon: require("@/static/home/custom/icon/5.png"),
+          icon: "https://files.myuwell.com/powehi/home/custom/icon/5.png",
           text: "Suit Different Styles",
           width: 48 / 7.5,
           height: 48 / 7.5,
@@ -260,7 +260,7 @@ export default {
     flex-wrap: wrap;
     box-sizing: border-box;
 
-    background-image: url("@/static/home/custom/moBg.png");
+    background-image: url("https://files.myuwell.com/powehi/home/custom/moBg.png");
     background-size: 100% (414 / @morem);
     background-position: center (220 / @morem);
     background-repeat: no-repeat;

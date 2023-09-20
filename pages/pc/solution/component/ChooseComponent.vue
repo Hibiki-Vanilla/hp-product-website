@@ -1,9 +1,9 @@
 <template>
   <section class="choose" data-aos="fade-up">
-    <div class="chooseTitle textBold titleSize">CHOOSE US FOR A</div>
-    <div class="chooseTitleLine textBold titleSize">
+    <h2 class="chooseTitle textBold titleSize">CHOOSE US FOR A</h2>
+    <h2 class="chooseTitleLine textBold titleSize">
       COMPREHENSIVE AND SEAMLESS EXPERIENCE.
-    </div>
+    </h2>
     <!-- con -->
     <div class="chooseCon">
       <div class="chooseConMid">
@@ -45,50 +45,50 @@ export default {
   data() {
     return {
       chooseList: [
-        { src: require("@/static/solution/a.png") },
-        { src: require("@/static/solution/b.png") },
-        { src: require("@/static/solution/c.png") },
+        { src: "https://files.myuwell.com/powehi/solution/a.png" },
+        { src: "https://files.myuwell.com/powehi/solution/b.png" },
+        { src: "https://files.myuwell.com/powehi/solution/c.png" },
       ],
 
       iconList: [
         {
-          src: require("@/static/solution/icon/1.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/1.png",
           height: 44,
           width: 44,
           text: "Customizable & Professional",
         },
         {
-          src: require("@/static/solution/icon/2.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/2.png",
           height: 38,
           width: 40,
           text: "Time-Saving & Cost-Effective",
         },
         {
-          src: require("@/static/solution/icon/3.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/3.png",
           height: 35,
           width: 35,
           text: "Comprehensive & Integrated",
         },
         {
-          src: require("@/static/solution/icon/4.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/4.png",
           height: 33,
           width: 27,
           text: "Reliable & Secure",
         },
         {
-          src: require("@/static/solution/icon/5.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/5.png",
           height: 37,
           width: 33,
           text: "Innovative & Flexible",
         },
         {
-          src: require("@/static/solution/icon/6.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/6.png",
           height: 32,
           width: 32,
           text: "Customer-Oriented & Responsive",
         },
         {
-          src: require("@/static/solution/icon/7.png"),
+          src: "https://files.myuwell.com/powehi/solution/icon/7.png",
           height: 33,
           width: 31,
           text: "Sustainable & Scalable",

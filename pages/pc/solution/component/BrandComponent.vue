@@ -1,10 +1,10 @@
 <template>
   <section class="brand imageItem" data-aos="zoom">
-    <div class="brandTitle textBold">
+    <h2 class="brandTitle textBold">
       ELEVATE YOUR BRAND
       <br />
       WITH OUR <span class="brandLightSpan">EXPERTISE OF CUSTOMIZATION.</span>
-    </div>
+    </h2>
 
     <div class="brandTip textLight">
       POWEHI offers a full-service OEM/ODM that provides customers with the complete
@@ -59,7 +59,7 @@ export default {
       list: [
         {
           name: "REQUIREMENT EVALUATION",
-          icon: require("@/static/solution/brand/icon/1.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/1.png",
           height: "2.81vw",
           width: "2.76vw",
           list: [
@@ -82,7 +82,7 @@ Ensures that your product is realistic to manufacture.`,
         },
         {
           name: "ENGINEERING",
-          icon: require("@/static/solution/icon/2.png"),
+          icon: "https://files.myuwell.com/powehi/solution/icon/2.png",
           height: "2.76vw",
           width: "2.39vw",
           list: [
@@ -104,7 +104,7 @@ Ensures that your product is manufacturable.`,
         },
         {
           name: "ID & MD COMPLETION & APPROVAL",
-          icon: require("@/static/solution/brand/icon/3.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/3.png",
           height: "1.51vw",
           width: "2.76vw",
           list: [
@@ -128,7 +128,7 @@ Ensures the product is structurally sound.`,
         },
         {
           name: "PROJECT KICKOFF",
-          icon: require("@/static/solution/brand/icon/4.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/4.png",
           height: "2.5vw",
           width: "2.5vw",
           list: [
@@ -149,7 +149,7 @@ Ensures the project is on track to be completed on time and within budget.`,
         },
         {
           name: "PRE-PRODUCTION VERIFICATION",
-          icon: require("@/static/solution/brand/icon/5.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/5.png",
           height: "2.55vw",
           width: "2.29vw",
           list: [
@@ -170,7 +170,7 @@ Ensures that your product is ready to be manufactured.`,
         },
         {
           name: "PROTOTYPING",
-          icon: require("@/static/solution/brand/icon/6.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/6.png",
           height: "2.7vw",
           width: "2.7vw",
           list: [
@@ -192,7 +192,7 @@ Ensures that your product is manufacturable.`,
         },
         {
           name: "MOLDING",
-          icon: require("@/static/solution/brand/icon/7.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/7.png",
           height: "2.60vw",
           width: "2.29vw",
           list: [
@@ -212,7 +212,7 @@ Ensures that your product is manufacturable.`,
         },
         {
           name: "MASS PRODUCTION",
-          icon: require("@/static/solution/brand/icon/8.png"),
+          icon: "https://files.myuwell.com/powehi/solution/brand/icon/8.png",
           height: "2.55vw",
           width: "2.44vw",
           list: [
@@ -240,7 +240,7 @@ Ensures that your product is manufacturable.`,
 .brand {
   height: (1090 / @pcrem);
   width: 100%;
-  background-image: url("@/static/solution/brand/bg.png");
+  background-image: url("https://files.myuwell.com/powehi/solution/brand/bg.png");
   display: flex;
   flex-direction: column;
   align-items: center;
