@@ -1,46 +1,46 @@
-import router from "./router";
+import router from './router'
 
-import env from "./env";
+import env from './env'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "POWEHI",
+    title: 'POWEHI',
     htmlAttrs: {
-      lang: "en",
+      lang: 'en',
     },
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "google-site-verification",
-        content: "37p4moKLxzaXykKtKE4lDfeWyu5ZLV-F_5dNzgxaybo",
+        name: 'google-site-verification',
+        content: '7XGSBbO2_P-q94gDVZT31nKQZL6_TQc2pYpLPipXW-I',
       },
-      { hid: "description", name: "description", content: "" },
+      { hid: 'description', name: 'description', content: '' },
       {
-        name: "format-detection",
-        content: "telephone=no",
+        name: 'format-detection',
+        content: 'telephone=no',
       },
       {
-        property: "og:image",
-        href: "https://files.myuwell.com/powehi/powehi-favicon.png",
+        property: 'og:image',
+        href: 'https://files.myuwell.com/powehi/powehi-favicon.png',
       },
     ],
     link: [
       {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "https://files.myuwell.com/powehi/powehi-favicon.png",
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'https://files.myuwell.com/powehi/powehi-favicon.png',
       },
     ],
     script: [
       {
-        src: "https://www.recaptcha.net/recaptcha/api.js?render=explicit",
+        src: 'https://www.recaptcha.net/recaptcha/api.js?render=explicit',
         async: true,
         defer: true,
       },
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-7H85CDY9Z4",
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-7H85CDY9Z4',
         async: true,
       },
     ],
@@ -54,28 +54,28 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~assets/css/base.less"],
+  css: ['~assets/css/base.less'],
   router,
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    "@/plugins/axios",
+    '@/plugins/axios',
 
     {
-      src: "@/plugins/gtag.js",
-      mode: "client",
+      src: '@/plugins/gtag.js',
+      mode: 'client',
     },
     {
-      src: "@/plugins/aos.js",
+      src: '@/plugins/aos.js',
       ssr: false,
     },
     {
-      src: "@/plugins/element-ui",
+      src: '@/plugins/element-ui',
     },
-    "@/plugins/router",
-    "@/plugins/ctx.js",
+    '@/plugins/router',
+    '@/plugins/ctx.js',
     {
-      src: "@/plugins/gRecaptcha",
-      mode: "client",
+      src: '@/plugins/gRecaptcha',
+      mode: 'client',
     },
   ],
 
@@ -83,44 +83,44 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/eslint-module"],
+  buildModules: ['@nuxtjs/eslint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios", "@nuxtjs/sitemap", "@nuxtjs/style-resources"],
+  modules: ['@nuxtjs/axios', '@nuxtjs/sitemap', '@nuxtjs/style-resources'],
   sitemap: {
-    path: "/sitemap.xml",
+    path: '/sitemap.xml',
     // 正式上线需要修改此地址  zwy
-    hostname: "https://test.com/",
+    hostname: 'https://test.com/',
     defaults: {
-      changefreq: "always",
+      changefreq: 'always',
       lastmod: new Date(),
     },
     // 路由配置
     routes: () => {
       const routes = [
         {
-          url: "/",
-          changefreq: "always",
+          url: '/',
+          changefreq: 'always',
           lastmod: new Date(), // 最后更新时间
         },
         {
-          url: "/integratedQueryResult",
-          changefreq: "always",
+          url: '/integratedQueryResult',
+          changefreq: 'always',
         },
-      ];
-      return routes;
+      ]
+      return routes
     },
   },
 
   styleResources: {
-    less: "@/assets/css/variables.less",
+    less: '@/assets/css/variables.less',
   },
   axios: {
     proxy: true,
     // prefix: '/api', // 给请求的url加上/api
   },
   proxy: {
-    "/u": {
+    '/u': {
       target: env[process.env.NODE_ENV].target,
       // target:'http://127.0.0.1:11800',
       changeOrigin: true,
@@ -149,10 +149,10 @@ export default {
     babel: {
       plugins: [
         [
-          "component",
+          'component',
           {
-            libraryName: "element-ui",
-            styleLibraryName: "theme-chalk",
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk',
           },
         ],
       ],
@@ -164,4 +164,4 @@ export default {
     },
     extend(config, ctx) {},
   },
-};
+}
