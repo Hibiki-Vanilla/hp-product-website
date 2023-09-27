@@ -1,32 +1,35 @@
+
 # hp-official-website-web
+
+HP 产品官网【Powehi】
 
 ## Build Setup
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm run build
+$ npm run start
 
 # generate static project
-$ yarn generate
+$ npm run generate
 ```
 
 ## 测试环境打包
 
-$ yarn buildtest
+$ npm run buildtest
 
 $
 
 ## 开发环境打包
 
-$ yarn builddev
+$ npm run builddev
 
 ## 正式环境打包
 
-$ yarn build
+$ npm run build
