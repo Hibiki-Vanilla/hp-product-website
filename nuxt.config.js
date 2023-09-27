@@ -90,7 +90,7 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     // 正式上线需要修改此地址  zwy
-    hostname: 'https://test.com/',
+    hostname: "https://www.powehiclub.com/",
     defaults: {
       changefreq: 'always',
       lastmod: new Date(),
