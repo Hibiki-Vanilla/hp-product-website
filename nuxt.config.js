@@ -103,10 +103,6 @@ export default {
           changefreq: 'always',
           lastmod: new Date(), // 最后更新时间
         },
-        {
-          url: '/integratedQueryResult',
-          changefreq: 'always',
-        },
       ]
       return routes
     },
