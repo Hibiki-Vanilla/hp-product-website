@@ -15,6 +15,6 @@ module.exports = {
     NODE_ENV: 'production',
     port: 11807,
     host: '0.0.0.0',
-    target: 'http://39.108.58.94:11800',
+    target: 'http://39.108.58.94:10010',
   },
 }
