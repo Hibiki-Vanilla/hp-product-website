@@ -7,19 +7,14 @@
 </template>
 
 <script>
-import "../index.less";
+import '../index.less'
 export default {
   methods: {
     onHomeForm() {
-      this.$ctx.push("/");
-      setTimeout(() => {
-        document
-          .getElementById("moRequesForm")
-          .scrollIntoView({ behavior: "smooth", block: "center" });
-      }, 200);
+      this.$ctx.push('/contant')
     },
   },
-};
+}
 </script>
 
 <style lang="less" scoped>
@@ -35,7 +30,7 @@ export default {
   background-size: (701 / @morem) (243 / @morem);
   background-position: center (210 / @morem);
   background-repeat: no-repeat;
-  background-image: url("https://files.myuwell.com/powehi/solution/quote/bg.png");
+  background-image: url('https://files.myuwell.com/powehi/solution/quote/bg.png');
 
   .quoteTitle {
     font-size: (35 / @morem);
