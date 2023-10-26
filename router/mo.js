@@ -3,8 +3,6 @@ import path from 'path'
 
 const resolve = (pagePath) => path.resolve(process.cwd(), `./${pagePath}`)
 
-
-
 export const moRouter = [
     {
         path: '/m',
@@ -20,6 +18,22 @@ export const moRouter = [
         component: resolve('pages/mo/about/index.vue'),
         meta: {
           name: '关于我们',
+        },
+      },
+      {
+        path: '/m/contant',
+        name: 'mcontant',
+        component: resolve('pages/mo/contant/index.vue'),
+        meta: {
+          name: '联系我们',
+        },
+      },
+      {
+        path: '/m/products',
+        name: 'mproducts',
+        component: resolve('pages/mo/products/index.vue'),
+        meta: {
+          name: '产品页',
         },
       },
       {

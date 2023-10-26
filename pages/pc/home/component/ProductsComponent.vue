@@ -3,7 +3,7 @@
     <h2 class="productTitle textBold titleSize">PRODUCTS</h2>
 
     <!-- con -->
-    <div class="productCon allShadow" @click="handleTo">
+    <div class="productCon allShadow" @click="handleTo('/product/calio')">
       <strong class="productConTitle textBold">
         CALIO
         <span class="textLight">HDN002/HDN002C</span>
@@ -18,32 +18,64 @@
 
     <!-- list -->
     <div class="productRow">
-      <div v-for="(item, index) in list" :key="index" class="productItem allShadow">
-        <img :src="item" alt="coming soon" />
+      <div v-for="(item, index) in list" :key="index" class="productItem allShadow" @click="handleTo(item.path)">
+        <div class="porduct">
+          <img :class="'img-' + index" :src="require(`~/assets/img/${item.img}`)" alt="PRODUCT" />
+        </div>
+        <strong class="title textBold">{{ item.title }}</strong>
+        <strong class="tip textLight">{{ item.tip }}</strong>
+        <strong v-for="(text, idx) in item.content" :key="idx" class="content textMedium">{{ text }}</strong>
+        <div class="parameter">
+          <strong v-for="(par, pid) in item.parameter" :key="pid" class="textLight">
+            <img src="~/assets/img/crie.png" alt="crie" />{{ par }}
+          </strong>
+        </div>
+        <img class="arrow" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="calio" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import "../index.less";
+import '../index.less'
 
 export default {
   data() {
     return {
       list: [
-        "https://files.myuwell.com/powehi/home/products/1.png",
-        "https://files.myuwell.com/powehi/home/products/2.png",
-        "https://files.myuwell.com/powehi/home/products/3.png",
+        {
+          img: 'pro-1.png',
+          title: 'SOLE',
+          tip: 'HDN003/HDNOO3B',
+          content: ['REPRESENTATIVE OF', 'ELEGANCE'],
+          parameter: ['1-2ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE'],
+          path: '/product/sole',
+        },
+        {
+          img: 'pro-2.png',
+          title: 'CUSH',
+          tip: 'HDN004/HDNOO4B/HDN008',
+          content: ['GRASP PERSONALITY', 'IN PALM'],
+          parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE', 'DUAL AIRFLOW'],
+          path: '/product/cush',
+        },
+        {
+          img: 'pro-3.png',
+          title: 'BELLO',
+          tip: 'HDN005/HDNOO5B/HDN009',
+          content: ['INTEGRATION OF', 'ECONOMIC AND', 'ELEGANCE'],
+          parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE', 'DUAL AIRFLOW'],
+          path: '/product/bello',
+        },
       ],
-    };
+    }
   },
   methods: {
-    handleTo() {
-      this.$ctx.push("/product/calio");
+    handleTo(path) {
+      this.$ctx.push(path)
     },
   },
-};
+}
 </script>
 
 <style lang="less" scoped>
@@ -130,9 +162,86 @@ export default {
       width: (456 / @pcrem);
       height: 100%;
       border-radius: (12 / @pcrem);
-      img {
-        height: 100%;
+      padding-left: (70 / @pcrem);
+      box-sizing: border-box;
+      position: relative;
+      .title {
+        display: block;
+        margin-top: (260 / @pcrem);
+        font-size: (40 / @pcrem);
+        color: #000;
+      }
+      .tip {
+        display: block;
+        font-size: (18 / @pcrem);
+        margin-bottom: (30 / @pcrem);
+      }
+      .content {
+        display: block;
+        color: #000;
+        font-size: (30 / @pcrem);
+      }
+      .porduct {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          margin-top: -(100 / @pcrem);
+        }
+        .img-0 {
+          width: (322 / @pcrem);
+          height: (319 / @pcrem);
+        }
+        .img-1 {
+          width: (300 / @pcrem);
+          height: (305 / @pcrem);
+        }
+        .img-2 {
+          width: (485 / @pcrem);
+          height: (279 / @pcrem);
+        }
+      }
+      .parameter {
+        position: absolute;
+        left: (70 / @pcrem);
+        bottom: (32 / @pcrem);
+        min-height: (134 / @pcrem);
+        opacity: 0;
+        transition: opacity 0.8s cubic-bezier(0.25, 1, 0.38, 1);
+        strong {
+          display: flex;
+          align-items: center;
+          font-size: (18 / @pcrem);
+          margin-bottom: (10 / @pcrem);
+          img {
+            width: (10 / @pcrem);
+            height: (10 / @pcrem);
+            margin-right: (10 / @pcrem);
+          }
+        }
+      }
+      .arrow {
+        position: absolute;
+        bottom: (20 / @pcrem);
+        right: (20 / @pcrem);
+        height: (44 / @pcrem);
+        width: (44 / @pcrem);
+        opacity: 0;
+        transition: opacity 0.8s cubic-bezier(0.25, 1, 0.38, 1);
+      }
+    }
+
+    .productItem {
+      &:hover {
+        .parameter {
+          opacity: 1;
+        }
+        .arrow {
+          opacity: 1;
+        }
       }
     }
   }

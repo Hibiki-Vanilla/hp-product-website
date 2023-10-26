@@ -3,8 +3,6 @@ import path from 'path'
 
 const resolve = (pagePath) => path.resolve(process.cwd(), `./${pagePath}`)
 
-
-
 export const pcRouter = [
     {
         path: '/',
@@ -20,6 +18,22 @@ export const pcRouter = [
         component: resolve('pages/pc/about/index.vue'),
         meta: {
           name: '关于我们',
+        },
+      },
+      {
+        path: '/contant',
+        name: 'contant',
+        component: resolve('pages/pc/contant/index.vue'),
+        meta: {
+          name: '联系我们',
+        },
+      },
+      {
+        path: '/products',
+        name: 'products',
+        component: resolve('pages/pc/products/index.vue'),
+        meta: {
+          name: '产品页',
         },
       },
       {
