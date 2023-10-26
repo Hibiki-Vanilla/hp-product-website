@@ -3,7 +3,7 @@
     <h2 class="productTitle textBold">PRODUCTS</h2>
 
     <!-- con -->
-    <div class="productCon allShadow" @click="handleTo">
+    <div class="productCon allShadow" @click="handleTo('/product/calio')">
       <strong class="productConTitle textBold">
         CALIO
         <span class="textLight">HDN002/HDN002C</span>
@@ -16,7 +16,7 @@
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="calio" />
     </div>
 
-    <div class="productCon allShadow two" @click="handleTo">
+    <div class="productCon allShadow two" @click="handleTo('/product/sole')">
       <strong class="productConTitle textBold">
         SOLE
         <span class="textLight">HDN003/HDNOO3B</span>
@@ -29,7 +29,7 @@
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="sole" />
     </div>
 
-    <div class="productCon allShadow three" @click="handleTo">
+    <div class="productCon allShadow three" @click="handleTo('/product/cush')">
       <strong class="productConTitle textBold">
         CUSH
         <span class="textLight">HDN004/HDNOO4B/</span>
@@ -43,7 +43,7 @@
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="cush" />
     </div>
 
-    <div class="productCon allShadow four" @click="handleTo">
+    <div class="productCon allShadow four" @click="handleTo('/product/bello')">
       <strong class="productConTitle textBold">
         BELLO
         <span class="textLight">HDN005/HDNOO5B/</span>
@@ -73,8 +73,8 @@ export default {
     }
   },
   methods: {
-    handleTo() {
-      this.$ctx.push('/product/calio')
+    handleTo(path) {
+      this.$ctx.push(path)
     },
   },
 }

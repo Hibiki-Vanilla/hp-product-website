@@ -3,7 +3,7 @@
     <h2 class="productTitle textBold titleSize">PRODUCTS</h2>
 
     <!-- con -->
-    <div class="productCon allShadow" @click="handleTo">
+    <div class="productCon allShadow" @click="handleTo('/product/calio')">
       <strong class="productConTitle textBold">
         CALIO
         <span class="textLight">HDN002/HDN002C</span>
@@ -18,7 +18,7 @@
 
     <!-- list -->
     <div class="productRow">
-      <div v-for="(item, index) in list" :key="index" class="productItem allShadow">
+      <div v-for="(item, index) in list" :key="index" class="productItem allShadow" @click="handleTo(item.path)">
         <div class="porduct">
           <img :class="'img-' + index" :src="require(`~/assets/img/${item.img}`)" alt="PRODUCT" />
         </div>
@@ -49,6 +49,7 @@ export default {
           tip: 'HDN003/HDNOO3B',
           content: ['REPRESENTATIVE OF', 'ELEGANCE'],
           parameter: ['1-2ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE'],
+          path: '/product/sole',
         },
         {
           img: 'pro-2.png',
@@ -56,6 +57,7 @@ export default {
           tip: 'HDN004/HDNOO4B/HDN008',
           content: ['GRASP PERSONALITY', 'IN PALM'],
           parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE', 'DUAL AIRFLOW'],
+          path: '/product/cush',
         },
         {
           img: 'pro-3.png',
@@ -63,13 +65,14 @@ export default {
           tip: 'HDN005/HDNOO5B/HDN009',
           content: ['INTEGRATION OF', 'ECONOMIC AND', 'ELEGANCE'],
           parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE', 'DUAL AIRFLOW'],
+          path: '/product/bello',
         },
       ],
     }
   },
   methods: {
-    handleTo() {
-      this.$ctx.push('/product/calio')
+    handleTo(path) {
+      this.$ctx.push(path)
     },
   },
 }

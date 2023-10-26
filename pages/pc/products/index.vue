@@ -34,21 +34,21 @@ export default {
           name: 'SOLE',
           paramter: '1ML/2ML',
           tipList: ['PRE-HEATING / CERAMIC CORE / 3 LEVEL VOLTAGES ADJUSTMENT'],
-          path: '/product/calio',
+          path: '/product/sole',
           img: 'd2.png',
         },
         {
           name: 'CUSH',
           paramter: '3ML/4ML/5ML',
           tipList: ['PRE-HEATING/CERAMIC CORE/DUAL AIR-FLOW/', '3 LEVEL VOLTAGES ADJUSTMENT'],
-          path: '/product/calio',
+          path: '/product/cush',
           img: 'd3.png',
         },
         {
           name: 'BELLO',
           paramter: '3ML/4ML/5ML',
           tipList: ['PRE-HEATING/CERAMIC CORE/DUAL AIR-FLOW/', '3 LEVEL VOLTAGES ADJUSTMENT'],
-          path: '/product/calio',
+          path: '/product/bello',
           img: 'd4.png',
         },
       ],
@@ -56,15 +56,16 @@ export default {
   },
   head() {
     return {
-      title: 'product',
+      title: 'POWEHI PRODUCTS-Diverse CBD Products for Any Preference and Budget',
       meta: [
         {
           name: 'keywords',
-          content: '',
+          content: 'CBD, THC, POWEHI, diverse products, preference, budget, D8 oil, D9 oil',
         },
         {
           name: 'description',
-          content: '',
+          content:
+            "Discover the perfect CBD product to fit your preference and budget with POWEHI's diverse selection. Our products are compatible with D8/D9 oil and feature designs to meet a variety of needs.",
         },
 
         {
@@ -73,11 +74,12 @@ export default {
         },
         {
           property: 'og:title',
-          content: '',
+          content: 'POWEHI PRODUCTS-Diverse CBD Products for Any Preference and Budget',
         },
         {
           property: 'og:description',
-          content: '',
+          content:
+            "Discover the perfect CBD product to fit your preference and budget with POWEHI's diverse selection. Our products are compatible with D8/D9 oil and feature designs to meet a variety of needs.",
         },
       ],
     }
