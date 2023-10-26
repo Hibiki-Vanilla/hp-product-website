@@ -2,9 +2,7 @@
   <section class="why">
     <h2 class="whyTitle textBold" data-aos="fade-up">WHY <span>POWEHI</span></h2>
     <div class="whyTop">
-      <h3 class="whyTopLeft whyTopItem textBold imageItem" data-aos="fade-up">
-        DIVERSE RANGE OF PRODUCTS
-      </h3>
+      <h3 class="whyTopLeft whyTopItem textBold imageItem" data-aos="fade-up">DIVERSE RANGE OF PRODUCTS</h3>
       <div class="whyTopBoxCon" data-aos="fade-up">
         <div class="whyTopBoxTop">
           <div class="whyTopBoxTopCon">
@@ -13,15 +11,12 @@
           </div>
         </div>
         <div class="whyTopBoxBottom textLight textSize">
-          We offer a wide range of cannabis vaping hardware for our customers to choose
-          from, to meet customers' comprehensive vaping device needs in various types of
-          market.
+          We offer a wide range of cannabis vaping hardware for our customers to choose from, to meet customers'
+          comprehensive vaping device needs in various types of market.
         </div>
       </div>
 
-      <h3 class="whyTopRight whyTopItem textBold imageItem" data-aos="fade-up">
-        CUTTING-EDGE TECHNOLOGY
-      </h3>
+      <h3 class="whyTopRight whyTopItem textBold imageItem" data-aos="fade-up">CUTTING-EDGE TECHNOLOGY</h3>
       <div class="whyTopBoxCon" data-aos="fade-up">
         <div class="whyTopBoxTop">
           <div class="whyTopBoxTopCon">
@@ -30,9 +25,8 @@
           </div>
         </div>
         <div class="whyTopBoxBottom textLight textSize">
-          Through meticulous attention to detail and a commitment to innovation, We
-          focus on enhancing the heating coil, Optimizing the product structure,
-          perfecting the industrial design, and maximizing electric functions.
+          Through meticulous attention to detail and a commitment to innovation, We focus on enhancing the heating coil,
+          Optimizing the product structure, perfecting the industrial design, and maximizing electric functions.
         </div>
       </div>
     </div>
@@ -45,10 +39,9 @@
             <h3 class="textBold">WE HANDLE IT ALL</h3>
           </div>
         </div>
-        <div class="whyTopBoxBottom textLight">
-          Leverage from our strong in-house team and partner supporting, we're proud to
-          offer a one-stop solution for all your cannabis vaping needs, from product
-          design and packaging to branding and compliance.
+        <div class="whyTopBoxBottom textLight textSize">
+          Leverage from our strong in-house team and partner supporting, we're proud to offer a one-stop solution for
+          all your cannabis vaping needs, from product design and packaging to branding and compliance.
         </div>
       </div>
     </div>
@@ -56,15 +49,22 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="less" scoped>
+.titleSize {
+  font-size: (55 / @morem);
+}
+
+.textSize {
+  font-size: (24 / @morem);
+}
 .why {
   padding-top: (100 / @morem);
   width: 100%;
   background-color: #ececec;
-  background-image: url("https://files.myuwell.com/powehi/home/why/moBg.png");
+  background-image: url('https://files.myuwell.com/powehi/home/why/moBg.png');
   background-size: 100% (490 / @morem);
   background-position: center (550 / @morem);
   background-repeat: no-repeat;
@@ -95,16 +95,16 @@ export default {};
       box-sizing: border-box;
       padding-top: (30 / @morem);
       padding-left: (20 / @morem);
-      font-size: (36 / @morem);
+      font-size: (24 / @morem);
       color: @white;
     }
 
     .whyTopLeft {
-      background-image: url("https://files.myuwell.com/powehi/home/why/top.png");
+      background-image: url('https://files.myuwell.com/powehi/home/why/top.png');
     }
     .whyTopRight {
       margin-top: (50 / @morem);
-      background-image: url("https://files.myuwell.com/powehi/home/why/bottom.png");
+      background-image: url('https://files.myuwell.com/powehi/home/why/bottom.png');
     }
   }
 
@@ -161,7 +161,7 @@ export default {};
       position: relative;
       height: (300 / @morem);
       width: 100%;
-      background-image: url("https://files.myuwell.com/powehi/home/why/moBottomBg.png");
+      background-image: url('https://files.myuwell.com/powehi/home/why/moBottomBg.png');
     }
     .whyBottomBox {
       height: (254 / @morem);
