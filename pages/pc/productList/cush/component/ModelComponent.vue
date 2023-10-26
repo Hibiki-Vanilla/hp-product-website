@@ -52,8 +52,6 @@
           <br />
           ● Up to 5g Larger volume
           <br />
-          ● Dual air-flow for anti-clogging
-          <br />
           ● 3 Voltage settings adjustment with preheat
           <br />
           ● LED Indicator in bottom

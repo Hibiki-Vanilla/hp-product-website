@@ -6,7 +6,7 @@
         :key="index"
         :src="item"
         class="calioImg"
-        alt="calio"
+        alt="sole"
       />
     </div>
 
@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     onContant() {
-      this.$ctx.push("/contant");
+      this.$ctx.push("/contact");
     },
   },
 };

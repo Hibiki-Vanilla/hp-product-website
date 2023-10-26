@@ -21,9 +21,9 @@ export const pcRouter = [
         },
       },
       {
-        path: '/contant',
+        path: '/contact',
         name: 'contant',
-        component: resolve('pages/pc/contant/index.vue'),
+        component: resolve('pages/pc/contact/index.vue'),
         meta: {
           name: '联系我们',
         },

@@ -27,15 +27,6 @@
           <div class="listItem textLight">{{ item.text }}</div>
           <div class="listItem textLight">{{ item.twoText }}</div>
         </div>
-
-        <!-- <div
-
-          class="scrollItem"
-
-        >
-          <span class="scrollItemTitle textBold textSize">{{ item.title }}</span>
-          <span class="scrollItemText textLight"> {{ item.text }}</span>
-        </div> -->
       </div>
       <div class="scrollRightBottom">
         <div class="scrollButton textRegular" role="button" @click="onContant">
@@ -78,7 +69,7 @@ export default {
   },
   methods: {
     onContant() {
-      this.$ctx.push("/contant");
+      this.$ctx.push("/contact");
     },
   },
 };
@@ -92,7 +83,7 @@ export default {
   justify-content: space-between;
   .scrollLeft {
     width: (1100 / @pcrem);
-    .calioImg {
+    .soleImg {
       width: 100%;
     }
   }

@@ -30,9 +30,9 @@
           </div>
         </div>
         <div class="whyTopBoxBottom textLight textSize">
-          Through Meticulous Attention To Detail And A Commitment To Innovation, We Focus
-          On Enhancing The Heating Coil, Optimizing The Product Structure, Perfecting The
-          Industrial Design, And Maximizing Electric Functions.
+          Through meticulous attention to detail and a commitment to innovation, We
+          focus on enhancing the heating coil, Optimizing the product structure,
+          perfecting the industrial design, and maximizing electric functions.
         </div>
       </div>
     </div>

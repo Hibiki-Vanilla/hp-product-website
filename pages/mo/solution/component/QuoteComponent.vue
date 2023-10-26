@@ -11,7 +11,7 @@ import '../index.less'
 export default {
   methods: {
     onHomeForm() {
-      this.$ctx.push('/contant')
+      this.$ctx.push('/contact')
     },
   },
 }

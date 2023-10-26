@@ -4,7 +4,7 @@
       <div class="headerLeft" role="button" @click="handleHome"></div>
       <div class="headerRight">
         <!-- go inqury -->
-        <div class="headerRightInquryButton" role="button" @click="onHomeForm">Inqury Now</div>
+        <div class="headerRightInquryButton" role="button" @click="onHomeForm">Inquiry Now</div>
         <!-- nav  -->
         <div class="navButton" :class="{ navButtonOn: onNav }" @click="onNavButton">
           <div class="navIconLine"></div>
@@ -38,7 +38,7 @@ export default {
         { name: 'HOME', jumpLink: '/' },
         { name: 'PRODUCT', jumpLink: '/products' },
         { name: 'SOLUTION', jumpLink: '/solution' },
-        { name: 'CONTANT US', jumpLink: '/contant' },
+        { name: 'CONTACT US', jumpLink: '/contact' },
         { name: 'ABOUT', jumpLink: '/about' },
       ],
     }
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     onHomeForm() {
-      this.$ctx.push('/contant')
+      this.$ctx.push('/contact')
     },
     handleScroll() {
       const scroll = Window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop

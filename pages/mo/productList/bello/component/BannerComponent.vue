@@ -2,8 +2,8 @@
   <section class="banner imageItem" data-aos="zoom">
     <h1 class="bannerCon">
       <strong class="bannerTitle textBlack"
-        >FUSION OF ECONOMIC <br />
-        AND DELICATE</strong
+        >THE EMBODIMENT OF <br />
+        MINIMALIST</strong
       >
       <div class="textRegular bannerText">Dual air-flow for anti-clogging</div>
     </h1>

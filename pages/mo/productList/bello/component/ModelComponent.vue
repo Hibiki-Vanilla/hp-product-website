@@ -53,15 +53,13 @@
           <br />
           ● Up to 5g Larger volume
           <br />
-          ● Dual air-flow for anti-clogging
-          <br />
           ● 3 Voltage settings adjustment with preheat
           <br />
           ● LED Indicator in bottom
           <br />
           ● Unique design 180° visible oil window
           <br />
-          ● 280mah battery&Rechargeable Type-C Port
+          ● 320mah battery&Rechargeable Type-C Port
           <br />
           ● Convenient button activation
           <br />

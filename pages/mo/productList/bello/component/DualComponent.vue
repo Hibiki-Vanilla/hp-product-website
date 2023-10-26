@@ -3,7 +3,7 @@
     <div class="dualCon" data-aos="fade-up">
       <h2 class="dualTitle textBlack titleSize">WHITE LABLE FOR OEM/ODM CUSTOMIZATION</h2>
       <div class="dualText textSize textLight">
-        Why not customize our CALIO for your brand? POWEHI provide various OEM and ODM solutions for your business.
+        Why not customize our BELLO for your brand? POWEHI provide various OEM and ODM solutions for your business.
         <br />
         Want to try our products? Contact us today for a FREE sample.
       </div>

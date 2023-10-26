@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     onContant() {
-      this.$ctx.push("/contant");
+      this.$ctx.push("/contact");
     },
   },
 };

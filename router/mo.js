@@ -21,9 +21,9 @@ export const moRouter = [
         },
       },
       {
-        path: '/m/contant',
+        path: '/m/contact',
         name: 'mcontant',
-        component: resolve('pages/mo/contant/index.vue'),
+        component: resolve('pages/mo/contact/index.vue'),
         meta: {
           name: '联系我们',
         },

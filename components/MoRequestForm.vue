@@ -33,9 +33,9 @@
             <div class="iconTextCon" @click="handleToView">
               <div class="topTitle">Find us at the office</div>
               <div class="topContent">
-                12345 Clark St a, Los Angles,
+                14816 Central Ave, Chino,
                 <br />
-                CA 91006, USA
+                CA 91707, USA
               </div>
             </div>
           </div>

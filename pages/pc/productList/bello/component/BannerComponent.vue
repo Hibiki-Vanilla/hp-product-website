@@ -1,7 +1,7 @@
 <template>
   <section class="banner imageItem" data-aos="zoom">
     <h1 class="bannerCon">
-      <strong class="bannerTitle textBlack">FUSION OF ECONOMIC AND DELICATE</strong>
+      <strong class="bannerTitle textBlack">THE EMBODIMENT OF MINIMALIST </strong>
       <div class="textRegular titleSize">Dual air-flow for anti-clogging</div>
     </h1>
   </section>

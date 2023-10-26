@@ -1,14 +1,14 @@
 <template>
   <div class="products">
-    <div class="head-title fmb">PRODUCT</div>
+    <div class="head-title textBold">PRODUCT</div>
     <div class="product-boxs">
       <div v-for="item in list" :key="item.name" class="box">
-        <strong class="name fmb">{{ item.name }}</strong>
-        <strong class="paramter fml">{{ item.paramter }}</strong>
-        <div class="tips fmr">
+        <strong class="name textBold">{{ item.name }}</strong>
+        <strong class="paramter textLight">{{ item.paramter }}</strong>
+        <div class="tips textRegular">
           <strong v-for="(tip, index) in item.tipList" :key="index">{{ tip }}</strong>
         </div>
-        <div class="more fmr" @click="handleView(item.path)">view more</div>
+        <div class="more textRegular" @click="handleView(item.path)">view more</div>
         <img class="pro-img" :src="require(`~/assets/img/${item.img}`)" :alt="item.name" />
       </div>
     </div>
@@ -40,14 +40,14 @@ export default {
         {
           name: 'CUSH',
           paramter: '3ML/4ML/5ML',
-          tipList: ['PRE-HEATING/CERAMIC CORE/', 'DUAL AIR-FLOW/', '3 LEVEL VOLTAGES ADJUSTMENT'],
+          tipList: ['PRE-HEATING/CERAMIC CORE/', '3 LEVEL VOLTAGES ADJUSTMENT'],
           path: '/product/cush',
           img: 'd3.png',
         },
         {
           name: 'BELLO',
           paramter: '3ML/4ML/5ML',
-          tipList: ['PRE-HEATING/CERAMIC CORE/', 'DUAL AIR-FLOW/', '3 LEVEL VOLTAGES ADJUSTMENT'],
+          tipList: ['PRE-HEATING/CERAMIC CORE/', '3 LEVEL VOLTAGES ADJUSTMENT'],
           path: '/product/bello',
           img: 'd4.png',
         },

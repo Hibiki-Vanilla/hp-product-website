@@ -42,7 +42,6 @@
 </template>
 
 <script>
-import "../index.less";
 export default {
   data() {
     return {
@@ -116,6 +115,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    .titleSize {
+        font-size: (55 /@morem);
+    }
+    
+    .textSize {
+        font-size: (24/@morem);
+    }
+
 .subscribe {
   display: flex;
   flex-direction: column;

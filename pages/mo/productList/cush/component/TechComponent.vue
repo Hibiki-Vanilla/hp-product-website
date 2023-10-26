@@ -9,7 +9,7 @@
 
       <div class="techText textSize textLight">
         Equipped with a top-of-the-line VISCORE® ceramic heating core, CUSH is specially designed to provide the
-          ultimate taste experience. With standout features such as a 280mAh battery and rechargeable Type-C port, CUSH
+          ultimate taste experience. With standout features such as a 320mAh battery and rechargeable Type-C port, CUSH
           ensures your enjoyment until the very last drop.
       </div>
     </div>

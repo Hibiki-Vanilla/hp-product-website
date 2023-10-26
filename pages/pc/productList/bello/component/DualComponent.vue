@@ -6,7 +6,7 @@
           WHITE LABLE FOR OEM/ODM CUSTOMIZATION
         </h2>
         <div class="dualText textSize textLight">
-          Why not customize our CALIO for your brand?
+          Why not customize our BELLO for your brand?
           <br />
           POWEHI provide various OEM and ODM solutions for your business.
           <br />

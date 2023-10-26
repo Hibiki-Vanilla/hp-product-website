@@ -8,7 +8,7 @@
       </h2>
 
       <div class="techText textSize textLight">
-        Thanks to the VISCORE® ceramic heating core, 280mAh battery, and rechargeable USB Type-C port, BELLO not only
+        Thanks to the VISCORE® ceramic heating core, 320mAh battery, and rechargeable USB Type-C port, BELLO not only
         delivers a smooth, pure, full-body hit anytime but also ensures that consumers never run out of juice anywhere.
       </div>
     </div>

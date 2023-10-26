@@ -7,7 +7,7 @@
                 VAPING EXPERIENCE
             </h2>
             <div class="fullyText textSize textLight">
-                Featuring a 350mAh battery and handy rechargeable function, the SOLE double-guarantees long-lasting
+                Featuring a 280mAh battery and handy rechargeable function, the SOLE double-guarantees long-lasting
                 sessions until the last drop. Its medical-grade stainless steel internals and mouthpiece ensure every
                 inhale is both secure and delightful.
             </div>

@@ -2,25 +2,23 @@
   <section class="custom">
     <h2 class="customTitle textBold titleSize" data-aos="fade-up">CUSTOMIZATION</h2>
     <div class="customText textLight textSize" data-aos="fade-up">
-      Our CMF design service helps you create a distinctive and appealing look and feel
-      for your cannabis vaping products. We offer a range of options for color, material,
-      and finishing that suit different styles, preferences, and budgets. All these
-      customization solutions make your products stand out from the crowd!
+      Our CMF design service helps you create a distinctive and appealing look and feel for your cannabis vaping
+      products. We offer a range of options for color, material, and finishing that suit different styles, preferences,
+      and budgets. All these customization solutions make your products stand out from the crowd!
     </div>
     <div class="customTipRow" data-aos="fade-up">
       <img class="customTipIcon" src="https://files.myuwell.com/powehi/home/custom/moTipIcon.png" alt="" />
       <div class="customTipCon allShadow textLight">
         <div>
-          <strong class="textBold">Materials:</strong> Aluminium Alloy, PCTG, ABS+PC, PP, PC,
-          ABS, Stainless Steel, Leather, PLA, Silicone, Glass, Ceramic…
+          <strong class="textBold">Materials:</strong> Aluminium Alloy, PCTG, ABS+PC, PP, PC, ABS, Stainless Steel,
+          Leather, PLA, Silicone, Glass, Ceramic…
         </div>
 
         <br />
         <div>
-          <strong class="textBold">Finishing:</strong> Polishing, Sandblasting, Wire Drawing,
-          Anodizing, Blast Light Development, Radium Carving, Etching, Painting, Spraying,
-          Water Plating, Vacuum Plating, Water Sticker, Composite Plate Coating, Glass
-          Coating…
+          <strong class="textBold">Finishing:</strong> Polishing, Sandblasting, Wire Drawing, Anodizing, Blast Light
+          Development, Radium Carving, Etching, Painting, Spraying, Water Plating, Vacuum Plating, Water Sticker,
+          Composite Plate Coating, Glass Coating…
         </div>
       </div>
     </div>
@@ -71,19 +69,10 @@
       <div
         v-for="(item, index) in iconList"
         :key="index"
-        :class="[
-          { allShadow: index !== 2 },
-          { customBottomItem: index !== 2 },
-          { customBottomItemSpace: index === 2 },
-        ]"
+        :class="[{ allShadow: index !== 2 }, { customBottomItem: index !== 2 }, { customBottomItemSpace: index === 2 }]"
       >
         <div class="customBottomImgBox">
-          <img
-            v-if="item.icon"
-            :style="`height:${item.height}vw;width:${item.width}vw`"
-            :src="item.icon"
-            alt="icon"
-          />
+          <img v-if="item.icon" :style="`height:${item.height}vw;width:${item.width}vw`" :src="item.icon" alt="icon" />
         </div>
         <span class="textRegular">{{ item.text }}</span>
       </div>
@@ -92,74 +81,81 @@
 </template>
 
 <script>
-import "../index.less";
 export default {
   data() {
     return {
       topSiderList: [
-        "https://files.myuwell.com/powehi/home/custom/line/1.png",
-        "https://files.myuwell.com/powehi/home/custom/line/2.png",
-        "https://files.myuwell.com/powehi/home/custom/line/3.png",
-        "https://files.myuwell.com/powehi/home/custom/line/4.png",
-        "https://files.myuwell.com/powehi/home/custom/line/5.png",
-        "https://files.myuwell.com/powehi/home/custom/line/1.png",
-        "https://files.myuwell.com/powehi/home/custom/line/2.png",
-        "https://files.myuwell.com/powehi/home/custom/line/3.png",
-        "https://files.myuwell.com/powehi/home/custom/line/4.png",
-        "https://files.myuwell.com/powehi/home/custom/line/5.png",
+        'https://files.myuwell.com/powehi/home/custom/line/1.png',
+        'https://files.myuwell.com/powehi/home/custom/line/2.png',
+        'https://files.myuwell.com/powehi/home/custom/line/3.png',
+        'https://files.myuwell.com/powehi/home/custom/line/4.png',
+        'https://files.myuwell.com/powehi/home/custom/line/5.png',
+        'https://files.myuwell.com/powehi/home/custom/line/1.png',
+        'https://files.myuwell.com/powehi/home/custom/line/2.png',
+        'https://files.myuwell.com/powehi/home/custom/line/3.png',
+        'https://files.myuwell.com/powehi/home/custom/line/4.png',
+        'https://files.myuwell.com/powehi/home/custom/line/5.png',
       ],
       bottomSiderList: [
-        "https://files.myuwell.com/powehi/home/custom/twoLine/1.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/2.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/3.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/4.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/5.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/1.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/2.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/3.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/4.png",
-        "https://files.myuwell.com/powehi/home/custom/twoLine/5.png",
+        'https://files.myuwell.com/powehi/home/custom/twoLine/1.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/2.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/3.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/4.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/5.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/1.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/2.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/3.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/4.png',
+        'https://files.myuwell.com/powehi/home/custom/twoLine/5.png',
       ],
 
       iconList: [
         {
-          icon: "https://files.myuwell.com/powehi/home/custom/icon/1.png",
-          text: "High-Quality & Durable Materials",
+          icon: 'https://files.myuwell.com/powehi/home/custom/icon/1.png',
+          text: 'High-Quality & Durable Materials',
           width: 56 / 7.5,
           height: 52 / 7.5,
         },
         {
-          icon: "https://files.myuwell.com/powehi/home/custom/icon/2.png",
-          text: "Custom Colors & Patterns",
+          icon: 'https://files.myuwell.com/powehi/home/custom/icon/2.png',
+          text: 'Custom Colors & Patterns',
           width: 55 / 7.5,
           height: 55 / 7.5,
         },
         {},
         {
-          icon: "https://files.myuwell.com/powehi/home/custom/icon/3.png",
-          text: "Special Finishing Options",
+          icon: 'https://files.myuwell.com/powehi/home/custom/icon/3.png',
+          text: 'Special Finishing Options',
           width: 45 / 7.5,
           height: 45 / 7.5,
         },
         {
-          icon: "https://files.myuwell.com/powehi/home/custom/icon/4.png",
-          text: "Meet Diverse Budgets",
+          icon: 'https://files.myuwell.com/powehi/home/custom/icon/4.png',
+          text: 'Meet Diverse Budgets',
           width: 45 / 7.5,
           height: 51 / 7.5,
         },
         {
-          icon: "https://files.myuwell.com/powehi/home/custom/icon/5.png",
-          text: "Suit Different Styles",
+          icon: 'https://files.myuwell.com/powehi/home/custom/icon/5.png',
+          text: 'Suit Different Styles',
           width: 48 / 7.5,
           height: 48 / 7.5,
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="less" scoped>
+.titleSize {
+  font-size: (55 / @morem);
+}
+
+.textSize {
+  font-size: (24 / @morem);
+}
+
 .custom {
   display: flex;
   overflow: hidden;
@@ -260,7 +256,7 @@ export default {
     flex-wrap: wrap;
     box-sizing: border-box;
 
-    background-image: url("https://files.myuwell.com/powehi/home/custom/moBg.png");
+    background-image: url('https://files.myuwell.com/powehi/home/custom/moBg.png');
     background-size: 100% (414 / @morem);
     background-position: center (220 / @morem);
     background-repeat: no-repeat;

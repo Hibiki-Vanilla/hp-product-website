@@ -49,7 +49,7 @@
         <span class="textLight">HDN005/HDNOO5B/</span>
         <span class="textLight">HDN009</span>
       </strong>
-      <div class="productConTip textMedium"><strong>INTEGRATION OF ECONOMIC AND ELEGANCE</strong></div>
+      <div class="productConTip textMedium"><strong>THE EMBODIMENT OF MINIMALIST</strong></div>
       <img class="productConIcon" src="~/assets/img/mo/bello.png" alt="bello" />
 
       <img class="productConImg" src="~/assets/img/pro-3.png" alt="bello" />
@@ -60,8 +60,6 @@
 </template>
 
 <script>
-import '../index.less'
-
 export default {
   data() {
     return {
@@ -81,6 +79,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.titleSize {
+  font-size: (55 / @morem);
+}
+
+.textSize {
+  font-size: (24 / @morem);
+}
+
 .product {
   padding-top: (100 / @morem);
   padding-bottom: (120 / @morem);
