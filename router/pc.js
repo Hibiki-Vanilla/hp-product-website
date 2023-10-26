@@ -39,6 +39,30 @@ export const pcRouter = [
         },
       },
       {
+        path: '/product/bello',
+        name: 'bello',
+        component: resolve('pages/pc/productList/bello/index.vue'),
+        meta: {
+          name: 'bello',
+        },
+      },
+      {
+        path: '/product/cush',
+        name: 'cush',
+        component: resolve('pages/pc/productList/cush/index.vue'),
+        meta: {
+          name: 'cush',
+        },
+      },
+      {
+        path: '/product/sole',
+        name: 'sole',
+        component: resolve('pages/pc/productList/sole/index.vue'),
+        meta: {
+          name: 'sole',
+        },
+      },
+      {
         path: '/terms',
         name: 'terms',
         component: resolve('pages/pc/terms/index.vue'),

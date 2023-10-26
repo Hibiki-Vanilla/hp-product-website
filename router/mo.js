@@ -39,6 +39,30 @@ export const moRouter = [
         },
       },
       {
+        path: '/m/product/bello',
+        name: 'mbello',
+        component: resolve('pages/mo/productList/bello/index.vue'),
+        meta: {
+          name: 'bello',
+        },
+      },
+      {
+        path: '/m/product/cush',
+        name: 'mcush',
+        component: resolve('pages/mo/productList/cush/index.vue'),
+        meta: {
+          name: 'cush',
+        },
+      },
+      {
+        path: '/m/product/sole',
+        name: 'msole',
+        component: resolve('pages/mo/productList/sole/index.vue'),
+        meta: {
+          name: 'sole',
+        },
+      },
+      {
         path: '/m/terms',
         name: 'mterms',
         component: resolve('pages/mo/terms/index.vue'),
