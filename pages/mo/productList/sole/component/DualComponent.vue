@@ -21,7 +21,7 @@ export default {}
 <style lang="less" scoped>
 .dual {
   height: (1334 / @morem);
-  background-image: url('@/static/sole/mo/color.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/mo/color.png');
   .dualCon {
     display: flex;
     flex-direction: column;

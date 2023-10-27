@@ -3,13 +3,13 @@
     <img
       v-for="(item, index) in 8"
       :key="index"
-      :src="require(`@/static/cush/pc/swiper-${item}.png`)"
+      :src="`https://files.myuwell.com/powehi/cush/pc/swiper-${item}.png`"
       class="swiperImg"
       :class="[{'swiperImgAct': item === nowIndex }]"
       alt="bello"
     />
-    <img class="swiperLeftArr" src="@/static/bello/arr.png"  role="button"  @click="nowIndex = nowIndex === 1? 8:nowIndex - 1" alt="arr">
-    <img class="swiperRightArr" src="@/static/bello/arr.png" role="button"  @click="nowIndex = nowIndex === 8? 1:nowIndex + 1" alt="arr">
+    <img class="swiperLeftArr" src="https://files.myuwell.com/powehi/bello/arr.png"  role="button" alt="arr" @click="nowIndex = nowIndex === 1? 8:nowIndex - 1" >
+    <img class="swiperRightArr" src="https://files.myuwell.com/powehi/bello/arr.png" role="button" alt="arr" @click="nowIndex = nowIndex === 8? 1:nowIndex + 1" >
   </section>
 </template>
 

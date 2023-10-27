@@ -32,7 +32,7 @@ export default {}
   .techCon {
     height: (1234 / @morem);
     width: (650 / @morem);
-    background-image: url('@/static/sole/mo/fits.png');
+    background-image: url('https://files.myuwell.com/powehi/sole/mo/fits.png');
     text-align: center;
     .techTitle {
       padding-top: (180 / @morem);

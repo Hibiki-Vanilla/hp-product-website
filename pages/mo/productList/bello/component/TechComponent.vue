@@ -31,7 +31,7 @@ export default {}
   .techCon {
     height: (1234 / @morem);
     width: (650 / @morem);
-    background-image: url('@/static/bello/moTech.png');
+    background-image: url('https://files.myuwell.com/powehi/bello/moTech.png');
     text-align: center;
     .techTitle {
       padding-top: (830 / @morem);

@@ -4,7 +4,7 @@
       <img
         v-for="(item, index) in 7"
         :key="index"
-        :src="require(`@/static/sole/pc/swiper-${item}.png`)"
+        :src="`https://files.myuwell.com/powehi/sole/pc/swiper-${item}.png`"
         class="soleImg"
         alt="sole"
       />

@@ -23,7 +23,7 @@ export default {}
 <style lang="less" scoped>
 .dual {
   height: (1080 / @pcrem);
-  background-image: url('@/static/sole/pc/color.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/pc/color.png');
   .dualCon {
     display: flex;
     width: (1400 / @pcrem);

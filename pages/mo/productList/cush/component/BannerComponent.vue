@@ -19,7 +19,7 @@ export default {}
 <style lang="less" scoped>
 .banner {
   height: (1334 / @morem);
-  background-image: url('@/static/cush/mo/mobanner.png');
+  background-image: url('https://files.myuwell.com/powehi/cush/mo/mobanner.png');
 
   .bannerCon {
     display: flex;

@@ -22,7 +22,7 @@ export default {}
 <style lang="less" scoped>
 .unleash {
   height: (1334 / @morem);
-  background-image: url('@/static/sole/mo/eye.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/mo/eye.png');
 
   .unleashCon {
     height: 100%;

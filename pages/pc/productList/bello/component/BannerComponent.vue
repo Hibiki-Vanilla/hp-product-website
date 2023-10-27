@@ -2,7 +2,7 @@
   <section class="banner imageItem" data-aos="zoom">
     <h1 class="bannerCon">
       <strong class="bannerTitle textBlack">THE EMBODIMENT OF MINIMALIST </strong>
-      <div class="textRegular titleSize">Dual air-flow for anti-clogging</div>
+      <div class="textRegular titleSize">Unique design 180°visible oil window</div>
     </h1>
   </section>
 </template>
@@ -15,7 +15,7 @@ export default {};
 <style lang="less" scoped>
 .banner {
   height: (1080 / @pcrem);
-  background-image: url("@/static/bello/banner.png");
+  background-image: url("https://files.myuwell.com/powehi/bello/banner.png");
 
   .bannerCon {
     display: flex;

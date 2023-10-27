@@ -59,7 +59,7 @@
           <br />
           ● Unique design 180° visible oil window
           <br />
-          ● 320mah battery&Rechargeable Type-C Port
+          ● 320mAh battery&Rechargeable Type-C Port
           <br />
           ● Convenient button activation
           <br />
@@ -79,10 +79,10 @@ export default {
     return {
       nowIndex: 0,
       list: [
-        require('@/static/bello/01.png'),
-        require('@/static/bello/02.png'),
-        require('@/static/bello/03.png'),
-        require('@/static/bello/04.png'),
+        'https://files.myuwell.com/powehi/bello/01.png',
+        'https://files.myuwell.com/powehi/bello/02.png',
+        'https://files.myuwell.com/powehi/bello/03.png',
+        'https://files.myuwell.com/powehi/bello/04.png',
       ],
     }
   },

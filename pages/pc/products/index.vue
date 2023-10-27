@@ -9,10 +9,10 @@
           <strong v-for="(tip, index) in item.tipList" :key="index">{{ tip }}</strong>
         </div>
         <div class="more textRegular" @click="handleView(item.path)">view more</div>
-        <img class="pro-img" :src="require(`~/assets/img/${item.img}`)" :alt="item.name" />
+        <img class="pro-img" :src="`https://files.myuwell.com/powehi/products/${item.img}`" :alt="item.name" />
       </div>
     </div>
-    <div class="finish"><img src="~/assets/img/finish.png" alt="finish" /></div>
+    <div class="finish"><img src="https://files.myuwell.com/powehi/products/pc/finish.png" alt="finish" /></div>
   </div>
 </template>
 
@@ -109,7 +109,7 @@ export default {
     .box {
       width: calc(50% - 1.302vw);
       height: (1000 / @pcrem);
-      background: url('~/assets/img/rectbg.png');
+      background: url('https://files.myuwell.com/powehi/products/rectbg.png');
       background-size: cover;
       margin-bottom: (50 / @pcrem);
       display: flex;
@@ -154,8 +154,8 @@ export default {
     }
     .box:nth-child(2) {
       .pro-img {
-        width: (326 / @pcrem);
-        height: (429 / @pcrem);
+        width: (381 / @pcrem);
+        height: (460 / @pcrem);
         margin-top: (48 / @pcrem);
       }
     }

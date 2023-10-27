@@ -31,8 +31,8 @@
             </div>
           </div>
           <div class="whyTopBoxBottom textLight">
-            Through meticulous attention to detail and a commitment to innovation, We
-            focus on enhancing the heating coil, Optimizing the product structure,
+            Through meticulous attention to detail and a commitment to innovation, we
+            focus on enhancing the heating coil, optimizing the product structure,
             perfecting the industrial design, and maximizing electric functions.
           </div>
         </div>

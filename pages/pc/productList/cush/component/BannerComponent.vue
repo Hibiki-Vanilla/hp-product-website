@@ -15,7 +15,7 @@ export default {};
 <style lang="less" scoped>
 .banner {
   height: (1080 / @pcrem);
-  background-image: url("@/static/cush/pc/banner.png");
+  background-image: url("https://files.myuwell.com/powehi/cush/pc/banner.png");
 
   .bannerCon {
     display: flex;

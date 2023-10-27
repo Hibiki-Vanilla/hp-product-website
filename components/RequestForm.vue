@@ -247,7 +247,7 @@ export default {
 
   .con {
     position: absolute;
-    top: (110 / @pcrem);
+    top: (50 / @pcrem);
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;

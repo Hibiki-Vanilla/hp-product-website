@@ -32,7 +32,7 @@ export default {};
   .techCon {
     height: (881 / @pcrem);
     width: (1453 / @pcrem);
-    background-image: url("@/static/bello/tech.png");
+    background-image: url("https://files.myuwell.com/powehi/bello/tech.png");
 
     .techLeft {
       display: flex;

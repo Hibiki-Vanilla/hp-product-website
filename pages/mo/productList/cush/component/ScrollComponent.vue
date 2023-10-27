@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       list: [
-         require("@/static/cush/mo/swiper-1.png"),
+         "https://files.myuwell.com/powehi/cush/mo/swiper-1.png",
       ],
       textList: [
         {

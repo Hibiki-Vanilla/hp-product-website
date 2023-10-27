@@ -30,7 +30,7 @@ export default {}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('@/static/cush/pc/powerful.png');
+  background-image: url('https://files.myuwell.com/powehi/cush/pc/powerful.png');
 
   .techCon {
     height: 100%;

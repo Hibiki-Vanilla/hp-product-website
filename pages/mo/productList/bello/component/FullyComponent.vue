@@ -23,7 +23,7 @@ export default {}
 <style lang="less" scoped>
 .fully {
   height: (1334 / @morem);
-  background-image: url('@/static/bello/moFully.png');
+  background-image: url('https://files.myuwell.com/powehi/bello/moFully.png');
   .fullyCon {
     display: flex;
     flex-direction: column;

@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       navList: [
-        { name: "PRODUCT", jumpLink: "/product" },
+        { name: "PRODUCT", jumpLink: "/products" },
         { name: "SOLUTION", jumpLink: "/solution" },
         { name: "ABOUT", jumpLink: "/about" },
       ],

@@ -257,7 +257,7 @@ export default {
   padding-bottom: (60 / @morem);
 
   .con {
-    padding-top: (100 / @morem);
+    padding-top: (40 / @morem);
     margin: 0 auto;
     display: flex;
     flex-direction: column;

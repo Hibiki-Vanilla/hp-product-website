@@ -28,7 +28,7 @@ export default {}
 <style lang="less" scoped>
 .unleash {
   height: (1334 / @morem);
-  background-image: url('@/static/bello/moBannerThree.png');
+  background-image: url('https://files.myuwell.com/powehi/bello/moBannerThree.png');
 
   .unleashCon {
     height: 100%;

@@ -9,7 +9,7 @@
         <span class="textLight">HDN002/HDN002C</span>
       </strong>
       <div class="productConTip textMedium"><strong>CLASSIC DESIGN</strong> 2G DISPOSABLE VAPE</div>
-      <img class="productConIcon" src="https://files.myuwell.com/powehi/home/products/moIcon.png" alt="calio" />
+      <img class="productConIcon" src="@/static/home/products/moIcon.png" alt="calio" />
 
       <img class="productConImg" src="https://files.myuwell.com/powehi/home/products/calio.png" alt="calio" />
 
@@ -22,9 +22,9 @@
         <span class="textLight">HDN003/HDNOO3B</span>
       </strong>
       <div class="productConTip textMedium"><strong>REPRESENTATIVE OF ELEGANCE</strong></div>
-      <img class="productConIcon" src="~/assets/img/mo/sole.png" alt="sole" />
+      <img class="productConIcon" src="https://files.myuwell.com/powehi/products/mo/sole.png" alt="sole" />
 
-      <img class="productConImg" src="~/assets/img/pro-1.png" alt="sole" />
+      <img class="productConImg" src="https://files.myuwell.com/powehi/home/pro-1.png" alt="sole" />
 
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="sole" />
     </div>
@@ -36,9 +36,9 @@
         <span class="textLight">HDN008</span>
       </strong>
       <div class="productConTip textMedium"><strong>GRASP PERSONALITY IN PALM</strong></div>
-      <img class="productConIcon" src="~/assets/img/mo/cush.png" alt="cush" />
+      <img class="productConIcon" src="https://files.myuwell.com/powehi/products/mo/cush.png" alt="cush" />
 
-      <img class="productConImg" src="~/assets/img/pro-2.png" alt="cush" />
+      <img class="productConImg" src="https://files.myuwell.com/powehi/home/pro-2.png" alt="cush" />
 
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="cush" />
     </div>
@@ -50,9 +50,9 @@
         <span class="textLight">HDN009</span>
       </strong>
       <div class="productConTip textMedium"><strong>THE EMBODIMENT OF MINIMALIST</strong></div>
-      <img class="productConIcon" src="~/assets/img/mo/bello.png" alt="bello" />
+      <img class="productConIcon" src="https://files.myuwell.com/powehi/products/mo/bello.png" alt="bello" />
 
-      <img class="productConImg" src="~/assets/img/pro-3.png" alt="bello" />
+      <img class="productConImg" src="https://files.myuwell.com/powehi/home/pro-3.png" alt="bello" />
 
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="bello" />
     </div>
@@ -128,7 +128,7 @@ export default {
       font-size: (18 / @morem);
     }
     .productConIcon {
-      height: (65 / @morem);
+      height: (79 / @morem);
       width: (282 / @morem);
     }
     .productConImg {

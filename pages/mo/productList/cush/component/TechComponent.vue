@@ -28,7 +28,7 @@ export default {}
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('@/static/cush/mo/powerful.png');
+  background-image: url('https://files.myuwell.com/powehi/cush/mo/powerful.png');
 
   .techCon {
     height: 100%;

@@ -1,5 +1,13 @@
 <template>
   <div class="contant">
+    <div class="mapBox">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.3214578564803!2d-117.68964199999999!3d33.984276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcccd8b007c6a9%3A0x1efd83df939f14f1!2zMTQ4MTYgQ2VudHJhbCBBdmUsIENoaW5vLCBDQSA5MTcxMOe-juWbvQ!5e0!3m2!1szh-CN!2shk!4v1698372841487!5m2!1szh-CN!2shk"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     <RequestForm page-value="home" />
   </div>
 </template>
@@ -42,4 +50,15 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.mapBox {
+  padding-top: (80/@pcrem);
+  width: (1512 / @pcrem);
+  margin: 0 auto;
+  iframe {
+    border: 0;
+    width: 100%;
+    height: (350 / @pcrem);
+  }
+}
+</style>

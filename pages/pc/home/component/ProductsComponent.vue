@@ -9,7 +9,7 @@
         <span class="textLight">HDN002/HDN002C</span>
       </strong>
       <div class="productConTip textMedium"><strong>CLASSIC DESIGN</strong> 2G DISPOSABLE VAPE</div>
-      <img class="productConIcon" src="https://files.myuwell.com/powehi/home/products/icon.png" alt="" />
+      <img class="productConIcon" src="@/static/home/products/icon.png" alt="" />
 
       <img class="productConImg" src="https://files.myuwell.com/powehi/home/products/calio.png" alt="calio" />
 
@@ -20,14 +20,14 @@
     <div class="productRow">
       <div v-for="(item, index) in list" :key="index" class="productItem allShadow" @click="handleTo(item.path)">
         <div class="porduct">
-          <img :class="'img-' + index" :src="require(`~/assets/img/${item.img}`)" alt="PRODUCT" />
+          <img :class="'img-' + index" :src="`https://files.myuwell.com/powehi/home/${item.img}`" alt="PRODUCT" />
         </div>
         <strong class="title textBold">{{ item.title }}</strong>
         <strong class="tip textLight">{{ item.tip }}</strong>
         <strong v-for="(text, idx) in item.content" :key="idx" class="content textMedium">{{ text }}</strong>
         <div class="parameter">
           <strong v-for="(par, pid) in item.parameter" :key="pid" class="textLight">
-            <img src="~/assets/img/crie.png" alt="crie" />{{ par }}
+            <img src="https://files.myuwell.com/powehi/home/crie.png" alt="crie" />{{ par }}
           </strong>
         </div>
         <img class="arrow" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="calio" />
@@ -120,7 +120,7 @@ export default {
     .productConIcon {
       opacity: 0;
       height: (74 / @pcrem);
-      width: (537 / @pcrem);
+      width: (583 / @pcrem);
       transition: opacity 0.8s cubic-bezier(0.25, 1, 0.38, 1);
     }
     .productConImg {

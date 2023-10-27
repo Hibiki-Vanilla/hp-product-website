@@ -5,7 +5,7 @@
         >THE EMBODIMENT OF <br />
         MINIMALIST</strong
       >
-      <div class="textRegular bannerText">Dual air-flow for anti-clogging</div>
+      <div class="textRegular bannerText">Unique design 180°visible oil window</div>
     </h1>
   </section>
 </template>
@@ -18,7 +18,7 @@ export default {}
 <style lang="less" scoped>
 .banner {
   height: (1334 / @morem);
-  background-image: url('@/static/bello/mobanner.png');
+  background-image: url('https://files.myuwell.com/powehi/bello/moBanner.png');
 
   .bannerCon {
     display: flex;

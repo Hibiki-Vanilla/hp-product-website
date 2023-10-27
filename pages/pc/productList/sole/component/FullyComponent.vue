@@ -21,7 +21,7 @@ export default {}
 <style lang="less" scoped>
 .fully {
   height: (1080 / @pcrem);
-  background-image: url('@/static/sole/pc/worry.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/pc/worry.png');
   .fullyCon {
     display: flex;
     flex-direction: column;

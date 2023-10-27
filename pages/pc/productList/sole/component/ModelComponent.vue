@@ -54,7 +54,7 @@
           <br />
           ● 3 level voltage with preheating function
           <br />
-          ● 280mah battery with type-c rechargeable port
+          ● 320mAh battery with type-c rechargeable port
           <br />
           ● Food-grade mouthpiece conforms with ergonomics
           <br />
@@ -78,10 +78,10 @@ export default {
     return {
       nowIndex: 0,
       list: [
-        require('@/static/sole/pc/1.png'),
-        require('@/static/sole/pc/2.png'),
-        require('@/static/sole/pc/3.png'),
-        require('@/static/sole/pc/4.png'),
+        'https://files.myuwell.com/powehi/sole/pc/1.png',
+        'https://files.myuwell.com/powehi/sole/pc/2.png',
+        'https://files.myuwell.com/powehi/sole/pc/3.png',
+        'https://files.myuwell.com/powehi/sole/pc/4.png',
       ],
     }
   },

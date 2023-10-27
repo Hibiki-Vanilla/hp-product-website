@@ -22,7 +22,7 @@ export default {}
 <style lang="less" scoped>
 .banner {
   height: (1080 / @pcrem);
-  background-image: url('@/static/sole/pc/banner.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/pc/banner.png');
 
   .bannerCon {
     display: flex;

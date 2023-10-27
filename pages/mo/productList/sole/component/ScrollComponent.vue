@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       list: [
-        require(`@/static/sole/mo/swiper-6.png`),
+        `https://files.myuwell.com/powehi/sole/mo/swiper-6.png`,
       ],
       textList: [
         {

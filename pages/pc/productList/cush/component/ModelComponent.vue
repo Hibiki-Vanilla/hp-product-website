@@ -58,7 +58,7 @@
           <br />
           ● Fully visible and customizable oil window
           <br />
-          ● 280mah battery&Rechargeable Type-C Port
+          ● 320mAh battery&Rechargeable Type-C Port
           <br />
           ● Convenient button activation
           <br />
@@ -80,10 +80,10 @@ export default {
     return {
       nowIndex: 0,
       list: [
-        require('@/static/cush/pc/01.png'),
-        require('@/static/cush/pc/02.png'),
-        require('@/static/cush/pc/03.png'),
-        require('@/static/cush/pc/04.png'),
+        'https://files.myuwell.com/powehi/cush/pc/01.png',
+        'https://files.myuwell.com/powehi/cush/pc/02.png',
+        'https://files.myuwell.com/powehi/cush/pc/03.png',
+        'https://files.myuwell.com/powehi/cush/pc/04.png',
       ],
     }
   },

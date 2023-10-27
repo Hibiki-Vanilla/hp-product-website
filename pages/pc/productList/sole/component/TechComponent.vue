@@ -34,7 +34,7 @@ export default {}
   .techCon {
     height: (881 / @pcrem);
     width: (1452 / @pcrem);
-    background-image: url('@/static/sole/pc/fits.png');
+    background-image: url('https://files.myuwell.com/powehi/sole/pc/fits.png');
 
     .techLeft {
       display: flex;

@@ -23,7 +23,7 @@ export default {}
 <style lang="less" scoped>
 .unleash {
   height: (1080 / @pcrem);
-  background-image: url('@/static/sole/pc/eye.png');
+  background-image: url('https://files.myuwell.com/powehi/sole/pc/eye.png');
 
   .unleashCon {
     height: 100%;
