@@ -9,7 +9,7 @@
         <span class="textLight">HDN002/HDN002C</span>
       </strong>
       <div class="productConTip textMedium"><strong>CLASSIC DESIGN</strong> 2G DISPOSABLE VAPE</div>
-      <img class="productConIcon" src="@/static/home/products/moIcon.png" alt="calio" />
+      <img class="productConIcon" src="https://files.myuwell.com/powehi/home/products/moIcon.png" alt="calio" />
 
       <img class="productConImg" src="https://files.myuwell.com/powehi/home/products/calio.png" alt="calio" />
 

@@ -34,7 +34,7 @@ export default {
         "https://files.myuwell.com/powehi/home/change/1.png",
         "https://files.myuwell.com/powehi/home/change/2.png",
         "https://files.myuwell.com/powehi/home/change/3.png",
-        require("@/static/home/change/4.png"),
+        "https://files.myuwell.com/powehi/home/change/4.png",
       ],
     };
   },

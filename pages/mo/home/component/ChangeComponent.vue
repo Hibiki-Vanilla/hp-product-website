@@ -32,7 +32,7 @@ export default {
         "https://files.myuwell.com/powehi/home/change/mo1.png",
         "https://files.myuwell.com/powehi/home/change/mo2.png",
         "https://files.myuwell.com/powehi/home/change/mo3.png",
-        require("@/static/home/change/mo4.png"),
+        'https://files.myuwell.com/powehi/home/change/mo4.png'
       ],
     };
   },
