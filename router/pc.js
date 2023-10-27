@@ -3,8 +3,6 @@ import path from 'path'
 
 const resolve = (pagePath) => path.resolve(process.cwd(), `./${pagePath}`)
 
-
-
 export const pcRouter = [
     {
         path: '/',
@@ -23,6 +21,22 @@ export const pcRouter = [
         },
       },
       {
+        path: '/contact',
+        name: 'contant',
+        component: resolve('pages/pc/contact/index.vue'),
+        meta: {
+          name: '联系我们',
+        },
+      },
+      {
+        path: '/products',
+        name: 'products',
+        component: resolve('pages/pc/products/index.vue'),
+        meta: {
+          name: '产品页',
+        },
+      },
+      {
         path: '/solution',
         name: 'solution',
         component: resolve('pages/pc/solution/index.vue'),
@@ -36,6 +50,30 @@ export const pcRouter = [
         component: resolve('pages/pc/productList/calio/index.vue'),
         meta: {
           name: 'calio',
+        },
+      },
+      {
+        path: '/product/bello',
+        name: 'bello',
+        component: resolve('pages/pc/productList/bello/index.vue'),
+        meta: {
+          name: 'bello',
+        },
+      },
+      {
+        path: '/product/cush',
+        name: 'cush',
+        component: resolve('pages/pc/productList/cush/index.vue'),
+        meta: {
+          name: 'cush',
+        },
+      },
+      {
+        path: '/product/sole',
+        name: 'sole',
+        component: resolve('pages/pc/productList/sole/index.vue'),
+        meta: {
+          name: 'sole',
         },
       },
       {

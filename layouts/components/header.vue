@@ -4,9 +4,7 @@
       <div class="headerLeft" role="button" @click="handleHome"></div>
       <div class="headerRight">
         <!-- go inqury -->
-        <div class="headerRightInquryButton" role="button" @click="onHomeForm">
-          Inqury Now
-        </div>
+        <div class="headerRightInquryButton" role="button" @click="onHomeForm">Inquiry Now</div>
         <!-- nav  -->
         <div class="navButton" :class="{ navButtonOn: onNav }" @click="onNavButton">
           <div class="navIconLine"></div>
@@ -22,12 +20,7 @@
 
     <!-- open window -->
     <div class="headerBottomRow" :class="{ headerBottomRowOn: onNav }">
-      <div
-        v-for="(item, index) in navList"
-        :key="index"
-        class="windowNavItem"
-        @click="onNavClick(item)"
-      >
+      <div v-for="(item, index) in navList" :key="index" class="windowNavItem" @click="onNavClick(item)">
         {{ item.name }}
       </div>
     </div>
@@ -42,74 +35,66 @@ export default {
       hanTopBtn: false,
       onNav: false,
       navList: [
-        { name: "HOME", jumpLink: "/" },
-        { name: "PRODUCT", jumpLink: "/product/calio" },
-        { name: "SOLUTION", jumpLink: "/solution" },
-        { name: "ABOUT", jumpLink: "/about" },
+        { name: 'HOME', jumpLink: '/' },
+        { name: 'PRODUCT', jumpLink: '/products' },
+        { name: 'SOLUTION', jumpLink: '/solution' },
+        { name: 'CONTACT US', jumpLink: '/contact' },
+        { name: 'ABOUT', jumpLink: '/about' },
       ],
-    };
+    }
   },
 
   mounted() {
-    this.handleScroll();
-    window.addEventListener("scroll", this.handleScroll);
+    this.handleScroll()
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     onHomeForm() {
-      this.$ctx.push("/");
-      setTimeout(() => {
-        document
-          .getElementById(this.$store.state.isPc ? "requesForm" : "moRequesForm")
-          .scrollIntoView({ behavior: "smooth", block: "center" });
-      }, 200);
+      this.$ctx.push('/contact')
     },
     handleScroll() {
-      const scroll =
-        Window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-      // console.log(this.$store.state.isPc);
-      this.isFixed = scroll > 0;
-      this.hanTopBtn = scroll > 100;
+      const scroll = Window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      this.isFixed = scroll > 0
+      this.hanTopBtn = scroll > 100
     },
     handleHome() {
-      this.$ctx.push("/");
+      this.$ctx.push('/')
       if (this.onNav) {
-        this.onNavButton();
+        this.onNavButton()
       }
     },
     handleTo(nav) {
       if (nav.jumpLink) {
-        this.$ctx.push(nav.jumpLink);
+        this.$ctx.push(nav.jumpLink)
       }
     },
     handleTop() {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
-      });
+        behavior: 'smooth',
+      })
     },
     onNavButton() {
-      this.onNav = !this.onNav;
-      const htmlCss = document.getElementsByTagName("html");
+      this.onNav = !this.onNav
+      const htmlCss = document.getElementsByTagName('html')
       if (this.onNav) {
-        document.body.style.cssText = "overflow:hidden";
-        htmlCss[0].style.cssText = "overflow:hidden";
+        document.body.style.cssText = 'overflow:hidden'
+        htmlCss[0].style.cssText = 'overflow:hidden'
       } else {
-        document.body.style.cssText = "overflow:unset";
-        htmlCss[0].style.cssText = "overflow:unset";
-        this.onLang = false;
+        document.body.style.cssText = 'overflow:unset'
+        htmlCss[0].style.cssText = 'overflow:unset'
+        this.onLang = false
       }
     },
     onNavClick(item) {
-      this.$ctx.push(item.jumpLink);
-      this.onNavButton();
+      this.$ctx.push(item.jumpLink)
+      this.onNavButton()
     },
   },
-};
+}
 </script>
 
 <style lang="less" scoped>
@@ -135,7 +120,7 @@ export default {
       cursor: pointer;
       width: 160px;
       height: 55px;
-      background-image: url("@/static/logo.png");
+      background-image: url('@/static/logo.png');
       background-size: 100% 100%;
       background-position: center center;
       background-repeat: no-repeat;
@@ -152,7 +137,7 @@ export default {
 
       .headerRightInquryButton {
         cursor: pointer;
-        font-family: "Montserrat Regular";
+        font-family: 'Montserrat Regular';
         font-size: 18px;
         color: @white;
         background-color: @mainColor;
@@ -264,7 +249,7 @@ export default {
 
     .windowNavItem {
       cursor: pointer;
-      font-family: "Montserrat Bold";
+      font-family: 'Montserrat Bold';
       font-size: 40px;
       color: #fff;
       margin-bottom: 60px;

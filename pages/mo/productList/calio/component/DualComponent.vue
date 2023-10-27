@@ -2,15 +2,11 @@
   <section class="dual imageItem" data-aos="zoom">
     <div class="dualCon" data-aos="fade-up">
       <h2 class="dualTitle textBlack titleSize">
-        DUAL AIR-FLOW & PRE-HEATING FOR ANTI-CLOGGING
+        BUTTON ACTIVATION AND 3 LEVEL VOLTAGES ADJUSTMENT FOR CUSTOMIZED VAPING
       </h2>
       <div class="dualText textSize textLight">
-        CALIO has dual air-flow that provides a smooth vaping experience. The pre-heating
-        function helps prevent clogging.
-        <br />
-        <br />
-        With button activation and 3 level voltages adjustment that allows you to
-        customize your vaping experience.
+        CALIO offers a truly personalized vaping experience with its button activation and 3 level voltages adjustment feature.
+        Simply press the button to activate the device and choose from three voltage levels to customize your ideal vaping experience. 
       </div>
     </div>
   </section>

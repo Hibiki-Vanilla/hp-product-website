@@ -43,7 +43,7 @@
 
       <div class="scrollBottomBottom">
         <div class="scrollButton textRegular" role="button" @click="onHomeForm">
-          Request Sample Now
+          REQUEST SAMPLE NOW
         </div>
       </div>
     </div>
@@ -95,12 +95,7 @@ export default {
   },
   methods: {
     onHomeForm() {
-      this.$ctx.push("/");
-      setTimeout(() => {
-        document
-          .getElementById("moRequesForm")
-          .scrollIntoView({ behavior: "smooth", block: "center" });
-      }, 200);
+      this.$ctx.push("/contact");
     },
   },
 };

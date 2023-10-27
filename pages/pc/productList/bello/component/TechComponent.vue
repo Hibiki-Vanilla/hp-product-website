@@ -1,0 +1,57 @@
+<template>
+  <section class="tech" data-aos="zoom">
+    <div class="techCon imageItem">
+      <div class="techLeft" data-aos="fade-up">
+        <h2 class="techTitle textBlack titleSize">
+          STANDOUT POTENCY GIVES
+          <br />
+          THE BEST EXPERIENCE
+        </h2>
+
+        <div class="techText textSize textLight">
+          Thanks to the VISCORE® ceramic heating core, 320mAh battery, and rechargeable USB Type-C port, BELLO not only delivers a smooth, pure, full-body hit anytime but also ensures that consumers never run out of juice anywhere.
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import "../index.less";
+export default {};
+</script>
+
+<style lang="less" scoped>
+.tech {
+  height: (1080 / @pcrem);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .techCon {
+    height: (881 / @pcrem);
+    width: (1453 / @pcrem);
+    background-image: url("https://files.myuwell.com/powehi/bello/tech.png");
+
+    .techLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #000;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: (120 / @pcrem);
+    }
+    .techTitle {
+      padding-bottom: (60 / @pcrem);
+      letter-spacing: -0.1vw;
+    }
+    .techText {
+      box-sizing: border-box;
+      width:(640 / @pcrem);
+      padding-right: (80 / @pcrem);
+    }
+  }
+}
+</style>

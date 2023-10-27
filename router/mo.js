@@ -3,8 +3,6 @@ import path from 'path'
 
 const resolve = (pagePath) => path.resolve(process.cwd(), `./${pagePath}`)
 
-
-
 export const moRouter = [
     {
         path: '/m',
@@ -23,6 +21,22 @@ export const moRouter = [
         },
       },
       {
+        path: '/m/contact',
+        name: 'mcontant',
+        component: resolve('pages/mo/contact/index.vue'),
+        meta: {
+          name: '联系我们',
+        },
+      },
+      {
+        path: '/m/products',
+        name: 'mproducts',
+        component: resolve('pages/mo/products/index.vue'),
+        meta: {
+          name: '产品页',
+        },
+      },
+      {
         path: '/m/solution',
         name: 'msolution',
         component: resolve('pages/mo/solution/index.vue'),
@@ -36,6 +50,30 @@ export const moRouter = [
         component: resolve('pages/mo/productList/calio/index.vue'),
         meta: {
           name: 'calio',
+        },
+      },
+      {
+        path: '/m/product/bello',
+        name: 'mbello',
+        component: resolve('pages/mo/productList/bello/index.vue'),
+        meta: {
+          name: 'bello',
+        },
+      },
+      {
+        path: '/m/product/cush',
+        name: 'mcush',
+        component: resolve('pages/mo/productList/cush/index.vue'),
+        meta: {
+          name: 'cush',
+        },
+      },
+      {
+        path: '/m/product/sole',
+        name: 'msole',
+        component: resolve('pages/mo/productList/sole/index.vue'),
+        meta: {
+          name: 'sole',
         },
       },
       {

@@ -12,7 +12,7 @@
         <br />
         It is a masterpiece of art and technology that embodies our values and spirit.
         <br />
-        With its cutting-edge performance and design, CALIO offers users an
+        With its thrilling performance and cutting-edge design, CALIO offers users an
         unprecedentedly intelligent and convenient experience.
         <br />
         We believe that CALIO will set a new benchmark for the industry and lead the way
