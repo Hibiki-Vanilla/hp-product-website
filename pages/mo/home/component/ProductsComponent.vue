@@ -29,7 +29,7 @@
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="sole" />
     </div>
 
-    <div class="productCon allShadow three" @click="handleTo('/product/cush')">
+    <!-- <div class="productCon allShadow three" @click="handleTo('/product/cush')">
       <strong class="productConTitle textBold">
         CUSH
         <span class="textLight">HDN004/HDNOO4B/</span>
@@ -41,7 +41,7 @@
       <img class="productConImg" src="https://files.myuwell.com/powehi/home/pro-2.png" alt="cush" />
 
       <img class="productArrIcon" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="cush" />
-    </div>
+    </div> -->
 
     <div class="productCon allShadow four" @click="handleTo('/product/bello')">
       <strong class="productConTitle textBold">

@@ -37,13 +37,13 @@ export default {
           path: '/product/sole',
           img: 'd2.png',
         },
-        {
-          name: 'CUSH',
-          paramter: '3ML/4ML/5ML',
-          tipList: ['PRE-HEATING/CERAMIC CORE/', '3 LEVEL VOLTAGES ADJUSTMENT'],
-          path: '/product/cush',
-          img: 'd3.png',
-        },
+        // {
+        //   name: 'CUSH',
+        //   paramter: '3ML/4ML/5ML',
+        //   tipList: ['PRE-HEATING/CERAMIC CORE/', '3 LEVEL VOLTAGES ADJUSTMENT'],
+        //   path: '/product/cush',
+        //   img: 'd3.png',
+        // },
         {
           name: 'BELLO',
           paramter: '3ML/4ML/5ML',
@@ -156,14 +156,14 @@ export default {
         margin-top: (52 / @morem);
       }
     }
+    // .box:nth-child(3) {
+    //   .pro-img {
+    //     width: (284 / @morem);
+    //     height: (288 / @morem);
+    //     margin-top: (46 / @morem);
+    //   }
+    // }
     .box:nth-child(3) {
-      .pro-img {
-        width: (284 / @morem);
-        height: (288 / @morem);
-        margin-top: (46 / @morem);
-      }
-    }
-    .box:nth-child(4) {
       .pro-img {
         width: (456 / @morem);
         height: (262 / @morem);
