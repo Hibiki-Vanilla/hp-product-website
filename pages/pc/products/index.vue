@@ -11,6 +11,10 @@
         <div class="more textRegular" @click="handleView(item.path)">view more</div>
         <img class="pro-img" :src="`https://files.myuwell.com/powehi/products/${item.img}`" :alt="item.name" />
       </div>
+
+      <div  class="box lastBox">
+        <strong class="name textBold">COMING SOON</strong>
+      </div>
     </div>
     <div class="finish"><img src="https://files.myuwell.com/powehi/products/pc/finish.png" alt="finish" /></div>
   </div>
@@ -37,13 +41,13 @@ export default {
           path: '/product/sole',
           img: 'd2.png',
         },
-        {
-          name: 'CUSH',
-          paramter: '3ML/4ML/5ML',
-          tipList: ['PRE-HEATING/CERAMIC CORE/3 LEVEL VOLTAGES ADJUSTMENT'],
-          path: '/product/cush',
-          img: 'd3.png',
-        },
+        // {
+        //   name: 'CUSH',
+        //   paramter: '3ML/4ML/5ML',
+        //   tipList: ['PRE-HEATING/CERAMIC CORE/3 LEVEL VOLTAGES ADJUSTMENT'],
+        //   path: '/product/cush',
+        //   img: 'd3.png',
+        // },
         {
           name: 'BELLO',
           paramter: '3ML/4ML/5ML',
@@ -159,19 +163,24 @@ export default {
         margin-top: (48 / @pcrem);
       }
     }
+    // .box:nth-child(3) {
+    //   .pro-img {
+    //     width: (379 / @pcrem);
+    //     height: (386 / @pcrem);
+    //     margin-top: (96 / @pcrem);
+    //   }
+    // }
     .box:nth-child(3) {
-      .pro-img {
-        width: (379 / @pcrem);
-        height: (386 / @pcrem);
-        margin-top: (96 / @pcrem);
-      }
-    }
-    .box:nth-child(4) {
       .pro-img {
         width: (625 / @pcrem);
         height: (360 / @pcrem);
         margin-top: (102 / @pcrem);
       }
+    }
+    .lastBox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .finish {

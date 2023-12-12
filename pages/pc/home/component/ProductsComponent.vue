@@ -32,6 +32,11 @@
         </div>
         <img class="arrow" src="https://files.myuwell.com/powehi/home/products/arr.png" alt="calio" />
       </div>
+
+      <div  class="productItem allShadow" >
+        <strong class="title textBold">COMING SOON</strong>
+      </div>
+
     </div>
   </section>
 </template>
@@ -51,14 +56,14 @@ export default {
           parameter: ['1-2ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE'],
           path: '/product/sole',
         },
-        {
-          img: 'pro-2.png',
-          title: 'CUSH',
-          tip: 'HDN004/HDNOO4B/HDN008',
-          content: ['GRASP PERSONALITY', 'IN PALM'],
-          parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE'],
-          path: '/product/cush',
-        },
+        // {
+        //   img: 'pro-2.png',
+        //   title: 'CUSH',
+        //   tip: 'HDN004/HDNOO4B/HDN008',
+        //   content: ['GRASP PERSONALITY', 'IN PALM'],
+        //   parameter: ['3ML/4ML/5ML', '3 LEVEL VOLTAGES', 'CERAMIC HEATING CORE'],
+        //   path: '/product/cush',
+        // },
         {
           img: 'pro-3.png',
           title: 'BELLO',
@@ -195,11 +200,11 @@ export default {
           width: (322 / @pcrem);
           height: (319 / @pcrem);
         }
+        // .img-1 {
+        //   width: (300 / @pcrem);
+        //   height: (305 / @pcrem);
+        // }
         .img-1 {
-          width: (300 / @pcrem);
-          height: (305 / @pcrem);
-        }
-        .img-2 {
           width: (485 / @pcrem);
           height: (279 / @pcrem);
         }
